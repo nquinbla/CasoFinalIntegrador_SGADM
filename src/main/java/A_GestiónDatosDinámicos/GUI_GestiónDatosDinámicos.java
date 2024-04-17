@@ -26,34 +26,53 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
         agregarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int primerElemento = Integer.parseInt(primerElementoField.getText());
-                int segundoElemento = Integer.parseInt(segundoElementoField.getText());
-                Pareja pareja = new Pareja(primerElemento, segundoElemento);
-                gestionDatosDinamicos.agregarPareja(pareja);
-                actualizarParejasArea();
+                try {
+                    int primerElemento = Integer.parseInt(primerElementoField.getText());
+                    int segundoElemento = Integer.parseInt(segundoElementoField.getText());
+                    Pareja pareja = new Pareja(primerElemento, segundoElemento);
+                    gestionDatosDinamicos.agregarPareja(pareja);
+                    actualizarParejasArea();
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
+                }
             }
         });
 
         eliminarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int primerElemento = Integer.parseInt(primerElementoField.getText());
-                int segundoElemento = Integer.parseInt(segundoElementoField.getText());
-                Pareja pareja = new Pareja(primerElemento, segundoElemento);
-                gestionDatosDinamicos.eliminarPareja(pareja);
-                actualizarParejasArea();
+                try {
+                    int primerElemento = Integer.parseInt(primerElementoField.getText());
+                    int segundoElemento = Integer.parseInt(segundoElementoField.getText());
+                    Pareja pareja = new Pareja(primerElemento, segundoElemento);
+                    gestionDatosDinamicos.eliminarPareja(pareja);
+                    actualizarParejasArea();
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
+                }
             }
         });
 
         modificarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int index = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el índice de la pareja a modificar"));
-                int primerElemento = Integer.parseInt(primerElementoField.getText());
-                int segundoElemento = Integer.parseInt(segundoElementoField.getText());
-                Pareja nuevaPareja = new Pareja(primerElemento, segundoElemento);
-                gestionDatosDinamicos.modificarPareja(index, nuevaPareja);
-                actualizarParejasArea();
+                try {
+                    int primerElemento = Integer.parseInt(primerElementoField.getText());
+                    int segundoElemento = Integer.parseInt(segundoElementoField.getText());
+                    Pareja pareja = new Pareja(primerElemento, segundoElemento);
+                    int index = gestionDatosDinamicos.getParejas().indexOf(pareja);
+                    if (index != -1) {
+                        int nuevoPrimerElemento = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el nuevo primer elemento de la pareja"));
+                        int nuevoSegundoElemento = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el nuevo segundo elemento de la pareja"));
+                        Pareja nuevaPareja = new Pareja(nuevoPrimerElemento, nuevoSegundoElemento);
+                        gestionDatosDinamicos.modificarPareja(index, nuevaPareja);
+                        actualizarParejasArea();
+                    } else {
+                        JOptionPane.showMessageDialog(null, "La pareja no se encuentra en la lista.");
+                    }
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
+                }
             }
         });
 
