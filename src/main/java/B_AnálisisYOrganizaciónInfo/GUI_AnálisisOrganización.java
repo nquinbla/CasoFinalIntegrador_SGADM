@@ -61,7 +61,7 @@ public class GUI_AnálisisOrganización extends JFrame {
         add(ordenarVentaButton);
         add(filtrarVentaButton);
 
-        setSize(300, 120);
+        setSize(300, 200);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }
