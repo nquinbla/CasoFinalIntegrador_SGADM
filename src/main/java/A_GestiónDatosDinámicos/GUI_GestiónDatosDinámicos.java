@@ -11,6 +11,7 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
     private JTextField segundoElementoField;
     private JTextField tercerElementoField; // Nuevo campo para la matriz
     private JTextArea datosArea;
+    private int matrizSeleccionada = -1;
 
     public GUI_GestiónDatosDinámicos(String tipo) {
         gestionDatosDinamicos = new GestiónDatosDinámicos();
@@ -90,47 +91,40 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                         int columnas = Integer.parseInt(segundoElementoField.getText());
                         Matriz matriz = new Matriz(filas, columnas);
                         gestionDatosDinamicos.agregarMatriz(matriz);
+                        matrizSeleccionada = gestionDatosDinamicos.getMatrices().size() - 1;
                         actualizarMatricesArea();
                     } catch (NumberFormatException ex) {
                         JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
                     }
                 }
             });
-
             eliminarButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    try {
-                        int filas = Integer.parseInt(primerElementoField.getText());
-                        int columnas = Integer.parseInt(segundoElementoField.getText());
-                        Matriz matriz = new Matriz(filas, columnas);
-                        gestionDatosDinamicos.eliminarMatriz(matriz);
+                    if (matrizSeleccionada != -1) {
+                        gestionDatosDinamicos.eliminarMatriz(matrizSeleccionada);
+                        matrizSeleccionada = -1;
                         actualizarMatricesArea();
-                    } catch (NumberFormatException ex) {
-                        JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Por favor, seleccione una matriz.");
                     }
                 }
             });
-
             modificarButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    try {
-                        int filas = Integer.parseInt(primerElementoField.getText());
-                        int columnas = Integer.parseInt(segundoElementoField.getText());
-                        Matriz matriz = new Matriz(filas, columnas);
-                        int index = gestionDatosDinamicos.getMatrices().indexOf(matriz);
-                        if (index != -1) {
+                    if (matrizSeleccionada != -1) {
+                        try {
                             int nuevasFilas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese las nuevas filas de la matriz"));
                             int nuevasColumnas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese las nuevas columnas de la matriz"));
                             Matriz nuevaMatriz = new Matriz(nuevasFilas, nuevasColumnas);
-                            gestionDatosDinamicos.modificarMatriz(index, nuevaMatriz);
+                            gestionDatosDinamicos.modificarMatriz(matrizSeleccionada, nuevaMatriz);
                             actualizarMatricesArea();
-                        } else {
-                            JOptionPane.showMessageDialog(null, "La matriz no se encuentra en la lista.");
+                        } catch (NumberFormatException ex) {
+                            JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
                         }
-                    } catch (NumberFormatException ex) {
-                        JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Por favor, seleccione una matriz.");
                     }
                 }
             });

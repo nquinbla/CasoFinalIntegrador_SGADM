@@ -34,8 +34,11 @@ public class GestiónDatosDinámicos {
     public void agregarMatriz(Matriz matriz) {
         matrices.add(matriz);
     }
-    public void eliminarMatriz(Matriz matriz) {
-        matrices.remove(matriz);
+    // En la clase GestiónDatosDinámicos
+    public void eliminarMatriz(int index) {
+        if (index >= 0 && index < matrices.size()) {
+            matrices.remove(index);
+        }
     }
     public void modificarMatriz(int index, Matriz nuevaMatriz) {
         if (index >= 0 && index < matrices.size()) {
