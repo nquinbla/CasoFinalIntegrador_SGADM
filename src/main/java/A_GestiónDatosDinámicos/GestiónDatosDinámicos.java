@@ -3,13 +3,17 @@ package A_GestiónDatosDinámicos;
 import java.util.ArrayList;
 import java.util.List;
 
+// Clase que gestiona los datos dinámicos de la aplicación
 public class GestiónDatosDinámicos {
+    // Atributos
     private List<Pareja> parejas;
 
+    // Constructor
     public GestiónDatosDinámicos() {
         this.parejas = new ArrayList<>();
     }
 
+    // Métodos
     public void agregarPareja(Pareja pareja) {
         parejas.add(pareja);
     }
