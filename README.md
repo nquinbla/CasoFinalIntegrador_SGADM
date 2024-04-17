@@ -3,13 +3,19 @@ Caso Final Integrador de la Unidad 6, sobre sistemas de gestión y análisis de 
 LINK: 
 
 ## DESCRIPCIÓN
- El proyecto consistirá en el desarrollo de una aplicación de software que integre varias estructuras de datos, algoritmos de ordenación y búsqueda, y métodos interactivos de entrada y salida de datos. Los estudiantes aplicarán conceptos avanzados de programación y estructuras de datos para crear una herramienta versátil y eficiente.
+ El proyecto consistirá en el desarrollo de una aplicación de software que integre varias estructuras de datos, algoritmos de ordenación y búsqueda, y métodos interactivos de entrada y salida de datos. Los estudiantes aplicarán conceptos avanzados de programación y estructuras de datos para   
+ crear una herramienta versátil y eficiente.
  
 ## MÓDULO
  ### 1. Gestión de Datos Dinámicos (Ejercicios 1,2,3,4 y 5)
-   * Modelado Multidimensional: Desarrollar clases y estructuras para representar y manejar datos multidimensionales, como la clase "Pareja" y listas de datos reales y de pares enteros.
-   * Interfaz de Usuario Interactiva: Crear una interfaz que permita a los usuarios introducir, modificar y eliminar datos dinámicamente, mostrando cambios en tiempo real y ofreciendo opciones de organización y filtrado.
-   * DESCRIPCIÓN -> El programa consiste en una lista de parejas de números enteros, los cuales, puedes añadir, eliminar y modificar estos. Si se intenta meter otra cosa que no sean números enteros salta un error.
+  Consiste en una interfaz gráfica donde el usuario puede escoger con lo que desea trabajar, matrices o parejas de números enteros. En las dos opciones podrán agregar, eliminar y modificar los elementos de estos que deseé, manejando así datos multidimensionales.
+  
+* Pareja.java -> Esta clase representa una pareja de enteros. Cada objeto Pareja tiene dos atributos, primerElemento y segundoElemento, que representan los dos enteros de la pareja. La clase Pareja tiene métodos para establecer y obtener estos elementos, así como un método toString() que devuelve una representación de cadena de la pareja.
+* Matriz.java -> Esta clase representa una matriz de enteros. Cada objeto Matriz tiene un atributo elementos, que es un array bidimensional de enteros. La clase Matriz tiene métodos para establecer y obtener elementos individuales de la matriz, así como un método toString() que devuelve una representación de cadena de la matriz. Los elementos de la matriz se pueden inicializar a través del constructor o mediante el método setElemento(). Los elementos se pueden recuperar utilizando el método getElemento().
+* GestiónDatosDinámicos -> Esta clase es una interfaz gráfica de usuario (GUI) que permite al usuario interactuar con objetos Matriz. La GUI tiene campos de texto para que el usuario pueda ingresar los valores de los elementos de la matriz, así como botones para agregar, eliminar y modificar matrices. Los datos ingresados por el usuario se utilizan para crear nuevos objetos Matriz, que luego se agregan a una lista de matrices. La GUI también tiene un área de texto donde se muestran todas las matrices en la lista.
+* GestiónDatosDinámicos.java -> Esta clase es responsable de gestionar las operaciones de datos dinámicos. Contiene una lista de objetos Matriz y proporciona métodos para agregar, eliminar y modificar matrices en la lista. Cada operación afecta a la lista de matrices y, por lo tanto, a los datos que se muestran en la GUI.
+* GUI_Selección -> Esta clase es otra GUI que permite al usuario elegir entre trabajar con parejas o matrices. Dependiendo de la elección del usuario, se abre la GUI correspondiente.
+
 
  ### 2. Análisis y Organización de Información (Ejercicios 6, 10, 11 y 13):
    * Ordenación y Búsqueda: Implementar algoritmos de ordenación y búsqueda eficientes para organizar y acceder rápidamente a los datos, como el uso de Treeset para ordenar nombres y el ordenamiento de ventas por diferentes criterios.
