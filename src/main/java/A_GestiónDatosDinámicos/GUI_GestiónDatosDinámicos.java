@@ -14,7 +14,8 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
     public GUI_GestiónDatosDinámicos() {
         gestionDatosDinamicos = new GestiónDatosDinámicos();
 
-        getContentPane().setBackground(Color.LIGHT_GRAY);
+        Color lightBlueGray = Color.decode("#B0C4DE");
+        getContentPane().setBackground(lightBlueGray); // color personalizado
 
         setLayout(new FlowLayout());
 
