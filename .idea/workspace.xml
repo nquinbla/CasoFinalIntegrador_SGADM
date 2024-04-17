@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 1] ajustes pt15" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 1] ajustes pt17">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +73,7 @@
       <updated>1713360980236</updated>
       <workItem from="1713360981290" duration="1856000" />
       <workItem from="1713370856818" duration="1231000" />
-      <workItem from="1713372107504" duration="4963000" />
+      <workItem from="1713372107504" duration="6093000" />
     </task>
     <task id="LOCAL-00001" summary="ajustes tontos">
       <option name="closed" value="true" />
@@ -281,15 +283,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713377072309</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="[Módulo 1] ajustes pt16">
+      <option name="closed" value="true" />
+      <created>1713377216633</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1713377216633</updated>
+    </task>
+    <task id="LOCAL-00028" summary="[Módulo 1] ajustes pt17">
+      <option name="closed" value="true" />
+      <created>1713377356197</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1713377356197</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ajustes tontos" />
-    <MESSAGE value="ajustes tontos pt2" />
     <MESSAGE value="main inicio" />
     <MESSAGE value="[Módulo 1] Clase pareja código" />
     <MESSAGE value="[Módulo 1] Clase pareja comentarios" />
@@ -313,6 +329,8 @@
     <MESSAGE value="[Módulo 1] ajustes pt13" />
     <MESSAGE value="[Módulo 1] ajustes pt14" />
     <MESSAGE value="[Módulo 1] ajustes pt15" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 1] ajustes pt15" />
+    <MESSAGE value="[Módulo 1] ajustes pt16" />
+    <MESSAGE value="[Módulo 1] ajustes pt17" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 1] ajustes pt17" />
   </component>
 </project>
