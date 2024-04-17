@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 1] ajustes pt17" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] clase AnalizadorRegistros código ajustes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_AnálisisOrganización.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +73,7 @@
       <updated>1713360980236</updated>
       <workItem from="1713360981290" duration="1856000" />
       <workItem from="1713370856818" duration="1231000" />
-      <workItem from="1713372107504" duration="6387000" />
+      <workItem from="1713372107504" duration="6991000" />
     </task>
     <task id="LOCAL-00001" summary="ajustes tontos">
       <option name="closed" value="true" />
@@ -305,16 +307,37 @@
       <option name="project" value="LOCAL" />
       <updated>1713378333008</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="[Módulo 2] clase registro código">
+      <option name="closed" value="true" />
+      <created>1713384073404</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1713384073404</updated>
+    </task>
+    <task id="LOCAL-00031" summary="[Módulo 2] clase AnalizadorRegistros código">
+      <option name="closed" value="true" />
+      <created>1713384107417</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1713384107417</updated>
+    </task>
+    <task id="LOCAL-00032" summary="[Módulo 2] clase AnalizadorRegistros código ajustes">
+      <option name="closed" value="true" />
+      <created>1713384139564</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1713384139564</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="main inicio" />
-    <MESSAGE value="[Módulo 1] Clase pareja código" />
-    <MESSAGE value="[Módulo 1] Clase pareja comentarios" />
     <MESSAGE value="[Módulo 1] Clase gestión de datos dinámicos código" />
     <MESSAGE value="[Módulo 1] Clase gestión de datos dinámicos comentarios" />
     <MESSAGE value="[Módulo 1] Clase gestión de datos dinámicos GUI código" />
@@ -337,6 +360,9 @@
     <MESSAGE value="[Módulo 1] ajustes pt15" />
     <MESSAGE value="[Módulo 1] ajustes pt16" />
     <MESSAGE value="[Módulo 1] ajustes pt17" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 1] ajustes pt17" />
+    <MESSAGE value="[Módulo 2] clase registro código" />
+    <MESSAGE value="[Módulo 2] clase AnalizadorRegistros código" />
+    <MESSAGE value="[Módulo 2] clase AnalizadorRegistros código ajustes" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] clase AnalizadorRegistros código ajustes" />
   </component>
 </project>
