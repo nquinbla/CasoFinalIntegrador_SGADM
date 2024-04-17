@@ -31,7 +31,7 @@ public class GUI_Selección extends JFrame {
         add(parejasButton);
         add(matricesButton);
 
-        setSize(300, 200);
+        setSize(300, 120);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }
