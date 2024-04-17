@@ -9,6 +9,7 @@ LINK:
  ### 1. Gestión de Datos Dinámicos (Ejercicios 1,2,3,4 y 5)
    * Modelado Multidimensional: Desarrollar clases y estructuras para representar y manejar datos multidimensionales, como la clase "Pareja" y listas de datos reales y de pares enteros.
    * Interfaz de Usuario Interactiva: Crear una interfaz que permita a los usuarios introducir, modificar y eliminar datos dinámicamente, mostrando cambios en tiempo real y ofreciendo opciones de organización y filtrado.
+   * DESCRIPCIÓN -> El programa consiste en una lista de parejas de números enteros, los cuales, puedes añadir, eliminar y modificar estos. Si se intenta meter otra cosa que no sean números enteros salta un error.
 
  ### 2. Análisis y Organización de Información (Ejercicios 6, 10, 11 y 13):
    * Ordenación y Búsqueda: Implementar algoritmos de ordenación y búsqueda eficientes para organizar y acceder rápidamente a los datos, como el uso de Treeset para ordenar nombres y el ordenamiento de ventas por diferentes criterios.
