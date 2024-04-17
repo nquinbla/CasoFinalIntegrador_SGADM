@@ -1,5 +1,7 @@
 package A_GestiónDatosDinámicos;
 
+import java.util.Objects;
+
 // Clase que representa una pareja de enteros
 public class Pareja {
     // Atributos
@@ -27,5 +29,18 @@ public class Pareja {
 
     public void setSegundoElemento(int segundoElemento) {
         this.segundoElemento = segundoElemento;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pareja pareja = (Pareja) o;
+        return primerElemento == pareja.primerElemento && segundoElemento == pareja.segundoElemento;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(primerElemento, segundoElemento);
     }
 }
