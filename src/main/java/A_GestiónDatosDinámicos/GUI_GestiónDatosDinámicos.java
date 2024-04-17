@@ -40,7 +40,7 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
         add(new JScrollPane(parejasArea));
 
         setSize(400, 300);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }
 
