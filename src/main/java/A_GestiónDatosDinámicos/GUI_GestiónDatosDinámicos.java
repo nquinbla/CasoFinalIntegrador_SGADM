@@ -5,14 +5,14 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GestiónDatosDinámicos_GUI extends JFrame {
-    private GestiónDatosDinámicos_GUI gestionDatosDinamicos;
+public class GUI_GestiónDatosDinámicos extends JFrame {
+    private GestiónDatosDinámicos gestionDatosDinamicos;
     private JTextField primerElementoField;
     private JTextField segundoElementoField;
     private JTextArea parejasArea;
 
-    public GestiónDatosDinámicos_GUI() {
-        gestionDatosDinamicos = new GestiónDatosDinámicos_GUI();
+    public GUI_GestiónDatosDinámicos() {
+        gestionDatosDinamicos = new GestiónDatosDinámicos();
 
         setLayout(new FlowLayout());
 
@@ -52,6 +52,6 @@ public class GestiónDatosDinámicos_GUI extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new GestiónDatosDinámicos_GUI());
+        SwingUtilities.invokeLater(() -> new GUI_GestiónDatosDinámicos());
     }
 }
