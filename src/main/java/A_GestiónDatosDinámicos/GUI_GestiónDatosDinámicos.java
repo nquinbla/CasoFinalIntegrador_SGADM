@@ -83,13 +83,20 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                 }
             });
         } else if (tipo.equals("matrices")) {
+            // En el ActionListener del botón de agregar
             agregarButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     try {
                         int filas = Integer.parseInt(primerElementoField.getText());
                         int columnas = Integer.parseInt(segundoElementoField.getText());
-                        Matriz matriz = new Matriz(filas, columnas);
+                        int[][] elementos = new int[filas][columnas];
+                        for (int i = 0; i < filas; i++) {
+                            for (int j = 0; j < columnas; j++) {
+                                elementos[i][j] = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor del elemento en la fila " + (i+1) + " y la columna " + (j+1)));
+                            }
+                        }
+                        Matriz matriz = new Matriz(elementos);
                         gestionDatosDinamicos.agregarMatriz(matriz);
                         matrizSeleccionada = gestionDatosDinamicos.getMatrices().size() - 1;
                         actualizarMatricesArea();
