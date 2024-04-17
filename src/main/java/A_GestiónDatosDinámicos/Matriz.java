@@ -2,20 +2,14 @@ package A_GestiónDatosDinámicos;
 
 import java.util.Arrays;
 
+// Clase Matriz
 public class Matriz {
-    private int[][] elementos;
+    private int[][] elementos; // atributo de la clase Matriz
 
-    public Matriz(int filas, int columnas) {
-        this.elementos = new int[filas][columnas];
-    }
-
-    public void setElemento(int fila, int columna, int valor) {
-        this.elementos[fila][columna] = valor;
-    }
-
-    public int getElemento(int fila, int columna) {
-        return this.elementos[fila][columna];
-    }
+    // Constructor de la clase Matriz
+    public Matriz(int filas, int columnas) {this.elementos = new int[filas][columnas];}
+    public void setElemento(int fila, int columna, int valor) {this.elementos[fila][columna] = valor;}
+    public int getElemento(int fila, int columna) {return this.elementos[fila][columna];}
 
     @Override
     public String toString() {

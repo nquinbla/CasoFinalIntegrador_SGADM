@@ -22,11 +22,9 @@ public class Pareja {
     public void setPrimerElemento(int primerElemento) {
         this.primerElemento = primerElemento;
     }
-
     public int getSegundoElemento() {
         return segundoElemento;
     }
-
     public void setSegundoElemento(int segundoElemento) {
         this.segundoElemento = segundoElemento;
     }
