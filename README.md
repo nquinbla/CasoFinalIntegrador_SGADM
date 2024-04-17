@@ -1,6 +1,6 @@
 # Caso Final Integrador Tema 6: Sistema de Gestión y Análisis de Datos Multidimensionales
 Caso Final Integrador de la Unidad 6, sobre sistemas de gestión y análisis de datos multidimensionales de Nerea Quintanilla Blanco.
-LINK: 
+LINK: https://github.com/nquinbla/CasoFinalIntegrador_SGADM.git
 
 ## DESCRIPCIÓN
  El proyecto consistirá en el desarrollo de una aplicación de software que integre varias estructuras de datos, algoritmos de ordenación y búsqueda, y métodos interactivos de entrada y salida de datos. Los estudiantes aplicarán conceptos avanzados de programación y estructuras de datos para   
