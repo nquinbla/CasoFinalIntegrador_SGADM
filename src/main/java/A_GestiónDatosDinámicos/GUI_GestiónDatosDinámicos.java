@@ -11,7 +11,7 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
     private JTextField segundoElementoField;
     private JTextArea parejasArea;
 
-    public GUI_GestiónDatosDinámicos() {
+    public GUI_GestiónDatosDinámicos(String tipo) {
         gestionDatosDinamicos = new GestiónDatosDinámicos();
 
         Color lightBlueGray = Color.decode("#B0C4DE");
@@ -21,9 +21,9 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
 
         primerElementoField = new JTextField(10);
         segundoElementoField = new JTextField(10);
-        JButton agregarButton = new JButton("Agregar Pareja");
-        JButton eliminarButton = new JButton("Eliminar Pareja");
-        JButton modificarButton = new JButton("Modificar Pareja");
+        JButton agregarButton = new JButton("Agregar " + tipo);
+        JButton eliminarButton = new JButton("Eliminar " + tipo);
+        JButton modificarButton = new JButton("Modificar " + tipo);
         parejasArea = new JTextArea(10, 30);
 
         agregarButton.addActionListener(new ActionListener() {
@@ -93,14 +93,5 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
         setVisible(true);
     }
 
-    private void actualizarParejasArea() {
-        parejasArea.setText("");
-        for (Pareja pareja : gestionDatosDinamicos.getParejas()) {
-            parejasArea.append(pareja.getPrimerElemento() + ", " + pareja.getSegundoElemento() + "\n");
-        }
-    }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new GUI_GestiónDatosDinámicos());
-    }
+    // Aquí va el resto del código de la clase...
 }
