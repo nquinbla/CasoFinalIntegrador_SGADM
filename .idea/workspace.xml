@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="ajustes tontos">
-      <change afterPath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Aplicación.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/ModeladoMultidimensional.java" afterDir="false" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="ajustes tontos pt2">
+      <change beforePath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Aplicación.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Aplicación.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713360980236</updated>
       <workItem from="1713360981290" duration="1856000" />
-      <workItem from="1713370856818" duration="1073000" />
+      <workItem from="1713370856818" duration="1231000" />
     </task>
     <task id="LOCAL-00001" summary="ajustes tontos">
       <option name="closed" value="true" />
@@ -78,7 +77,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713370958179</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ajustes tontos pt2">
+      <option name="closed" value="true" />
+      <created>1713371955303</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713371955303</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ajustes tontos pt2">
+      <option name="closed" value="true" />
+      <created>1713372032245</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713372032245</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +101,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajustes tontos" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustes tontos" />
+    <MESSAGE value="ajustes tontos pt2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes tontos pt2" />
   </component>
 </project>
