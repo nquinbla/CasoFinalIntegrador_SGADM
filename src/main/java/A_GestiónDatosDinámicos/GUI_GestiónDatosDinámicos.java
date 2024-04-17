@@ -14,6 +14,8 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
     public GUI_GestiónDatosDinámicos() {
         gestionDatosDinamicos = new GestiónDatosDinámicos();
 
+        getContentPane().setBackground(Color.LIGHT_GRAY);
+
         setLayout(new FlowLayout());
 
         primerElementoField = new JTextField(10);
