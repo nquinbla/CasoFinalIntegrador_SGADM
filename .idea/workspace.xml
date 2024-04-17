@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 1] ajustes pt10">
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 1] ajustes pt11">
       <change beforePath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/GUI_GestiónDatosDinámicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/GUI_GestiónDatosDinámicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Matriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Matriz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Pareja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Pareja.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,7 @@
       <updated>1713360980236</updated>
       <workItem from="1713360981290" duration="1856000" />
       <workItem from="1713370856818" duration="1231000" />
-      <workItem from="1713372107504" duration="3772000" />
+      <workItem from="1713372107504" duration="4108000" />
     </task>
     <task id="LOCAL-00001" summary="ajustes tontos">
       <option name="closed" value="true" />
@@ -243,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713375847220</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="[Módulo 1] ajustes pt11">
+      <option name="closed" value="true" />
+      <created>1713375921548</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713375921548</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +280,7 @@
     <MESSAGE value="[Módulo 1] matriz código" />
     <MESSAGE value="[Módulo 1] gestión datos dinámicos con matrices" />
     <MESSAGE value="[Módulo 1] ajustes pt10" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 1] ajustes pt10" />
+    <MESSAGE value="[Módulo 1] ajustes pt11" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 1] ajustes pt11" />
   </component>
 </project>

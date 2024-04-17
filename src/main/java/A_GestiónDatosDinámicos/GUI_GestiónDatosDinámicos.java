@@ -82,7 +82,58 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                 }
             });
         } else if (tipo.equals("matrices")) {
-            // Aquí va el código para agregar los ActionListener a los botones para trabajar con matrices
+            agregarButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    try {
+                        int filas = Integer.parseInt(primerElementoField.getText());
+                        int columnas = Integer.parseInt(segundoElementoField.getText());
+                        Matriz matriz = new Matriz(filas, columnas);
+                        gestionDatosDinamicos.agregarMatriz(matriz);
+                        actualizarMatricesArea();
+                    } catch (NumberFormatException ex) {
+                        JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
+                    }
+                }
+            });
+
+            eliminarButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    try {
+                        int filas = Integer.parseInt(primerElementoField.getText());
+                        int columnas = Integer.parseInt(segundoElementoField.getText());
+                        Matriz matriz = new Matriz(filas, columnas);
+                        gestionDatosDinamicos.eliminarMatriz(matriz);
+                        actualizarMatricesArea();
+                    } catch (NumberFormatException ex) {
+                        JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
+                    }
+                }
+            });
+
+            modificarButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    try {
+                        int filas = Integer.parseInt(primerElementoField.getText());
+                        int columnas = Integer.parseInt(segundoElementoField.getText());
+                        Matriz matriz = new Matriz(filas, columnas);
+                        int index = gestionDatosDinamicos.getMatrices().indexOf(matriz);
+                        if (index != -1) {
+                            int nuevasFilas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese las nuevas filas de la matriz"));
+                            int nuevasColumnas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese las nuevas columnas de la matriz"));
+                            Matriz nuevaMatriz = new Matriz(nuevasFilas, nuevasColumnas);
+                            gestionDatosDinamicos.modificarMatriz(index, nuevaMatriz);
+                            actualizarMatricesArea();
+                        } else {
+                            JOptionPane.showMessageDialog(null, "La matriz no se encuentra en la lista.");
+                        }
+                    } catch (NumberFormatException ex) {
+                        JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
+                    }
+                }
+            });
         }
 
         add(new JLabel("Primer Elemento:"));
@@ -103,5 +154,20 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
         setVisible(true);
     }
 
-    // Aquí va el resto del código de la clase...
+    private void actualizarParejasArea() {
+        StringBuilder sb = new StringBuilder();
+        for (Pareja pareja : gestionDatosDinamicos.getParejas()) {
+            sb.append(pareja.toString()).append("\n");
+        }
+        datosArea.setText(sb.toString());
+    }
+
+    private void actualizarMatricesArea() {
+        StringBuilder sb = new StringBuilder();
+        for (Matriz matriz : gestionDatosDinamicos.getMatrices()) {
+            sb.append(matriz.toString()).append("\n");
+        }
+        datosArea.setText(sb.toString());
+    }
+
 }

@@ -43,4 +43,9 @@ public class Pareja {
     public int hashCode() {
         return Objects.hash(primerElemento, segundoElemento);
     }
+    // En la clase Pareja
+    @Override
+    public String toString() {
+        return "(" + primerElemento + ", " + segundoElemento + ")";
+    }
 }
