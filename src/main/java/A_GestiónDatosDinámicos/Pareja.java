@@ -1,9 +1,12 @@
 package A_GestiónDatosDinámicos;
 
+// Clase que representa una pareja de enteros
 public class Pareja {
+    // Atributos
     private int primerElemento;
     private int segundoElemento;
 
+    // Constructor
     public Pareja(int primerElemento, int segundoElemento) {
         this.primerElemento = primerElemento;
         this.segundoElemento = segundoElemento;
