@@ -9,9 +9,7 @@ public class AnalizadorRegistros {
         this.registros = new ArrayList<>();
     }
 
-    public void agregarRegistro(Registro registro) {
-        this.registros.add(registro);
-    }
+    public void agregarRegistro(Registro registro) {this.registros.add(registro);}
 
     public List<Registro> ordenarPorNombre() {
         registros.sort(Comparator.comparing(Registro::getNombre));
