@@ -96,7 +96,7 @@ public class GUI_Ventas extends JFrame {
         add(ordenarPorClienteButton);
         add(new JScrollPane(resultadoArea));
 
-        setSize(400, 500);
+        setSize(640, 460);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }
