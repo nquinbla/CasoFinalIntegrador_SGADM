@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] clase AnalizadorRegistros código ajustes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_AnálisisOrganización.java" afterDir="false" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] clase análisis organización GUI código">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/AnalizadorRegistros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_AnálisisOrganización.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/Registro.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,23 +38,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Aplicación.executor": "Run",
-    "Application.GUI_GestiónDatosDinámicos.executor": "Run",
-    "Application.GUI_Selección.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Aplicación.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_AnálisisOrganización.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_GestiónDatosDinámicos.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Selección.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -73,7 +78,11 @@
       <updated>1713360980236</updated>
       <workItem from="1713360981290" duration="1856000" />
       <workItem from="1713370856818" duration="1231000" />
-      <workItem from="1713372107504" duration="6991000" />
+      <workItem from="1713372107504" duration="7475000" />
+      <workItem from="1713461503251" duration="1849000" />
+      <workItem from="1713518818712" duration="657000" />
+      <workItem from="1713519829118" duration="645000" />
+      <workItem from="1713526864934" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="ajustes tontos">
       <option name="closed" value="true" />
@@ -331,14 +340,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713384139564</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="[Módulo 2] clase análisis organización GUI código">
+      <option name="closed" value="true" />
+      <created>1713384255496</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1713384255496</updated>
+    </task>
+    <task id="LOCAL-00034" summary="[Módulo 2] clase análisis organización GUI código">
+      <option name="closed" value="true" />
+      <created>1713384296294</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1713384296294</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 1] Clase gestión de datos dinámicos código" />
     <MESSAGE value="[Módulo 1] Clase gestión de datos dinámicos comentarios" />
     <MESSAGE value="[Módulo 1] Clase gestión de datos dinámicos GUI código" />
     <MESSAGE value="[Módulo 1] Clase gestión de datos dinámicos GUI código arreglillos" />
@@ -363,6 +387,7 @@
     <MESSAGE value="[Módulo 2] clase registro código" />
     <MESSAGE value="[Módulo 2] clase AnalizadorRegistros código" />
     <MESSAGE value="[Módulo 2] clase AnalizadorRegistros código ajustes" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] clase AnalizadorRegistros código ajustes" />
+    <MESSAGE value="[Módulo 2] clase análisis organización GUI código" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] clase análisis organización GUI código" />
   </component>
 </project>
