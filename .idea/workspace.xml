@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2]  Clase Venta.java" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] Clase Cliente.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_Ventas.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,24 +34,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Aplicación.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_AnálisisOrganización.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_GestiónDatosDinámicos.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_Selección.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Aplicación.executor": "Run",
+    "Application.GUI_AnálisisOrganización.executor": "Run",
+    "Application.GUI_GestiónDatosDinámicos.executor": "Run",
+    "Application.GUI_Selección.executor": "Run",
+    "Application.GUI_Ventas.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -76,7 +79,7 @@
       <workItem from="1713461503251" duration="1849000" />
       <workItem from="1713518818712" duration="657000" />
       <workItem from="1713519829118" duration="645000" />
-      <workItem from="1713526864934" duration="643000" />
+      <workItem from="1713526864934" duration="1071000" />
     </task>
     <task id="LOCAL-00001" summary="ajustes tontos">
       <option name="closed" value="true" />
@@ -366,15 +369,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713527510523</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="[Módulo 2] Clase RegistroVentas.java">
+      <option name="closed" value="true" />
+      <created>1713527634211</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1713527634211</updated>
+    </task>
+    <task id="LOCAL-00038" summary="[Módulo 2] Clase Cliente.java">
+      <option name="closed" value="true" />
+      <created>1713527726872</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1713527726872</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 1] Clase gestión de datos dinámicos GUI código arreglillos" />
-    <MESSAGE value="[Módulo 1] ajustes pt1" />
     <MESSAGE value="[Módulo 1] ajustes pt2" />
     <MESSAGE value="[Módulo 1] ajustes pt3" />
     <MESSAGE value="[Módulo 1] ajustes pt4" />
@@ -398,6 +415,8 @@
     <MESSAGE value="[Módulo 2] clase análisis organización GUI código" />
     <MESSAGE value="[Módulo 2]  ajustes" />
     <MESSAGE value="[Módulo 2]  Clase Venta.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2]  Clase Venta.java" />
+    <MESSAGE value="[Módulo 2] Clase RegistroVentas.java" />
+    <MESSAGE value="[Módulo 2] Clase Cliente.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] Clase Cliente.java" />
   </component>
 </project>
