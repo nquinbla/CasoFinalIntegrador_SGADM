@@ -9,6 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Calendar;
+import java.util.List; // Importa java.util.List
 
 public class GUI_Ventas extends JFrame {
     private RegistroVentas registroVentas;
@@ -64,7 +65,7 @@ public class GUI_Ventas extends JFrame {
 
         JButton ordenarPorFechaButton = new JButton("Ordenar por Fecha");
         ordenarPorFechaButton.addActionListener(e -> {
-            List<Venta> ventasOrdenadas = registroVentas.ordenarPorFecha();
+            List<Venta> ventasOrdenadas = registroVentas.ordenarPorFecha(); // Usa java.util.List
             resultadoArea.setText("");
             for (Venta venta : ventasOrdenadas) {
                 resultadoArea.append("Fecha: " + venta.getFecha() + ", Cantidad: " + venta.getCantidad() + ", Cliente: " + venta.getCliente() + "\n");
@@ -73,7 +74,7 @@ public class GUI_Ventas extends JFrame {
 
         JButton ordenarPorCantidadButton = new JButton("Ordenar por Cantidad");
         ordenarPorCantidadButton.addActionListener(e -> {
-            List<Venta> ventasOrdenadas = registroVentas.ordenarPorCantidad();
+            List<Venta> ventasOrdenadas = registroVentas.ordenarPorCantidad(); // Usa java.util.List
             resultadoArea.setText("");
             for (Venta venta : ventasOrdenadas) {
                 resultadoArea.append("Fecha: " + venta.getFecha() + ", Cantidad: " + venta.getCantidad() + ", Cliente: " + venta.getCliente() + "\n");
@@ -82,7 +83,7 @@ public class GUI_Ventas extends JFrame {
 
         JButton ordenarPorClienteButton = new JButton("Ordenar por Cliente");
         ordenarPorClienteButton.addActionListener(e -> {
-            List<Venta> ventasOrdenadas = registroVentas.ordenarPorCliente();
+            List<Venta> ventasOrdenadas = registroVentas.ordenarPorCliente(); // Usa java.util.List
             resultadoArea.setText("");
             for (Venta venta : ventasOrdenadas) {
                 resultadoArea.append("Fecha: " + venta.getFecha() + ", Cantidad: " + venta.getCantidad() + ", Cliente: " + venta.getCliente() + "\n");

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] ajustes pt3 (tamaño)">
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] ajustes pt5 (ordenación)">
       <change beforePath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_Ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_Ventas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +79,7 @@
       <workItem from="1713461503251" duration="1849000" />
       <workItem from="1713518818712" duration="657000" />
       <workItem from="1713519829118" duration="645000" />
-      <workItem from="1713526864934" duration="1733000" />
+      <workItem from="1713526864934" duration="2082000" />
     </task>
     <task id="LOCAL-00001" summary="ajustes tontos">
       <option name="closed" value="true" />
@@ -417,15 +417,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713528451269</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="[Módulo 2] ajustes pt4 (año)">
+      <option name="closed" value="true" />
+      <created>1713528705790</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1713528705790</updated>
+    </task>
+    <task id="LOCAL-00044" summary="[Módulo 2] ajustes pt5 (ordenación)">
+      <option name="closed" value="true" />
+      <created>1713528888890</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1713528888890</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 1] ajustes pt6" />
-    <MESSAGE value="[Módulo 1] ajustes pt7" />
     <MESSAGE value="[Módulo 1] ajustes pt8" />
     <MESSAGE value="[Módulo 1] matriz código" />
     <MESSAGE value="[Módulo 1] gestión datos dinámicos con matrices" />
@@ -449,6 +463,8 @@
     <MESSAGE value="[Módulo 2] ajustes pt1 (fecha)" />
     <MESSAGE value="[Módulo 2] ajustes pt2 (fecha)" />
     <MESSAGE value="[Módulo 2] ajustes pt3 (tamaño)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] ajustes pt3 (tamaño)" />
+    <MESSAGE value="[Módulo 2] ajustes pt4 (año)" />
+    <MESSAGE value="[Módulo 2] ajustes pt5 (ordenación)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] ajustes pt5 (ordenación)" />
   </component>
 </project>
