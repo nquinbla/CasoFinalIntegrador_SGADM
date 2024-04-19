@@ -15,16 +15,19 @@ public class RegistroVentas {
     }
 
     // Métodos para ordenar y filtrar ventas
-    public void ordenarPorFecha() {
+    public List<Venta> ordenarPorFecha() {
         ventas.sort((v1, v2) -> v1.getFecha().compareTo(v2.getFecha()));
+        return ventas;
     }
 
-    public void ordenarPorCantidad() {
+    public List<Venta> ordenarPorCantidad() {
         ventas.sort((v1, v2) -> v1.getCantidad() - v2.getCantidad());
+        return ventas;
     }
 
-    public void ordenarPorCliente() {
+    public List<Venta> ordenarPorCliente() {
         ventas.sort((v1, v2) -> v1.getCliente().compareTo(v2.getCliente()));
+        return ventas;
     }
 
     public List<Venta> filtrarPorCliente(String cliente) {

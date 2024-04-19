@@ -64,20 +64,29 @@ public class GUI_Ventas extends JFrame {
 
         JButton ordenarPorFechaButton = new JButton("Ordenar por Fecha");
         ordenarPorFechaButton.addActionListener(e -> {
-            registroVentas.ordenarPorFecha();
-            resultadoArea.append("Ventas ordenadas por fecha.\n");
+            List<Venta> ventasOrdenadas = registroVentas.ordenarPorFecha();
+            resultadoArea.setText("");
+            for (Venta venta : ventasOrdenadas) {
+                resultadoArea.append("Fecha: " + venta.getFecha() + ", Cantidad: " + venta.getCantidad() + ", Cliente: " + venta.getCliente() + "\n");
+            }
         });
 
         JButton ordenarPorCantidadButton = new JButton("Ordenar por Cantidad");
         ordenarPorCantidadButton.addActionListener(e -> {
-            registroVentas.ordenarPorCantidad();
-            resultadoArea.append("Ventas ordenadas por cantidad.\n");
+            List<Venta> ventasOrdenadas = registroVentas.ordenarPorCantidad();
+            resultadoArea.setText("");
+            for (Venta venta : ventasOrdenadas) {
+                resultadoArea.append("Fecha: " + venta.getFecha() + ", Cantidad: " + venta.getCantidad() + ", Cliente: " + venta.getCliente() + "\n");
+            }
         });
 
         JButton ordenarPorClienteButton = new JButton("Ordenar por Cliente");
         ordenarPorClienteButton.addActionListener(e -> {
-            registroVentas.ordenarPorCliente();
-            resultadoArea.append("Ventas ordenadas por cliente.\n");
+            List<Venta> ventasOrdenadas = registroVentas.ordenarPorCliente();
+            resultadoArea.setText("");
+            for (Venta venta : ventasOrdenadas) {
+                resultadoArea.append("Fecha: " + venta.getFecha() + ", Cantidad: " + venta.getCantidad() + ", Cliente: " + venta.getCliente() + "\n");
+            }
         });
 
         add(new JLabel("Día:"));
