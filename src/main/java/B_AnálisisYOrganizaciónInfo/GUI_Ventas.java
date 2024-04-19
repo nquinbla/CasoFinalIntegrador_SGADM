@@ -6,12 +6,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Calendar;
 
 public class GUI_Ventas extends JFrame {
     private RegistroVentas registroVentas;
-    private JTextField fechaField, cantidadField, clienteField;
+    private JTextField diaField, mesField, añoField, cantidadField, clienteField;
     private JTextArea resultadoArea;
 
     public GUI_Ventas() {
@@ -19,7 +20,9 @@ public class GUI_Ventas extends JFrame {
 
         setLayout(new FlowLayout());
 
-        fechaField = new JTextField(10);
+        diaField = new JTextField(2);
+        mesField = new JTextField(2);
+        añoField = new JTextField(4);
         cantidadField = new JTextField(10);
         clienteField = new JTextField(10);
         resultadoArea = new JTextArea(20, 30);
@@ -29,7 +32,14 @@ public class GUI_Ventas extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    Date fecha = new SimpleDateFormat("dd/MM/yyyy").parse(fechaField.getText());
+                    int dia = Integer.parseInt(diaField.getText());
+                    int mes = Integer.parseInt(mesField.getText());
+                    int año = Integer.parseInt(añoField.getText());
+
+                    Calendar calendar = Calendar.getInstance();
+                    calendar.set(año, mes - 1, dia);
+                    Date fecha = calendar.getTime();
+
                     int cantidad = Integer.parseInt(cantidadField.getText());
                     String cliente = clienteField.getText();
 
@@ -37,10 +47,8 @@ public class GUI_Ventas extends JFrame {
                     registroVentas.agregarVenta(venta);
 
                     resultadoArea.append("Venta agregada: " + venta.getCliente() + "\n");
-                } catch (ParseException ex) {
-                    resultadoArea.append("Error: Fecha inválida. Use el formato dd/MM/yyyy.\n");
                 } catch (NumberFormatException ex) {
-                    resultadoArea.append("Error: Cantidad inválida. Debe ser un número entero.\n");
+                    resultadoArea.append("Error: Fecha o cantidad inválida. Debe ser un número.\n");
                 }
             }
         });
@@ -63,8 +71,12 @@ public class GUI_Ventas extends JFrame {
             resultadoArea.append("Ventas ordenadas por cliente.\n");
         });
 
-        add(new JLabel("Fecha (dd/MM/yyyy):"));
-        add(fechaField);
+        add(new JLabel("Día:"));
+        add(diaField);
+        add(new JLabel("Mes:"));
+        add(mesField);
+        add(new JLabel("Año:"));
+        add(añoField);
         add(new JLabel("Cantidad:"));
         add(cantidadField);
         add(new JLabel("Cliente:"));
