@@ -36,8 +36,17 @@ public class GUI_Ventas extends JFrame {
                     int mes = Integer.parseInt(mesField.getText());
                     int año = Integer.parseInt(añoField.getText());
 
+                    if (dia < 1 || dia > 31 || mes < 1 || mes > 12 || año < 0) {
+                        throw new NumberFormatException();
+                    }
+
                     Calendar calendar = Calendar.getInstance();
                     calendar.set(año, mes - 1, dia);
+                    int maxDayInMonth = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
+                    if (dia > maxDayInMonth) {
+                        throw new NumberFormatException();
+                    }
+
                     Date fecha = calendar.getTime();
 
                     int cantidad = Integer.parseInt(cantidadField.getText());
@@ -48,7 +57,7 @@ public class GUI_Ventas extends JFrame {
 
                     resultadoArea.append("Venta agregada: " + venta.getCliente() + "\n");
                 } catch (NumberFormatException ex) {
-                    resultadoArea.append("Error: Fecha o cantidad inválida. Debe ser un número.\n");
+                    JOptionPane.showMessageDialog(null, "Error: Fecha, cantidad o cliente inválido. Debe ser un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });

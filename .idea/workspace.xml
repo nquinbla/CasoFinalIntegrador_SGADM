@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] Clase Cliente.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_Ventas.java" afterDir="false" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] ajustes pt1 (fecha)">
+      <change beforePath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_Ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_Ventas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,7 @@
       <workItem from="1713461503251" duration="1849000" />
       <workItem from="1713518818712" duration="657000" />
       <workItem from="1713519829118" duration="645000" />
-      <workItem from="1713526864934" duration="1071000" />
+      <workItem from="1713526864934" duration="1392000" />
     </task>
     <task id="LOCAL-00001" summary="ajustes tontos">
       <option name="closed" value="true" />
@@ -385,15 +385,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713527726872</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="[Módulo 2] Clase GUI_Ventas.java">
+      <option name="closed" value="true" />
+      <created>1713528026522</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1713528026522</updated>
+    </task>
+    <task id="LOCAL-00040" summary="[Módulo 2] ajustes pt1 (fecha)">
+      <option name="closed" value="true" />
+      <created>1713528138516</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1713528138516</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 1] ajustes pt2" />
-    <MESSAGE value="[Módulo 1] ajustes pt3" />
     <MESSAGE value="[Módulo 1] ajustes pt4" />
     <MESSAGE value="[Módulo 1] ajustes pt5" />
     <MESSAGE value="[Módulo 1] ajustes pt6" />
@@ -417,6 +431,8 @@
     <MESSAGE value="[Módulo 2]  Clase Venta.java" />
     <MESSAGE value="[Módulo 2] Clase RegistroVentas.java" />
     <MESSAGE value="[Módulo 2] Clase Cliente.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] Clase Cliente.java" />
+    <MESSAGE value="[Módulo 2] Clase GUI_Ventas.java" />
+    <MESSAGE value="[Módulo 2] ajustes pt1 (fecha)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] ajustes pt1 (fecha)" />
   </component>
 </project>
