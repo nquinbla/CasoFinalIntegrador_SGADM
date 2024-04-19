@@ -36,7 +36,7 @@ public class GUI_Ventas extends JFrame {
                     int mes = Integer.parseInt(mesField.getText());
                     int año = Integer.parseInt(añoField.getText());
 
-                    if (dia < 1 || dia > 31 || mes < 1 || mes > 12 || año < 0) {
+                    if (dia < 1 || dia > 31 || mes < 1 || mes > 12 || año < 0 || año > 2025) {
                         throw new NumberFormatException();
                     }
 
