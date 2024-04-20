@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] ajustes pt12 (comparando para cambiar cosas en GUI_Ventas)">
-      <change beforePath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/RegistroVentas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/RegistroVentas.java" afterDir="false" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] ajustes pt12 (arreglo editar venta)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_Ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_Ventas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/comparación.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,15 +84,7 @@
       <workItem from="1713518818712" duration="657000" />
       <workItem from="1713519829118" duration="645000" />
       <workItem from="1713526864934" duration="2082000" />
-      <workItem from="1713603558284" duration="5654000" />
-    </task>
-    <task id="LOCAL-00005" summary="[Módulo 1] Clase pareja código">
-      <option name="closed" value="true" />
-      <created>1713372487068</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1713372487068</updated>
+      <workItem from="1713603558284" duration="7821000" />
     </task>
     <task id="LOCAL-00006" summary="[Módulo 1] Clase pareja comentarios">
       <option name="closed" value="true" />
@@ -476,14 +470,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713610385350</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="[Módulo 2] ajustes pt12 (arreglo editar venta)">
+      <option name="closed" value="true" />
+      <created>1713610576513</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1713610576513</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 1] ajustes pt15" />
     <MESSAGE value="[Módulo 1] ajustes pt16" />
     <MESSAGE value="[Módulo 1] ajustes pt17" />
     <MESSAGE value="[Módulo 2] clase registro código" />
@@ -508,6 +509,7 @@
     <MESSAGE value="[Módulo 2] ajustes pt10 (arreglos de editar ventas)" />
     <MESSAGE value="[Módulo 2] ajustes pt11 (arreglos de editar ventas)" />
     <MESSAGE value="[Módulo 2] ajustes pt12 (comparando para cambiar cosas en GUI_Ventas)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] ajustes pt12 (comparando para cambiar cosas en GUI_Ventas)" />
+    <MESSAGE value="[Módulo 2] ajustes pt12 (arreglo editar venta)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] ajustes pt12 (arreglo editar venta)" />
   </component>
 </project>

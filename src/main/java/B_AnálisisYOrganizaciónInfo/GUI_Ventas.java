@@ -14,7 +14,7 @@ public class GUI_Ventas extends JFrame {
     private RegistroVentas registroVentas;
     private JTextField diaField, mesField, añoField, cantidadField, clienteField;
     private JTextArea resultadoArea;
-    private JComboBox<Integer> ventaComboBox; // Nuevo JComboBox para seleccionar la venta
+    private JComboBox<String> ventaComboBox;
 
     public GUI_Ventas() {
         registroVentas = new RegistroVentas(new ArrayList<>());
@@ -27,8 +27,8 @@ public class GUI_Ventas extends JFrame {
         cantidadField = new JTextField(10);
         clienteField = new JTextField(10);
         resultadoArea = new JTextArea(20, 30);
+        ventaComboBox = new JComboBox<>(); // Inicializar ventaComboBox
 
-        ventaComboBox = new JComboBox<>(); // Inicializar el JComboBox
 
         JButton agregarButton = new JButton("Agregar Venta");
         agregarButton.addActionListener(e -> {
@@ -55,7 +55,7 @@ public class GUI_Ventas extends JFrame {
 
                 Venta venta = new Venta(fecha, cantidad, cliente);
                 registroVentas.agregarVenta(venta);
-                actualizarComboBox(); // Actualizar el JComboBox después de agregar una venta
+                actualizarComboBox();
 
                 resultadoArea.append("Venta agregada: " + venta.getCliente() + "\n");
             } catch (NumberFormatException ex) {
@@ -65,21 +65,46 @@ public class GUI_Ventas extends JFrame {
 
         JButton eliminarButton = new JButton("Eliminar Venta");
         eliminarButton.addActionListener(e -> {
-            try {
-                int index = (int) ventaComboBox.getSelectedItem(); // Usar ventaComboBox en lugar de indexField
-                registroVentas.eliminarVenta(index);
-                actualizarComboBox(); // Actualizar el JComboBox después de eliminar una venta
+            String clienteSeleccionado = (String) ventaComboBox.getSelectedItem();
 
-                resultadoArea.append("Venta eliminada: " + index + "\n");
-            } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(null, "Error: Índice inválido. Debe ser un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
+            int index = -1;
+            for (int i = 0; i < registroVentas.getVentas().size(); i++) {
+                if (registroVentas.getVentas().get(i).getCliente().equals(clienteSeleccionado)) {
+                    index = i;
+                    break;
+                }
             }
+
+            if (index == -1) {
+                JOptionPane.showMessageDialog(null, "Error: No se encontró la venta.", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+
+            registroVentas.eliminarVenta(index);
+            actualizarComboBox();
+
+            resultadoArea.append("Venta eliminada: " + clienteSeleccionado + "\n");
         });
 
         JButton editarButton = new JButton("Editar Venta");
         editarButton.addActionListener(e -> {
             try {
-                int index = (int) ventaComboBox.getSelectedItem(); // Obtener el índice seleccionado del JComboBox
+                String clienteSeleccionado = (String) ventaComboBox.getSelectedItem(); // Obtener el nombre del cliente seleccionado del JComboBox
+
+                Venta ventaAEditar = null;
+                int index = -1;
+                for (int i = 0; i < registroVentas.getVentas().size(); i++) {
+                    if (registroVentas.getVentas().get(i).getCliente().equals(clienteSeleccionado)) {
+                        ventaAEditar = registroVentas.getVentas().get(i);
+                        index = i;
+                        break;
+                    }
+                }
+
+                if (ventaAEditar == null) {
+                    JOptionPane.showMessageDialog(null, "Error: No se encontró la venta.", "Error", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
 
                 String nuevoDia = JOptionPane.showInputDialog("Ingrese el nuevo día:");
                 String nuevoMes = JOptionPane.showInputDialog("Ingrese el nuevo mes:");
@@ -107,11 +132,11 @@ public class GUI_Ventas extends JFrame {
                 int cantidad = Integer.parseInt(nuevaCantidad);
 
                 registroVentas.editarVenta(index, fecha, cantidad, nuevoCliente);
-                actualizarComboBox(); // Actualizar el JComboBox después de editar una venta
+                actualizarComboBox();
 
-                resultadoArea.append("Venta editada: " + index + "\n");
+                resultadoArea.append("Venta editada: " + nuevoCliente + "\n");
             } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(null, "Error: Índice, fecha o cantidad inválidos. Deben ser números válidos.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Error: Fecha o cantidad inválidos. Deben ser números válidos.", "Error", JOptionPane.ERROR_MESSAGE);
             }
         });
 
@@ -138,15 +163,14 @@ public class GUI_Ventas extends JFrame {
         setVisible(true);
     }
 
-    // Método para actualizar el JComboBox cada vez que se agrega, edita o elimina una venta
     private void actualizarComboBox() {
         ventaComboBox.removeAllItems();
-        for (int i = 0; i < registroVentas.getVentas().size(); i++) {
-            ventaComboBox.addItem(i);
+        for (Venta venta : registroVentas.getVentas()) {
+            ventaComboBox.addItem(venta.getCliente()); // Agregar el nombre del cliente en lugar del índice
         }
     }
 
     public static void main(String[] args) {
-        new comparación();
+        new GUI_Ventas();
     }
 }
