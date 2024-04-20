@@ -74,11 +74,17 @@ public class GUI_Ventas extends JFrame {
         JButton editarButton = new JButton("Editar Venta");
         editarButton.addActionListener(e -> {
             try {
-                int index = Integer.parseInt(indexField.getText()); // Usar indexField en lugar de clienteField
+                int index = Integer.parseInt(indexField.getText());
 
-                int dia = Integer.parseInt(diaField.getText());
-                int mes = Integer.parseInt(mesField.getText());
-                int año = Integer.parseInt(añoField.getText());
+                String nuevoDia = JOptionPane.showInputDialog("Ingrese el nuevo día:");
+                String nuevoMes = JOptionPane.showInputDialog("Ingrese el nuevo mes:");
+                String nuevoAño = JOptionPane.showInputDialog("Ingrese el nuevo año:");
+                String nuevaCantidad = JOptionPane.showInputDialog("Ingrese la nueva cantidad:");
+                String nuevoCliente = JOptionPane.showInputDialog("Ingrese el nuevo cliente:");
+
+                int dia = Integer.parseInt(nuevoDia);
+                int mes = Integer.parseInt(nuevoMes);
+                int año = Integer.parseInt(nuevoAño);
 
                 if (dia < 1 || dia > 31 || mes < 1 || mes > 12 || año < 0 || año > 2025) {
                     throw new NumberFormatException();
@@ -91,12 +97,11 @@ public class GUI_Ventas extends JFrame {
                     throw new NumberFormatException();
                 }
 
-                Date fecha = calendar.getTime(); // Definir fecha
+                Date fecha = calendar.getTime();
 
-                int cantidad = Integer.parseInt(cantidadField.getText()); // Definir cantidad
-                String cliente = clienteField.getText();
+                int cantidad = Integer.parseInt(nuevaCantidad);
 
-                registroVentas.editarVenta(index, fecha, cantidad, cliente);
+                registroVentas.editarVenta(index, fecha, cantidad, nuevoCliente);
                 resultadoArea.append("Venta editada: " + index + "\n");
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(null, "Error: Índice, fecha o cantidad inválidos. Deben ser números válidos.", "Error", JOptionPane.ERROR_MESSAGE);
