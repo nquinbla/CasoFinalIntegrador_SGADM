@@ -177,7 +177,7 @@ public class GUI_Ventas extends JFrame {
             JFrame ayudaFrame = new JFrame("Ayuda");
             ayudaFrame.setLayout(new FlowLayout());
 
-            JTextArea ayudaArea = new JTextArea(13, 35);
+            JTextArea ayudaArea = new JTextArea(13, 50);
             ayudaArea.setText("Ayuda ℹ\uFE0F\u200B :\n\n" +
                     "1. Ingrese el día, mes y año de la venta.\n" +
                     "2. Ingrese la cantidad de productos vendidos.\n" +
@@ -193,7 +193,7 @@ public class GUI_Ventas extends JFrame {
 
             ayudaFrame.add(new JScrollPane(ayudaArea));
 
-            ayudaFrame.setSize(520, 270);
+            ayudaFrame.setSize(575, 280);
             ayudaFrame.setLocationRelativeTo(null);
             ayudaFrame.setVisible(true);
         });
