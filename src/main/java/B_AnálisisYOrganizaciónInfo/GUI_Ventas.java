@@ -74,6 +74,7 @@ public class GUI_Ventas extends JFrame {
         JButton editarButton = new JButton("Editar Venta");
         editarButton.addActionListener(e -> {
             try {
+
                 int index = Integer.parseInt(indexField.getText());
 
                 String nuevoDia = JOptionPane.showInputDialog("Ingrese el nuevo día:");
