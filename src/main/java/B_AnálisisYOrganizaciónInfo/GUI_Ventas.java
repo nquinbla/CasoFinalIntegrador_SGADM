@@ -140,6 +140,27 @@ public class GUI_Ventas extends JFrame {
             }
         });
 
+        JButton ayudaButton = new JButton();
+        ImageIcon ayudaIcon = new ImageIcon("src/main/resources/image-removebg-preview (4) (1).png");
+        ayudaButton.setIcon(ayudaIcon);
+
+        ayudaButton.addActionListener(e -> {
+
+            JFrame ayudaFrame = new JFrame("Ayuda");
+            ayudaFrame.setLayout(new FlowLayout());
+
+            JTextArea ayudaArea = new JTextArea(20, 30);
+            ayudaArea.setText("Aquí van las normas..."); // Reemplaza esto con la información de ayuda real
+            ayudaArea.setEditable(false);
+
+            ayudaFrame.add(new JScrollPane(ayudaArea));
+
+            ayudaFrame.setSize(400, 400);
+            ayudaFrame.setLocationRelativeTo(null);
+            ayudaFrame.setVisible(true);
+        });
+
+
         add(new JLabel("Día:"));
         add(diaField);
         add(new JLabel("Mes:"));
@@ -153,6 +174,7 @@ public class GUI_Ventas extends JFrame {
         add(agregarButton);
         add(eliminarButton);
         add(editarButton);
+        add(ayudaButton);
         add(new JScrollPane(resultadoArea));
 
         add(new JLabel("Venta:"));
