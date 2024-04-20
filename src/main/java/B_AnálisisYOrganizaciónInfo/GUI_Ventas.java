@@ -169,7 +169,7 @@ public class GUI_Ventas extends JFrame {
         });
 
         JButton ayudaButton = new JButton();
-        ImageIcon ayudaIcon = new ImageIcon("src/main/resources/image-removebg-preview (4) (1).png");
+        ImageIcon ayudaIcon = new ImageIcon("src/main/resources/image-icono-ayuda.png");
         ayudaButton.setIcon(ayudaIcon);
 
         ayudaButton.addActionListener(e -> {

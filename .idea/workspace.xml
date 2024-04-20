@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] ajustes pt19 (size de ayuda)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] ajustes pt21 FIN MODULO 2">
       <change beforePath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_Ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/B_AnálisisYOrganizaciónInfo/GUI_Ventas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/image-removebg-preview (4) (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/image-icono-ayuda.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,15 +86,7 @@
       <workItem from="1713518818712" duration="657000" />
       <workItem from="1713519829118" duration="645000" />
       <workItem from="1713526864934" duration="2082000" />
-      <workItem from="1713603558284" duration="13226000" />
-    </task>
-    <task id="LOCAL-00014" summary="[Módulo 1] ajustes pt4">
-      <option name="closed" value="true" />
-      <created>1713373369322</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1713373369322</updated>
+      <workItem from="1713603558284" duration="13581000" />
     </task>
     <task id="LOCAL-00015" summary="[Módulo 1] ajustes pt5">
       <option name="closed" value="true" />
@@ -480,14 +472,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713616800861</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="[Módulo 2] ajustes pt21 FIN MODULO 2">
+      <option name="closed" value="true" />
+      <created>1713618341342</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1713618341342</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 2] Clase RegistroVentas.java" />
     <MESSAGE value="[Módulo 2] Clase Cliente.java" />
     <MESSAGE value="[Módulo 2] Clase GUI_Ventas.java" />
     <MESSAGE value="[Módulo 2] ajustes pt1 (fecha)" />
@@ -512,6 +511,7 @@
     <MESSAGE value="[Módulo 2] ajustes pt18 (ordenación)" />
     <MESSAGE value="[Módulo 2] ajustes pt19 (ayuda)" />
     <MESSAGE value="[Módulo 2] ajustes pt19 (size de ayuda)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] ajustes pt19 (size de ayuda)" />
+    <MESSAGE value="[Módulo 2] ajustes pt21 FIN MODULO 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] ajustes pt21 FIN MODULO 2" />
   </component>
 </project>
