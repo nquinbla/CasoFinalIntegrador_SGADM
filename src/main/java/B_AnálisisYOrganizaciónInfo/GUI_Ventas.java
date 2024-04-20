@@ -5,9 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
+import java.util.*;
 import java.util.List;
 
 public class GUI_Ventas extends JFrame {
@@ -27,7 +25,38 @@ public class GUI_Ventas extends JFrame {
         cantidadField = new JTextField(10);
         clienteField = new JTextField(10);
         resultadoArea = new JTextArea(20, 30);
-        ventaComboBox = new JComboBox<>(); // Inicializar ventaComboBox
+        ventaComboBox = new JComboBox<>();
+
+
+        String[] opcionesOrdenacion = { "Por Fecha", "Por Cantidad", "Por Cliente" };
+        JComboBox<String> comboBoxOrdenacion = new JComboBox<>(opcionesOrdenacion);
+
+        comboBoxOrdenacion.addActionListener(e -> {
+            String seleccion = (String) comboBoxOrdenacion.getSelectedItem();
+
+            TreeSet<Venta> ventasOrdenadas;
+            switch (seleccion) {
+                case "Por Fecha":
+                    ventasOrdenadas = registroVentas.getVentasPorFecha();
+                    break;
+                case "Por Cantidad":
+                    ventasOrdenadas = registroVentas.getVentasPorCantidad();
+                    break;
+                case "Por Cliente":
+                default:
+                    ventasOrdenadas = registroVentas.getVentasPorCliente();
+                    break;
+            }
+
+            resultadoArea.setText("");
+            for (Venta venta : ventasOrdenadas) {
+                resultadoArea.append(venta.getCliente() + "\n");
+            }
+        });
+
+// Agregar el JComboBox a tu GUI
+        add(new JLabel("Ordenar:"));
+        add(comboBoxOrdenacion);
 
 
         JButton agregarButton = new JButton("Agregar Venta");
