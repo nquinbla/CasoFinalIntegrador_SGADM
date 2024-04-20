@@ -178,7 +178,7 @@ public class GUI_Ventas extends JFrame {
             ayudaFrame.setLayout(new FlowLayout());
 
             JTextArea ayudaArea = new JTextArea(13, 35);
-            ayudaArea.setText("Ayuda:\n\n" +
+            ayudaArea.setText("Ayuda ℹ\uFE0F\u200B :\n\n" +
                     "1. Ingrese el día, mes y año de la venta.\n" +
                     "2. Ingrese la cantidad de productos vendidos.\n" +
                     "3. Ingrese el nombre del cliente, este no debe repetirse.\n" +
@@ -186,7 +186,8 @@ public class GUI_Ventas extends JFrame {
                     "5. Seleccione un cliente de la lista desplegable.\n" +
                     "6. Haga clic en 'Eliminar Venta' para eliminar la venta seleccionada.\n" +
                     "7. Haga clic en 'Editar Venta' para editar la venta seleccionada.\n" +
-                    "8. Haga clic en 'Ayuda' para mostrar esta ventana de ayuda.\n\n" +
+                    "8. Seleccione una opción de ordenación de la lista desplegable 'Ordenar:' para ordenar las ventas.\n" +
+                    "9. Haga clic en 'Ayuda' para mostrar esta ventana de ayuda.\n\n" +
                     "Nota: Las ventas se ordenan por cliente en la lista desplegable.");
             ayudaArea.setEditable(false);
 
