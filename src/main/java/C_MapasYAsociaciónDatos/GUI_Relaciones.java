@@ -44,3 +44,4 @@ public class GUI_Relaciones extends JFrame {
         new GUI_Relaciones();
     }
 }
+
