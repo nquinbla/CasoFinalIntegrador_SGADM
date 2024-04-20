@@ -12,7 +12,7 @@ import java.util.List;
 
 public class GUI_Ventas extends JFrame {
     private RegistroVentas registroVentas;
-    private JTextField diaField, mesField, añoField, cantidadField, clienteField;
+    private JTextField diaField, mesField, añoField, cantidadField, clienteField, indexField;
     private JTextArea resultadoArea;
 
     public GUI_Ventas() {
@@ -25,6 +25,7 @@ public class GUI_Ventas extends JFrame {
         añoField = new JTextField(4);
         cantidadField = new JTextField(10);
         clienteField = new JTextField(10);
+        indexField = new JTextField(10);
         resultadoArea = new JTextArea(20, 30);
 
         JButton agregarButton = new JButton("Agregar Venta");
@@ -62,7 +63,7 @@ public class GUI_Ventas extends JFrame {
         JButton eliminarButton = new JButton("Eliminar Venta");
         eliminarButton.addActionListener(e -> {
             try {
-                int index = Integer.parseInt(clienteField.getText());
+                int index = Integer.parseInt(indexField.getText()); // Usar indexField en lugar de clienteField
                 registroVentas.eliminarVenta(index);
                 resultadoArea.append("Venta eliminada: " + index + "\n");
             } catch (NumberFormatException ex) {
@@ -73,17 +74,29 @@ public class GUI_Ventas extends JFrame {
         JButton editarButton = new JButton("Editar Venta");
         editarButton.addActionListener(e -> {
             try {
-                int index = Integer.parseInt(clienteField.getText());
+                int index = Integer.parseInt(indexField.getText()); // Usar indexField en lugar de clienteField
+
                 int dia = Integer.parseInt(diaField.getText());
                 int mes = Integer.parseInt(mesField.getText());
                 int año = Integer.parseInt(añoField.getText());
-                int cantidad = Integer.parseInt(cantidadField.getText());
+
+                if (dia < 1 || dia > 31 || mes < 1 || mes > 12 || año < 0 || año > 2025) {
+                    throw new NumberFormatException();
+                }
 
                 Calendar calendar = Calendar.getInstance();
                 calendar.set(año, mes - 1, dia);
-                Date fecha = calendar.getTime();
+                int maxDayInMonth = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
+                if (dia > maxDayInMonth) {
+                    throw new NumberFormatException();
+                }
 
-                registroVentas.editarVenta(index, fecha, cantidad, clienteField.getText());
+                Date fecha = calendar.getTime(); // Definir fecha
+
+                int cantidad = Integer.parseInt(cantidadField.getText()); // Definir cantidad
+                String cliente = clienteField.getText();
+
+                registroVentas.editarVenta(index, fecha, cantidad, cliente);
                 resultadoArea.append("Venta editada: " + index + "\n");
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(null, "Error: Índice, fecha o cantidad inválidos. Deben ser números válidos.", "Error", JOptionPane.ERROR_MESSAGE);
@@ -104,6 +117,9 @@ public class GUI_Ventas extends JFrame {
         add(eliminarButton);
         add(editarButton);
         add(new JScrollPane(resultadoArea));
+
+        indexField = new JTextField(10); // Nuevo campo para el índice
+        add(new JLabel("Índice:"));
 
         setSize(640, 460);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
