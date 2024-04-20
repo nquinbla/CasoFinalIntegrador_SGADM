@@ -17,7 +17,7 @@ public class GUI_Ventas extends JFrame {
     private JComboBox<String> ventaComboBox;
 
     public GUI_Ventas() {
-        registroVentas = new RegistroVentas(new ArrayList<>());
+        registroVentas = new RegistroVentas();
 
         setLayout(new FlowLayout());
 
@@ -67,20 +67,20 @@ public class GUI_Ventas extends JFrame {
         eliminarButton.addActionListener(e -> {
             String clienteSeleccionado = (String) ventaComboBox.getSelectedItem();
 
-            int index = -1;
-            for (int i = 0; i < registroVentas.getVentas().size(); i++) {
-                if (registroVentas.getVentas().get(i).getCliente().equals(clienteSeleccionado)) {
-                    index = i;
+            Venta ventaAEliminar = null;
+            for (Venta venta : registroVentas.getVentasPorCliente()) { // Corrección aquí
+                if (venta.getCliente().equals(clienteSeleccionado)) {
+                    ventaAEliminar = venta;
                     break;
                 }
             }
 
-            if (index == -1) {
+            if (ventaAEliminar == null) {
                 JOptionPane.showMessageDialog(null, "Error: No se encontró la venta.", "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
 
-            registroVentas.eliminarVenta(index);
+            registroVentas.eliminarVenta(ventaAEliminar); // Corrección aquí
             actualizarComboBox();
 
             resultadoArea.append("Venta eliminada: " + clienteSeleccionado + "\n");
@@ -196,8 +196,8 @@ public class GUI_Ventas extends JFrame {
 
     private void actualizarComboBox() {
         ventaComboBox.removeAllItems();
-        for (Venta venta : registroVentas.getVentas()) {
-            ventaComboBox.addItem(venta.getCliente()); // Agregar el nombre del cliente en lugar del índice
+        for (Venta venta : registroVentas.getVentasPorCliente()) { // Corrección aquí
+            ventaComboBox.addItem(venta.getCliente());
         }
     }
 
