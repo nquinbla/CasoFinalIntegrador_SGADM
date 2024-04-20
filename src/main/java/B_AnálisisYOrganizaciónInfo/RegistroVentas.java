@@ -37,4 +37,10 @@ public class RegistroVentas {
     public TreeSet<Venta> getVentasPorCliente() {
         return ventasPorCliente;
     }
+    public void editarVenta(Venta ventaAntigua, Venta ventaNueva) {
+        eliminarVenta(ventaAntigua);
+        agregarVenta(ventaNueva);
+    }
+
+
 }

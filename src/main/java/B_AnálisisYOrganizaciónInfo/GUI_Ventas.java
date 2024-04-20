@@ -92,11 +92,9 @@ public class GUI_Ventas extends JFrame {
                 String clienteSeleccionado = (String) ventaComboBox.getSelectedItem(); // Obtener el nombre del cliente seleccionado del JComboBox
 
                 Venta ventaAEditar = null;
-                int index = -1;
-                for (int i = 0; i < registroVentas.getVentas().size(); i++) {
-                    if (registroVentas.getVentas().get(i).getCliente().equals(clienteSeleccionado)) {
-                        ventaAEditar = registroVentas.getVentas().get(i);
-                        index = i;
+                for (Venta venta : registroVentas.getVentasPorCliente()) {
+                    if (venta.getCliente().equals(clienteSeleccionado)) {
+                        ventaAEditar = venta;
                         break;
                     }
                 }
@@ -131,7 +129,8 @@ public class GUI_Ventas extends JFrame {
 
                 int cantidad = Integer.parseInt(nuevaCantidad);
 
-                registroVentas.editarVenta(index, fecha, cantidad, nuevoCliente);
+                Venta ventaNueva = new Venta(fecha, cantidad, nuevoCliente);
+                registroVentas.editarVenta(ventaAEditar, ventaNueva);
                 actualizarComboBox();
 
                 resultadoArea.append("Venta editada: " + nuevoCliente + "\n");
