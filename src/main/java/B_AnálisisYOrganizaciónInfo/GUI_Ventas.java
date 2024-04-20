@@ -61,12 +61,33 @@ public class GUI_Ventas extends JFrame {
 
         JButton eliminarButton = new JButton("Eliminar Venta");
         eliminarButton.addActionListener(e -> {
-            // Aquí puedes agregar la lógica para eliminar una venta
+            try {
+                int index = Integer.parseInt(clienteField.getText());
+                registroVentas.eliminarVenta(index);
+                resultadoArea.append("Venta eliminada: " + index + "\n");
+            } catch (NumberFormatException ex) {
+                JOptionPane.showMessageDialog(null, "Error: Índice inválido. Debe ser un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
         });
 
         JButton editarButton = new JButton("Editar Venta");
         editarButton.addActionListener(e -> {
-            // Aquí puedes agregar la lógica para editar una venta
+            try {
+                int index = Integer.parseInt(clienteField.getText());
+                int dia = Integer.parseInt(diaField.getText());
+                int mes = Integer.parseInt(mesField.getText());
+                int año = Integer.parseInt(añoField.getText());
+                int cantidad = Integer.parseInt(cantidadField.getText());
+
+                Calendar calendar = Calendar.getInstance();
+                calendar.set(año, mes - 1, dia);
+                Date fecha = calendar.getTime();
+
+                registroVentas.editarVenta(index, fecha, cantidad, clienteField.getText());
+                resultadoArea.append("Venta editada: " + index + "\n");
+            } catch (NumberFormatException ex) {
+                JOptionPane.showMessageDialog(null, "Error: Índice, fecha o cantidad inválidos. Deben ser números válidos.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
         });
 
         add(new JLabel("Día:"));

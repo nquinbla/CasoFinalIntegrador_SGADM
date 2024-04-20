@@ -1,5 +1,6 @@
 package B_AnálisisYOrganizaciónInfo;
 
+import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -42,4 +43,14 @@ public class RegistroVentas {
         return ventas.stream().filter(v -> v.getFecha().toString().equals(fecha)).toList();
     }
 
+    public void editarVenta(int index, Date fecha, int cantidad, String text) {
+        Venta venta = ventas.get(index);
+        venta.setFecha(fecha);
+        venta.setCantidad(cantidad);
+        venta.setCliente(text);
+    }
+
+    public void eliminarVenta(int index) {
+        ventas.remove(index);
+    }
 }
