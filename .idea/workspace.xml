@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] recuperador eficiente código">
-      <change afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/GUI_Relaciones.java" afterDir="false" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] GUI relaciones código">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,28 +34,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Aplicación.executor": "Run",
-    "Application.GUI_AnálisisOrganización.executor": "Run",
-    "Application.GUI_GestiónDatosDinámicos.executor": "Run",
-    "Application.GUI_Relaciones.executor": "Run",
-    "Application.GUI_Selección.executor": "Run",
-    "Application.GUI_Ventas.executor": "Run",
-    "Application.comparación.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Aplicación.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_AnálisisOrganización.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_GestiónDatosDinámicos.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Relaciones.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Selección.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Ventas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.comparación.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nerea\OneDrive\Documentos\GitHub\CasoFinalIntegrador_SGADM\src\main\resources" />
@@ -86,31 +86,9 @@
       <workItem from="1713518818712" duration="657000" />
       <workItem from="1713519829118" duration="645000" />
       <workItem from="1713526864934" duration="2082000" />
-      <workItem from="1713603558284" duration="14784000" />
-    </task>
-    <task id="LOCAL-00018" summary="[Módulo 1] ajustes pt8">
-      <option name="closed" value="true" />
-      <created>1713374903793</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1713374903793</updated>
-    </task>
-    <task id="LOCAL-00019" summary="[Módulo 1] matriz código">
-      <option name="closed" value="true" />
-      <created>1713375063820</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1713375063820</updated>
-    </task>
-    <task id="LOCAL-00020" summary="[Módulo 1] gestión datos dinámicos con matrices">
-      <option name="closed" value="true" />
-      <created>1713375379028</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1713375379028</updated>
+      <workItem from="1713603558284" duration="14839000" />
+      <workItem from="1713631013022" duration="53000" />
+      <workItem from="1713631756250" duration="639000" />
     </task>
     <task id="LOCAL-00021" summary="[Módulo 1] ajustes pt10">
       <option name="closed" value="true" />
@@ -480,14 +458,37 @@
       <option name="project" value="LOCAL" />
       <updated>1713620028654</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="[Módulo 3] GUI relaciones código">
+      <option name="closed" value="true" />
+      <created>1713620074066</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1713620074066</updated>
+    </task>
+    <task id="LOCAL-00068" summary="[Módulo 3] GUI relaciones código">
+      <option name="closed" value="true" />
+      <created>1713620087046</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1713620087046</updated>
+    </task>
+    <task id="LOCAL-00069" summary="[Módulo 3] GUI relaciones código">
+      <option name="closed" value="true" />
+      <created>1713620096474</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1713620096474</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 2] ajustes pt1 (fecha)" />
     <MESSAGE value="[Módulo 2] ajustes pt2 (fecha)" />
     <MESSAGE value="[Módulo 2] ajustes pt3 (tamaño)" />
     <MESSAGE value="[Módulo 2] ajustes pt4 (año)" />
@@ -512,6 +513,7 @@
     <MESSAGE value="[Módulo 2] ajustes pt21 FIN MODULO 2" />
     <MESSAGE value="[Módulo 3] gestor de relaciones código" />
     <MESSAGE value="[Módulo 3] recuperador eficiente código" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] recuperador eficiente código" />
+    <MESSAGE value="[Módulo 3] GUI relaciones código" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] GUI relaciones código" />
   </component>
 </project>
