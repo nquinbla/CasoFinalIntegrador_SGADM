@@ -12,8 +12,9 @@ import java.util.List;
 
 public class GUI_Ventas extends JFrame {
     private RegistroVentas registroVentas;
-    private JTextField diaField, mesField, añoField, cantidadField, clienteField, indexField;
+    private JTextField diaField, mesField, añoField, cantidadField, clienteField;
     private JTextArea resultadoArea;
+    private JComboBox<Integer> ventaComboBox; // Nuevo JComboBox para seleccionar la venta
 
     public GUI_Ventas() {
         registroVentas = new RegistroVentas(new ArrayList<>());
@@ -25,8 +26,9 @@ public class GUI_Ventas extends JFrame {
         añoField = new JTextField(4);
         cantidadField = new JTextField(10);
         clienteField = new JTextField(10);
-        indexField = new JTextField(10);
         resultadoArea = new JTextArea(20, 30);
+
+        ventaComboBox = new JComboBox<>(); // Inicializar el JComboBox
 
         JButton agregarButton = new JButton("Agregar Venta");
         agregarButton.addActionListener(e -> {
@@ -53,6 +55,7 @@ public class GUI_Ventas extends JFrame {
 
                 Venta venta = new Venta(fecha, cantidad, cliente);
                 registroVentas.agregarVenta(venta);
+                actualizarComboBox(); // Actualizar el JComboBox después de agregar una venta
 
                 resultadoArea.append("Venta agregada: " + venta.getCliente() + "\n");
             } catch (NumberFormatException ex) {
@@ -63,8 +66,10 @@ public class GUI_Ventas extends JFrame {
         JButton eliminarButton = new JButton("Eliminar Venta");
         eliminarButton.addActionListener(e -> {
             try {
-                int index = Integer.parseInt(indexField.getText()); // Usar indexField en lugar de clienteField
+                int index = (int) ventaComboBox.getSelectedItem(); // Usar ventaComboBox en lugar de indexField
                 registroVentas.eliminarVenta(index);
+                actualizarComboBox(); // Actualizar el JComboBox después de eliminar una venta
+
                 resultadoArea.append("Venta eliminada: " + index + "\n");
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(null, "Error: Índice inválido. Debe ser un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
@@ -74,8 +79,7 @@ public class GUI_Ventas extends JFrame {
         JButton editarButton = new JButton("Editar Venta");
         editarButton.addActionListener(e -> {
             try {
-
-                int index = Integer.parseInt(indexField.getText());
+                int index = (int) ventaComboBox.getSelectedItem(); // Obtener el índice seleccionado del JComboBox
 
                 String nuevoDia = JOptionPane.showInputDialog("Ingrese el nuevo día:");
                 String nuevoMes = JOptionPane.showInputDialog("Ingrese el nuevo mes:");
@@ -103,6 +107,8 @@ public class GUI_Ventas extends JFrame {
                 int cantidad = Integer.parseInt(nuevaCantidad);
 
                 registroVentas.editarVenta(index, fecha, cantidad, nuevoCliente);
+                actualizarComboBox(); // Actualizar el JComboBox después de editar una venta
+
                 resultadoArea.append("Venta editada: " + index + "\n");
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(null, "Error: Índice, fecha o cantidad inválidos. Deben ser números válidos.", "Error", JOptionPane.ERROR_MESSAGE);
@@ -124,15 +130,23 @@ public class GUI_Ventas extends JFrame {
         add(editarButton);
         add(new JScrollPane(resultadoArea));
 
-        indexField = new JTextField(10); // Nuevo campo para el índice
-        add(new JLabel("Índice:"));
+        add(new JLabel("Venta:"));
+        add(ventaComboBox); // Agregar el JComboBox a la GUI
 
         setSize(640, 460);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }
 
+    // Método para actualizar el JComboBox cada vez que se agrega, edita o elimina una venta
+    private void actualizarComboBox() {
+        ventaComboBox.removeAllItems();
+        for (int i = 0; i < registroVentas.getVentas().size(); i++) {
+            ventaComboBox.addItem(i);
+        }
+    }
+
     public static void main(String[] args) {
-        new GUI_Ventas();
+        new comparación();
     }
 }

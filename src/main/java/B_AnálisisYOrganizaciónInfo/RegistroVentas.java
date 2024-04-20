@@ -11,6 +11,8 @@ public class RegistroVentas {
         this.ventas = ventas;
     }
 
+    public List<Venta> getVentas() {return ventas;}
+
     public void agregarVenta(Venta venta) {
         ventas.add(venta);
     }
