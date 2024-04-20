@@ -6,8 +6,9 @@ LINK: https://github.com/nquinbla/CasoFinalIntegrador_SGADM.git
  El proyecto consistirá en el desarrollo de una aplicación de software que integre varias estructuras de datos, algoritmos de ordenación y búsqueda, y métodos interactivos de entrada y salida de datos. Los estudiantes aplicarán conceptos avanzados de programación y estructuras de datos para   
  crear una herramienta versátil y eficiente.
  
-## MÓDULO
- ### 1. Gestión de Datos Dinámicos (Ejercicios 1,2,3,4 y 5)
+## MÓDULOS
+
+ ### 1. Gestión de Datos Dinámicos [A_GestiónDatosDinámicos]
   Consiste en una interfaz gráfica donde el usuario puede escoger con lo que desea trabajar, matrices o parejas de números enteros. En las dos opciones podrán agregar, eliminar y modificar los elementos de estos que deseé, manejando así datos multidimensionales.
   
 * Pareja.java -> Esta clase representa una pareja de enteros. Cada objeto Pareja tiene dos atributos, primerElemento y segundoElemento, que representan los dos enteros de la pareja. La clase Pareja tiene métodos para establecer y obtener estos elementos, así como un método toString() que devuelve una representación de cadena de la pareja.
@@ -17,11 +18,14 @@ LINK: https://github.com/nquinbla/CasoFinalIntegrador_SGADM.git
 * GUI_Selección -> Esta clase es otra GUI que permite al usuario elegir entre trabajar con parejas o matrices. Dependiendo de la elección del usuario, se abre la GUI correspondiente.
 
 
- ### 2. Análisis y Organización de Información (Ejercicios 6, 10, 11 y 13):
-   * Ordenación y Búsqueda: Implementar algoritmos de ordenación y búsqueda eficientes para organizar y acceder rápidamente a los datos, como el uso de Treeset para ordenar nombres y el ordenamiento de ventas por diferentes criterios.
-   * Análisis de Registros: Desarrollar funcionalidades para analizar y manipular registros complejos, como transacciones de venta, permitiendo su ordenación y filtrado según diversos parámetros.
+ ### 2. Análisis y Organización de Información [B_AnálisisYOrganizaciónInfo]
+Este módulo, B_AnálisisYOrganizaciónInfo, es parte de una aplicación de gestión de ventas. Aquí se manejan las ventas y los clientes, y se proporciona una interfaz gráfica de usuario (GUI) para interactuar con estos datos.
+* Venta.java: Esta clase representa una venta individual. Cada venta tiene una fecha, una cantidad y un cliente. Los métodos getFecha(), getCantidad() y getCliente() se utilizan para obtener estos valores, mientras que los métodos setFecha(), setCantidad() y setCliente() se utilizan para establecer estos valores.
+* RegistroVentas.java: Esta clase se utiliza para gestionar un conjunto de ventas. Las ventas se almacenan en tres TreeSet: ventasPorFecha, ventasPorCantidad y ventasPorCliente, que ordenan las ventas por fecha, cantidad y cliente, respectivamente. Los métodos agregarVenta(), eliminarVenta() y editarVenta() se utilizan para modificar estos conjuntos. Los métodos getVentasPorFecha(), getVentasPorCantidad() y getVentasPorCliente() se utilizan para obtener las ventas ordenadas.
+* Cliente.java: Esta clase representa a un cliente. Cada cliente tiene un nombre, que se puede obtener con getNombre() y establecer con setNombre().
+* GUI_Ventas.java: Esta clase es la interfaz gráfica de usuario (GUI) para gestionar las ventas. Permite al usuario agregar, eliminar y editar ventas, así como ordenar las ventas por fecha, cantidad o cliente. Los datos ingresados por el usuario se validan antes de ser utilizados para crear o editar una venta. La GUI también proporciona una opción de ayuda para el usuario. 
 
- ### 3. Mapas y Asociación de Datos (Ejercicios 7 y 8):
+ ### 3. Mapas y Asociación de Datos [C_MapasYAsociaciónDatos]
    * Gestión de Relaciones: Crear mapas para asociar y gestionar relaciones entre diferentes conjuntos de datos, como números y letras o números y sus representaciones textuales.
    * Recuperación Eficiente: Desarrollar métodos para recuperar información asociada de manera eficiente, basándose en claves o criterios definidos por el usuario.
 
