@@ -26,7 +26,7 @@ public class GUI_Ventas extends JFrame {
         añoField = new JTextField(4);
         cantidadField = new JTextField(10);
         clienteField = new JTextField(10);
-        resultadoArea = new JTextArea(40, 30);
+        resultadoArea = new JTextArea(22, 30);
 
         JButton agregarButton = new JButton("Agregar Venta");
         agregarButton.addActionListener(new ActionListener() {
