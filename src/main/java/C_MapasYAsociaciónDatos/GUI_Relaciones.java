@@ -33,6 +33,9 @@ public class GUI_Relaciones extends JFrame {
             numerosYTextos.agregarRelacion(i, unidades[i - 1]);
         }
         recuperadorEficiente = new RecuperadorEficiente<>();
+        for (int i = 1; i <= 100; i++) {
+            recuperadorEficiente.agregarDato(i, unidades[i - 1]);
+        }
 
         setLayout(new FlowLayout());
 
