@@ -30,9 +30,47 @@ Este módulo, B_AnálisisYOrganizaciónInfo, es parte de una aplicación de gest
    * Recuperación Eficiente: Desarrollar métodos para recuperar información asociada de manera eficiente, basándose en claves o criterios definidos por el usuario.
 
  ### 4. Indexación y Visualización de Archivos (Ejercicio 12):
-   * Indexación Recursiva: Diseñar un sistema que indexe nombres de archivos y sus rutas en la memoria de manera recursiva, permitiendo consultas rápidas y eficientes.
-   * Ordenación y Listado: Implementar funcionalidades para ordenar alfabéticamente los nombres de los archivos y listarlos junto con sus rutas completas, facilitando la visualización y el acceso a los archivos.
+El proyecto proporciona una funcionalidad para indexar y listar archivos en un directorio dado. Los archivos se indexan de manera recursiva, lo que significa que si hay subdirectorios en el directorio dado, sus archivos también se indexarán. Los archivos indexados se pueden buscar por nombre y se pueden listar en orden alfabético.
 
+#### 'IndexadorRecursivo'
+Esta clase se utiliza para indexar archivos de manera recursiva. Mantiene un mapa donde la clave es el nombre del archivo y el valor es la ruta absoluta del archivo.  
+
+##### Métodos principales:  
+indexar(File directorio): Este método se utiliza para indexar todos los archivos en un directorio dado. Si encuentra un subdirectorio, lo indexa recursivamente.
+buscar(String nombreArchivo): Este método se utiliza para buscar la ruta de un archivo por su nombre.
+getIndex(): Este método se utiliza para obtener el mapa de indexación.
+
+##### Ejemplo de uso:  
+IndexadorRecursivo indexador = new IndexadorRecursivo();
+indexador.indexar(new File("/path/to/directory"));
+String filePath = indexador.buscar("fileName");
+
+------------------------------------------------------
+
+#### OrdenadorYListador  
+Esta clase se utiliza para ordenar y listar archivos. Mantiene un mapa donde la clave es el nombre del archivo y el valor es la ruta absoluta del archivo. El mapa se implementa como un TreeMap para mantener las entradas ordenadas por el nombre del archivo.  
+
+##### Métodos principales:  
+agregar(String nombreArchivo, String rutaArchivo): Este método se utiliza para agregar un archivo al mapa.
+listar(): Este método se utiliza para obtener una lista de archivos, donde cada entrada es una cadena que contiene el nombre del archivo y su ruta.
+
+##### Ejemplo de uso:
+OrdenadorYListador ordenador = new OrdenadorYListador();
+ordenador.agregar("fileName", "/path/to/file");
+List<String> fileList = ordenador.listar();
+
+---------------------------------------------------------
+
+#### GUI_Archivos  
+Esta clase se utiliza para crear una interfaz de usuario que permite al usuario indexar y listar archivos. Utiliza las clases IndexadorRecursivo y OrdenadorYListador para realizar estas operaciones.  
+
+##### Métodos principales:  
+GUI_Archivos(): Este es el constructor de la clase. Crea la interfaz de usuario y configura los manejadores de eventos para los botones.
+
+##### Ejemplo de uso:  
+GUI_Archivos gui = new GUI_Archivos();
+
+______________________________________________________________________________________________
 ### 5. Decoración
   * Decoración del panel: una clase la cuál hemos decorado  con dos imagenes metidas en src/main/resources, el fondo con lineas azules y rellenos del mismo color y un fondo azul claro -> [DecoPanel]
 
