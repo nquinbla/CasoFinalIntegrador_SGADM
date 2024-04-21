@@ -58,6 +58,16 @@ public class GUI_Relaciones extends JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "No se encontró un valor para: " + clave);
             }
+
+            boolean existeDato = recuperadorEficiente.existeDato(clave);
+            JOptionPane.showMessageDialog(null, "¿Existe dato para " + clave + "? " + (existeDato ? "Sí" : "No"));
+
+            Optional<String> datoPorCriterio = recuperadorEficiente.recuperarDatoPorCriterio(s -> s.length() > 5);
+            if (datoPorCriterio.isPresent()) {
+                JOptionPane.showMessageDialog(null, "El primer valor con longitud mayor a 5 es: " + datoPorCriterio.get());
+            } else {
+                JOptionPane.showMessageDialog(null, "No se encontró un valor con longitud mayor a 5");
+            }
         });
 
         add(gestionarRelacionesButton);
