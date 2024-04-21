@@ -41,7 +41,8 @@ public class GUI_Archivos extends JFrame {
         add(indexarButton);
         add(listarButton);
 
-        setSize(300, 200);
+        setSize(300, 110);
+        setTitle("Listado de Archivos");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }
