@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] código GUI pt4" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] código GUI pt5">
+      <change beforePath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/GUI_Relaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/GUI_Relaciones.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,15 +89,7 @@
       <workItem from="1713603558284" duration="14839000" />
       <workItem from="1713631013022" duration="53000" />
       <workItem from="1713631756250" duration="647000" />
-      <workItem from="1713680603432" duration="1461000" />
-    </task>
-    <task id="LOCAL-00026" summary="[Módulo 1] ajustes pt15">
-      <option name="closed" value="true" />
-      <created>1713377072309</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1713377072309</updated>
+      <workItem from="1713680603432" duration="1824000" />
     </task>
     <task id="LOCAL-00027" summary="[Módulo 1] ajustes pt16">
       <option name="closed" value="true" />
@@ -481,14 +475,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713682713994</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="[Módulo 3] código GUI pt5">
+      <option name="closed" value="true" />
+      <created>1713682752899</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1713682752899</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 2] ajustes pt6 (recuadro)" />
     <MESSAGE value="[Módulo 2] ajustes pt7 (codigo)" />
     <MESSAGE value="[Módulo 2] ajustes pt8 (eliminar y editar ventas)" />
     <MESSAGE value="[Módulo 2] ajustes pt9 (no se que hago)" />
@@ -513,6 +514,7 @@
     <MESSAGE value="[Módulo 3] ajustes GUI pt2" />
     <MESSAGE value="[Módulo 3] código GUI pt3" />
     <MESSAGE value="[Módulo 3] código GUI pt4" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] código GUI pt4" />
+    <MESSAGE value="[Módulo 3] código GUI pt5" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] código GUI pt5" />
   </component>
 </project>

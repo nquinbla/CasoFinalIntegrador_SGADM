@@ -57,7 +57,7 @@ public class GUI_Relaciones extends JFrame {
         add(gestionarRelacionesButton);
         add(recuperarDatosButton);
 
-        setSize(300, 120);
+        setSize(300, 110);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }
