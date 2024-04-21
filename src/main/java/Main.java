@@ -3,18 +3,36 @@ import B_AnálisisYOrganizaciónInfo.GUI_Ventas;
 import C_MapasYAsociaciónDatos.GUI_Relaciones;
 import D_IndexYVisualArchivos.GUI_Archivos;
 
-public class Main {
-    public static void main(String[] args) {
-        // Crear instancias de las clases
-        GUI_Selección gui_seleccion = new GUI_Selección();
-        GUI_Ventas gui_ventas = new GUI_Ventas();
-        GUI_Relaciones gui_relaciones = new GUI_Relaciones();
-        GUI_Archivos gui_archivos = new GUI_Archivos();
+import javax.swing.*;
+import java.awt.*;
 
-        // Mostrar las ventanas de la interfaz de usuario
-        gui_seleccion.setVisible(true);
-        gui_ventas.setVisible(true);
-        gui_relaciones.setVisible(true);
-        gui_archivos.setVisible(true);
+public class Main extends JFrame {
+    public Main() {
+        setLayout(new FlowLayout());
+
+        JButton gestionDatosDinamicosButton = new JButton("Gestión de Datos Dinámicos");
+        gestionDatosDinamicosButton.addActionListener(e -> new GUI_Selección());
+
+        JButton analisisOrganizacionButton = new JButton("Análisis y Organización de Información");
+        analisisOrganizacionButton.addActionListener(e -> new GUI_Ventas());
+
+        JButton mapasAsociacionButton = new JButton("Mapas y Asociación de Datos");
+        mapasAsociacionButton.addActionListener(e -> new GUI_Relaciones());
+
+        JButton indexadorVisualizacionButton = new JButton("Indexador y Visualización de Archivos");
+        indexadorVisualizacionButton.addActionListener(e -> new GUI_Archivos());
+
+        add(gestionDatosDinamicosButton);
+        add(analisisOrganizacionButton);
+        add(mapasAsociacionButton);
+        add(indexadorVisualizacionButton);
+
+        setSize(300, 120);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new Main();
     }
 }
