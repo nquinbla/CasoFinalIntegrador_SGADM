@@ -7,6 +7,7 @@ import java.util.Optional;
 public class GUI_Relaciones extends JFrame {
     private GestorRelaciones<Integer, String> numerosYLetras;
     private GestorRelaciones<Integer, String> numerosYTextos;
+    private RecuperadorEficiente<Integer, String> recuperadorEficiente;
 
     public GUI_Relaciones() {
         numerosYLetras = new GestorRelaciones<>();
@@ -31,8 +32,10 @@ public class GUI_Relaciones extends JFrame {
         }; for (int i = 1; i <= 100; i++) {
             numerosYTextos.agregarRelacion(i, unidades[i - 1]);
         }
+        recuperadorEficiente = new RecuperadorEficiente<>();
 
         setLayout(new FlowLayout());
+
 
 
         JButton gestionarRelacionesButton = new JButton("Gestionar Relaciones");
@@ -43,19 +46,19 @@ public class GUI_Relaciones extends JFrame {
             JOptionPane.showMessageDialog(null, "Para el número " + clave + ", la letra es: " + valorLetra + " y el texto es: " + valorTexto);
         });
 
-        JButton recuperarDatosButton = new JButton("Recuperar Datos");
-        recuperarDatosButton.addActionListener(e -> {
-            String clave = JOptionPane.showInputDialog("Ingrese una letra o texto:");
-            Optional<Integer> valorNumero = numerosYLetras.existeRelacionConValor(clave) ? numerosYLetras.obtenerClave(clave) : numerosYTextos.obtenerClave(clave);
-            if (valorNumero.isPresent()) {
-                JOptionPane.showMessageDialog(null, "El número para " + clave + " es: " + valorNumero.get());
+        JButton recuperarDatosEficientesButton = new JButton("Recuperar Datos Eficientes");
+        recuperarDatosEficientesButton.addActionListener(e -> {
+            Integer clave = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número:"));
+            String valor = recuperadorEficiente.recuperarDato(clave);
+            if (valor != null) {
+                JOptionPane.showMessageDialog(null, "El valor para " + clave + " es: " + valor);
             } else {
-                JOptionPane.showMessageDialog(null, "No se encontró un número para: " + clave);
+                JOptionPane.showMessageDialog(null, "No se encontró un valor para: " + clave);
             }
         });
 
         add(gestionarRelacionesButton);
-        add(recuperarDatosButton);
+        add(recuperarDatosEficientesButton);
 
         setSize(300, 110);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
