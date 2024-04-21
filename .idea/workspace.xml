@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] GUI relaciones código">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/GUI_Relaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/GUI_Relaciones.java" afterDir="false" />
-    </list>
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] código GUI pt4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,39 +87,7 @@
       <workItem from="1713603558284" duration="14839000" />
       <workItem from="1713631013022" duration="53000" />
       <workItem from="1713631756250" duration="647000" />
-      <workItem from="1713680603432" duration="1008000" />
-    </task>
-    <task id="LOCAL-00022" summary="[Módulo 1] ajustes pt11">
-      <option name="closed" value="true" />
-      <created>1713375921548</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1713375921548</updated>
-    </task>
-    <task id="LOCAL-00023" summary="[Módulo 1] ajustes pt12">
-      <option name="closed" value="true" />
-      <created>1713376263793</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1713376263793</updated>
-    </task>
-    <task id="LOCAL-00024" summary="[Módulo 1] ajustes pt13">
-      <option name="closed" value="true" />
-      <created>1713376415814</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1713376415814</updated>
-    </task>
-    <task id="LOCAL-00025" summary="[Módulo 1] ajustes pt14">
-      <option name="closed" value="true" />
-      <created>1713376727094</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1713376727094</updated>
+      <workItem from="1713680603432" duration="1461000" />
     </task>
     <task id="LOCAL-00026" summary="[Módulo 1] ajustes pt15">
       <option name="closed" value="true" />
@@ -484,17 +449,45 @@
       <option name="project" value="LOCAL" />
       <updated>1713636792523</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="[Módulo 3] GUI relaciones código (ajustes)">
+      <option name="closed" value="true" />
+      <created>1713682441026</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1713682441027</updated>
+    </task>
+    <task id="LOCAL-00072" summary="[Módulo 3] ajustes GUI pt2">
+      <option name="closed" value="true" />
+      <created>1713682478870</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1713682478870</updated>
+    </task>
+    <task id="LOCAL-00073" summary="[Módulo 3] código GUI pt3">
+      <option name="closed" value="true" />
+      <created>1713682620476</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1713682620476</updated>
+    </task>
+    <task id="LOCAL-00074" summary="[Módulo 3] código GUI pt4">
+      <option name="closed" value="true" />
+      <created>1713682713994</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1713682713994</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 2] ajustes pt2 (fecha)" />
-    <MESSAGE value="[Módulo 2] ajustes pt3 (tamaño)" />
-    <MESSAGE value="[Módulo 2] ajustes pt4 (año)" />
-    <MESSAGE value="[Módulo 2] ajustes pt5 (ordenación)" />
     <MESSAGE value="[Módulo 2] ajustes pt6 (recuadro)" />
     <MESSAGE value="[Módulo 2] ajustes pt7 (codigo)" />
     <MESSAGE value="[Módulo 2] ajustes pt8 (eliminar y editar ventas)" />
@@ -516,6 +509,10 @@
     <MESSAGE value="[Módulo 3] gestor de relaciones código" />
     <MESSAGE value="[Módulo 3] recuperador eficiente código" />
     <MESSAGE value="[Módulo 3] GUI relaciones código" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] GUI relaciones código" />
+    <MESSAGE value="[Módulo 3] GUI relaciones código (ajustes)" />
+    <MESSAGE value="[Módulo 3] ajustes GUI pt2" />
+    <MESSAGE value="[Módulo 3] código GUI pt3" />
+    <MESSAGE value="[Módulo 3] código GUI pt4" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] código GUI pt4" />
   </component>
 </project>
