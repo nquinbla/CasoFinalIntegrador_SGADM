@@ -4,31 +4,40 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GUI_Relaciones extends JFrame {
-    private GestorRelaciones<String, String> gestorRelaciones;
-    private RecuperadorEficiente<String, String> recuperadorEficiente;
+    private GestorRelaciones<Integer, String> numerosYLetras;
+    private GestorRelaciones<Integer, String> numerosYTextos;
 
     public GUI_Relaciones() {
-        gestorRelaciones = new GestorRelaciones<>();
-        recuperadorEficiente = new RecuperadorEficiente<>();
+        numerosYLetras = new GestorRelaciones<>();
+        numerosYLetras.agregarRelacion(1, "A");
+        numerosYLetras.agregarRelacion(2, "B");
+        numerosYLetras.agregarRelacion(3, "C");
+
+        // ...
+
+        numerosYTextos = new GestorRelaciones<>();
+        numerosYTextos.agregarRelacion(1, "uno");
+        numerosYTextos.agregarRelacion(2, "dos");
+        // ...
 
         setLayout(new FlowLayout());
 
         JButton gestionarRelacionesButton = new JButton("Gestionar Relaciones");
         gestionarRelacionesButton.addActionListener(e -> {
-            String clave = JOptionPane.showInputDialog("Ingrese la clave:");
-            String valor = JOptionPane.showInputDialog("Ingrese el valor:");
-            gestorRelaciones.agregarRelacion(clave, valor);
-            JOptionPane.showMessageDialog(null, "Relación agregada: " + clave + " -> " + valor);
+            Integer clave = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número:"));
+            String valorLetra = numerosYLetras.obtenerValor(clave);
+            String valorTexto = numerosYTextos.obtenerValor(clave);
+            JOptionPane.showMessageDialog(null, "Para el número " + clave + ", la letra es: " + valorLetra + " y el texto es: " + valorTexto);
         });
 
         JButton recuperarDatosButton = new JButton("Recuperar Datos");
         recuperarDatosButton.addActionListener(e -> {
-            String clave = JOptionPane.showInputDialog("Ingrese la clave:");
-            String valor = recuperadorEficiente.recuperarDato(clave);
-            if (valor != null) {
-                JOptionPane.showMessageDialog(null, "Valor recuperado: " + valor);
+            String clave = JOptionPane.showInputDialog("Ingrese una letra o texto:");
+            Integer valorNumero = numerosYLetras.existeRelacion(clave) ? numerosYLetras.obtenerValor(clave) : numerosYTextos.obtenerValor(clave);
+            if (valorNumero != null) {
+                JOptionPane.showMessageDialog(null, "El número para " + clave + " es: " + valorNumero);
             } else {
-                JOptionPane.showMessageDialog(null, "No se encontró un valor para la clave: " + clave);
+                JOptionPane.showMessageDialog(null, "No se encontró un número para: " + clave);
             }
         });
 
@@ -44,4 +53,3 @@ public class GUI_Relaciones extends JFrame {
         new GUI_Relaciones();
     }
 }
-
