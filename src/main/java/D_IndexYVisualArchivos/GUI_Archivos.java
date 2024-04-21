@@ -3,6 +3,7 @@ package D_IndexYVisualArchivos;
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
+import java.util.List;
 import java.util.Map;
 
 public class GUI_Archivos extends JFrame {
@@ -20,7 +21,7 @@ public class GUI_Archivos extends JFrame {
             if (seleccion == JFileChooser.APPROVE_OPTION) {
                 File directorio = fileChooser.getSelectedFile();
                 indexadorRecursivo.indexar(directorio);
-                for (Map.Entry<String, String> entrada : indexadorRecursivo.index.entrySet()) {
+                for (Map.Entry<String, String> entrada : indexadorRecursivo.getIndex().entrySet()) {
                     ordenadorYListador.agregar(entrada.getKey(), entrada.getValue());
                 }
                 JOptionPane.showMessageDialog(this, "Indexación completada");

@@ -22,4 +22,8 @@ public class IndexadorRecursivo {
     public String buscar(String nombreArchivo) {
         return index.get(nombreArchivo);
     }
+
+    public Map<String, String> getIndex() {
+        return index;
+    }
 }
