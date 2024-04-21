@@ -62,11 +62,12 @@ public class GUI_Relaciones extends JFrame {
             boolean existeDato = recuperadorEficiente.existeDato(clave);
             JOptionPane.showMessageDialog(null, "¿Existe dato para " + clave + "? " + (existeDato ? "Sí" : "No"));
 
-            Optional<String> datoPorCriterio = recuperadorEficiente.recuperarDatoPorCriterio(s -> s.length() > 5);
+            int longitud = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la longitud deseada:"));
+            Optional<String> datoPorCriterio = recuperadorEficiente.recuperarDatoPorCriterio(s -> s.length() == longitud);
             if (datoPorCriterio.isPresent()) {
-                JOptionPane.showMessageDialog(null, "El primer valor con longitud mayor a 5 es: " + datoPorCriterio.get());
+                JOptionPane.showMessageDialog(null, "El primer valor con longitud " + longitud + " es: " + datoPorCriterio.get());
             } else {
-                JOptionPane.showMessageDialog(null, "No se encontró un valor con longitud mayor a 5");
+                JOptionPane.showMessageDialog(null, "No se encontró un valor con longitud " + longitud);
             }
         });
 

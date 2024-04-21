@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] código GUI pt5">
-      <change beforePath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/GUI_Relaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/GUI_Relaciones.java" afterDir="false" />
-    </list>
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] GUI código pt 9" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,47 +87,7 @@
       <workItem from="1713603558284" duration="14839000" />
       <workItem from="1713631013022" duration="53000" />
       <workItem from="1713631756250" duration="647000" />
-      <workItem from="1713680603432" duration="1824000" />
-    </task>
-    <task id="LOCAL-00027" summary="[Módulo 1] ajustes pt16">
-      <option name="closed" value="true" />
-      <created>1713377216633</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1713377216633</updated>
-    </task>
-    <task id="LOCAL-00028" summary="[Módulo 1] ajustes pt17">
-      <option name="closed" value="true" />
-      <created>1713377356197</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1713377356197</updated>
-    </task>
-    <task id="LOCAL-00029" summary="[Módulo 1] ajustes pt17">
-      <option name="closed" value="true" />
-      <created>1713378333008</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1713378333008</updated>
-    </task>
-    <task id="LOCAL-00030" summary="[Módulo 2] clase registro código">
-      <option name="closed" value="true" />
-      <created>1713384073404</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1713384073404</updated>
-    </task>
-    <task id="LOCAL-00031" summary="[Módulo 2] clase AnalizadorRegistros código">
-      <option name="closed" value="true" />
-      <created>1713384107417</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1713384107417</updated>
+      <workItem from="1713680603432" duration="2721000" />
     </task>
     <task id="LOCAL-00032" summary="[Módulo 2] clase AnalizadorRegistros código ajustes">
       <option name="closed" value="true" />
@@ -483,18 +441,53 @@
       <option name="project" value="LOCAL" />
       <updated>1713682752899</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="[Módulo 3] código GUI pt6">
+      <option name="closed" value="true" />
+      <created>1713683100858</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1713683100859</updated>
+    </task>
+    <task id="LOCAL-00077" summary="[Módulo 3] RecuperadorEficiente ajustes">
+      <option name="closed" value="true" />
+      <created>1713683172779</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1713683172779</updated>
+    </task>
+    <task id="LOCAL-00078" summary="[Módulo 3] GUI código pt 7">
+      <option name="closed" value="true" />
+      <created>1713683258387</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1713683258387</updated>
+    </task>
+    <task id="LOCAL-00079" summary="[Módulo 3] GUI código pt 8">
+      <option name="closed" value="true" />
+      <created>1713683269443</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1713683269443</updated>
+    </task>
+    <task id="LOCAL-00080" summary="[Módulo 3] GUI código pt 9">
+      <option name="closed" value="true" />
+      <created>1713684223176</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1713684223176</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 2] ajustes pt7 (codigo)" />
-    <MESSAGE value="[Módulo 2] ajustes pt8 (eliminar y editar ventas)" />
-    <MESSAGE value="[Módulo 2] ajustes pt9 (no se que hago)" />
-    <MESSAGE value="[Módulo 2] ajustes pt9 (arreglos de editar ventas)" />
-    <MESSAGE value="[Módulo 2] ajustes pt10 (arreglos de editar ventas)" />
     <MESSAGE value="[Módulo 2] ajustes pt11 (arreglos de editar ventas)" />
     <MESSAGE value="[Módulo 2] ajustes pt12 (comparando para cambiar cosas en GUI_Ventas)" />
     <MESSAGE value="[Módulo 2] ajustes pt12 (arreglo editar venta)" />
@@ -515,6 +508,11 @@
     <MESSAGE value="[Módulo 3] código GUI pt3" />
     <MESSAGE value="[Módulo 3] código GUI pt4" />
     <MESSAGE value="[Módulo 3] código GUI pt5" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] código GUI pt5" />
+    <MESSAGE value="[Módulo 3] código GUI pt6" />
+    <MESSAGE value="[Módulo 3] RecuperadorEficiente ajustes" />
+    <MESSAGE value="[Módulo 3] GUI código pt 7" />
+    <MESSAGE value="[Módulo 3] GUI código pt 8" />
+    <MESSAGE value="[Módulo 3] GUI código pt 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] GUI código pt 9" />
   </component>
 </project>
