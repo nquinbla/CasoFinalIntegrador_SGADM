@@ -9,11 +9,11 @@ public class GUI_Relaciones extends JFrame {
 
     public GUI_Relaciones() {
         numerosYLetras = new GestorRelaciones<>();
-        numerosYLetras.agregarRelacion(1, "A");
-        numerosYLetras.agregarRelacion(2, "B");
-        numerosYLetras.agregarRelacion(3, "C");
+        for (int i = 1; i <= 28; i++) {
+            char letra = (char) ('A' + i - 1); // Convertir el número a una letra del abecedario
+            numerosYLetras.agregarRelacion(i, String.valueOf(letra));
+        }
 
-        // ...
 
         numerosYTextos = new GestorRelaciones<>();
         numerosYTextos.agregarRelacion(1, "uno");
