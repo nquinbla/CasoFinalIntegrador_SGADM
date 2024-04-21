@@ -2,6 +2,7 @@ package C_MapasYAsociaciónDatos;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Optional;
 
 public class GUI_Relaciones extends JFrame {
     private GestorRelaciones<Integer, String> numerosYLetras;
@@ -45,9 +46,9 @@ public class GUI_Relaciones extends JFrame {
         JButton recuperarDatosButton = new JButton("Recuperar Datos");
         recuperarDatosButton.addActionListener(e -> {
             String clave = JOptionPane.showInputDialog("Ingrese una letra o texto:");
-            Integer valorNumero = numerosYLetras.existeRelacion(clave) ? numerosYLetras.obtenerValor(clave) : numerosYTextos.obtenerValor(clave);
-            if (valorNumero != null) {
-                JOptionPane.showMessageDialog(null, "El número para " + clave + " es: " + valorNumero);
+            Optional<Integer> valorNumero = numerosYLetras.existeRelacionConValor(clave) ? numerosYLetras.obtenerClave(clave) : numerosYTextos.obtenerClave(clave);
+            if (valorNumero.isPresent()) {
+                JOptionPane.showMessageDialog(null, "El número para " + clave + " es: " + valorNumero.get());
             } else {
                 JOptionPane.showMessageDialog(null, "No se encontró un número para: " + clave);
             }
