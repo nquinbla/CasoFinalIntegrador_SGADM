@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] GUI código pt 9" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] GUI código pt10">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,15 +89,8 @@
       <workItem from="1713603558284" duration="14839000" />
       <workItem from="1713631013022" duration="53000" />
       <workItem from="1713631756250" duration="647000" />
-      <workItem from="1713680603432" duration="2721000" />
-    </task>
-    <task id="LOCAL-00032" summary="[Módulo 2] clase AnalizadorRegistros código ajustes">
-      <option name="closed" value="true" />
-      <created>1713384139564</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1713384139564</updated>
+      <workItem from="1713680603432" duration="3037000" />
+      <workItem from="1713691220933" duration="1935000" />
     </task>
     <task id="LOCAL-00033" summary="[Módulo 2] clase análisis organización GUI código">
       <option name="closed" value="true" />
@@ -481,14 +476,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713684223176</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="[Módulo 3] GUI código pt10">
+      <option name="closed" value="true" />
+      <created>1713684507209</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1713684507209</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 2] ajustes pt11 (arreglos de editar ventas)" />
     <MESSAGE value="[Módulo 2] ajustes pt12 (comparando para cambiar cosas en GUI_Ventas)" />
     <MESSAGE value="[Módulo 2] ajustes pt12 (arreglo editar venta)" />
     <MESSAGE value="[Módulo 2] ajustes pt13 (arreglo editar venta)" />
@@ -513,6 +515,7 @@
     <MESSAGE value="[Módulo 3] GUI código pt 7" />
     <MESSAGE value="[Módulo 3] GUI código pt 8" />
     <MESSAGE value="[Módulo 3] GUI código pt 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] GUI código pt 9" />
+    <MESSAGE value="[Módulo 3] GUI código pt10" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] GUI código pt10" />
   </component>
 </project>
