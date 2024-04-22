@@ -218,7 +218,7 @@ public class GUI_Ventas extends JFrame {
         add(new JLabel("Venta:"));
         add(ventaComboBox); // Agregar el JComboBox a la GUI
 
-        setSize(750, 470);
+        setSize(700, 470);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="Main código pt2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 5] Decoración del panel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,15 +92,7 @@
       <workItem from="1713680603432" duration="3037000" />
       <workItem from="1713691220933" duration="6867000" />
       <workItem from="1713725541088" duration="1146000" />
-      <workItem from="1713777080648" duration="23000" />
-    </task>
-    <task id="LOCAL-00042" summary="[Módulo 2] ajustes pt3 (tamaño)">
-      <option name="closed" value="true" />
-      <created>1713528451269</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1713528451269</updated>
+      <workItem from="1713777080648" duration="796000" />
     </task>
     <task id="LOCAL-00043" summary="[Módulo 2] ajustes pt4 (año)">
       <option name="closed" value="true" />
@@ -488,14 +478,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713715701661</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="[Módulo 5] Decoración del panel">
+      <option name="closed" value="true" />
+      <created>1713778977545</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1713778977546</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 2] ajustes pt18 (ordenación)" />
     <MESSAGE value="[Módulo 2] ajustes pt19 (ayuda)" />
     <MESSAGE value="[Módulo 2] ajustes pt19 (size de ayuda)" />
     <MESSAGE value="[Módulo 2] ajustes pt21 FIN MODULO 2" />
@@ -520,6 +517,7 @@
     <MESSAGE value="[Módulo 4] ajustes código pt2" />
     <MESSAGE value="Main código pt1" />
     <MESSAGE value="Main código pt2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main código pt2" />
+    <MESSAGE value="[Módulo 5] Decoración del panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 5] Decoración del panel" />
   </component>
 </project>
