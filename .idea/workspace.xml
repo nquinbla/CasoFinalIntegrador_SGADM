@@ -34,30 +34,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Aplicación.executor": "Run",
-    "Application.GUI_AnálisisOrganización.executor": "Run",
-    "Application.GUI_Archivos.executor": "Run",
-    "Application.GUI_GestiónDatosDinámicos.executor": "Run",
-    "Application.GUI_Relaciones.executor": "Run",
-    "Application.GUI_Selección.executor": "Run",
-    "Application.GUI_Ventas.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.comparación.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Aplicación.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_AnálisisOrganización.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Archivos.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_GestiónDatosDinámicos.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Relaciones.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Selección.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Ventas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.comparación.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nerea\OneDrive\Documentos\GitHub\CasoFinalIntegrador_SGADM\src\main\resources" />
@@ -92,15 +92,9 @@
       <workItem from="1713631013022" duration="53000" />
       <workItem from="1713631756250" duration="647000" />
       <workItem from="1713680603432" duration="3037000" />
-      <workItem from="1713691220933" duration="6132000" />
-    </task>
-    <task id="LOCAL-00041" summary="[Módulo 2] ajustes pt2 (fecha)">
-      <option name="closed" value="true" />
-      <created>1713528342910</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1713528342910</updated>
+      <workItem from="1713691220933" duration="6867000" />
+      <workItem from="1713725541088" duration="1146000" />
+      <workItem from="1713777080648" duration="23000" />
     </task>
     <task id="LOCAL-00042" summary="[Módulo 2] ajustes pt3 (tamaño)">
       <option name="closed" value="true" />
@@ -486,7 +480,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713714241397</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Main código pt2">
+      <option name="closed" value="true" />
+      <created>1713715701661</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1713715701661</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -27,7 +27,7 @@ public class Main extends JFrame {
         add(mapasAsociacionButton);
         add(indexadorVisualizacionButton);
 
-        setSize(300, 120);
+        setSize(1000, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
