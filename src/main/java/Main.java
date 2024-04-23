@@ -22,7 +22,7 @@ public class Main extends JFrame {
         gbc.gridwidth = GridBagConstraints.REMAINDER;
         gbc.anchor = GridBagConstraints.NORTH;
         gbc.weighty = 1;
-        gbc.insets = new Insets(5, 0, 5, 0); // Reduce el espacio vertical entre los botones
+        gbc.insets = new Insets(1, 0, 1, 0);
 
         JButton gestionDatosDinamicosButton = new JButton("Gestión de Datos Dinámicos \uD83D\uDCC8\u200B\uD83D\uDCC9\u200B");
         gestionDatosDinamicosButton.addActionListener(e -> new Main_A());
