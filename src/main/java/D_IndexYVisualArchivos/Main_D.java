@@ -23,8 +23,9 @@ public class Main_D extends JFrame {
         add(imageLabel);
 
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        getContentPane().setBackground(Color.LIGHT_GRAY);
         buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
-        buttonPanel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0)); // agrega un margen alrededor del panel
+        buttonPanel.setBorder(BorderFactory.createEmptyBorder(30, 20, 10, 0));
 
         JButton indexarButton = new JButton("Indexar Archivos");
         indexarButton.addActionListener(e -> {
@@ -54,6 +55,7 @@ public class Main_D extends JFrame {
         buttonPanel.add(indexarButton);
         buttonPanel.add(Box.createVerticalStrut(10));
         buttonPanel.add(listarButton);
+
 
         add(buttonPanel);
 

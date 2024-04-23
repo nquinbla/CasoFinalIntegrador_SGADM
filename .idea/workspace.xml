@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="ajustes main B">
-      <change beforePath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" afterDir="false" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="ajustes main c y su modulo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/D_IndexYVisualArchivos/Main_D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D_IndexYVisualArchivos/Main_D.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,33 +35,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Aplicación.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_AnálisisOrganización.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_Archivos.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_GestiónDatosDinámicos.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_Relaciones.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_Selección.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_Ventas.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main_A.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main_B.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main_C.executor&quot;: &quot;Run&quot;,
-    &quot;Application.comparación.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Aplicación.executor": "Run",
+    "Application.GUI_AnálisisOrganización.executor": "Run",
+    "Application.GUI_Archivos.executor": "Run",
+    "Application.GUI_GestiónDatosDinámicos.executor": "Run",
+    "Application.GUI_Relaciones.executor": "Run",
+    "Application.GUI_Selección.executor": "Run",
+    "Application.GUI_Ventas.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Main_A.executor": "Run",
+    "Application.Main_B.executor": "Run",
+    "Application.Main_C.executor": "Run",
+    "Application.Main_D.executor": "Run",
+    "Application.comparación.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nerea\OneDrive\Documentos\GitHub\CasoFinalIntegrador_SGADM\src\main\resources" />
@@ -103,15 +105,7 @@
       <workItem from="1713787313344" duration="223000" />
       <workItem from="1713854259546" duration="8424000" />
       <workItem from="1713864021047" duration="173000" />
-      <workItem from="1713872082045" duration="1036000" />
-    </task>
-    <task id="LOCAL-00078" summary="[Módulo 3] GUI código pt 7">
-      <option name="closed" value="true" />
-      <created>1713683258387</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1713683258387</updated>
+      <workItem from="1713872082045" duration="1847000" />
     </task>
     <task id="LOCAL-00079" summary="[Módulo 3] GUI código pt 8">
       <option name="closed" value="true" />
@@ -497,14 +491,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713873081979</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="ajustes main c y su modulo">
+      <option name="closed" value="true" />
+      <created>1713873496060</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1713873496060</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 1] ajustes" />
     <MESSAGE value="[Módulo 2] ajustes base" />
     <MESSAGE value="[Módulo 4] ajustes main deco pt1" />
     <MESSAGE value="[Módulo 4] ajustes main deco pt2" />
@@ -529,6 +530,7 @@
     <MESSAGE value="revisión main A pt3" />
     <MESSAGE value="ajustes mains A, B, C, D" />
     <MESSAGE value="ajustes main B" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustes main B" />
+    <MESSAGE value="ajustes main c y su modulo" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes main c y su modulo" />
   </component>
 </project>
