@@ -188,8 +188,14 @@ Esta clase se utiliza para crear una interfaz de usuario que permite al usuario 
     main(String[] args): Este es el método principal que se utiliza para iniciar la aplicación.
 
 ______________________________________________________________________________________________
+
 ### 5. Decoración
-  * Decoración del panel: una clase la cuál hemos decorado  con dos imagenes metidas en src/main/resources, el fondo con lineas azules y rellenos del mismo color y un fondo azul claro -> [DecoPanel]
+Una clase la cual hemos decorador con un fondo azul claro acompañado de figuras geometricas irregulares que atraviesan la pantalla con un color un poco más notorio que el fonod, tambien azul. 
+#### `Decopanel`
+
+#### Métodos principales
+
+______________________________________________________________________________________________
 
 ## ENTREGABLES
   * Software de Gestión y Análisis de Datos: Un programa interactivo que integre todas las funcionalidades mencionadas, con una interfaz de usuario que facilite su uso por parte de analistas, investigadores o cualquier persona interesada en la manipulación de datos complejos.
