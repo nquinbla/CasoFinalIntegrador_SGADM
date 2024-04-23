@@ -9,6 +9,7 @@ public class Main_C extends JFrame {
     private RecuperadorEficiente<Integer, String> recuperadorEficiente;
 
     public Main_C() {
+        setTitle("Mapas y Asociación de Datos");
         numerosYLetras = new GestorRelaciones<>();
         for (int i = 1; i <= 28; i++) {
             char letra = (char) ('A' + i - 1); // Convertir el número a una letra del abecedario
