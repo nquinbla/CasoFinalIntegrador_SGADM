@@ -21,8 +21,9 @@ public class Main extends JFrame {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridwidth = GridBagConstraints.REMAINDER;
         gbc.anchor = GridBagConstraints.NORTH;
-        gbc.weighty = 1;
-        gbc.insets = new Insets(1, 0, 1, 0);
+        gbc.weighty = 0; // Cambia cómo se distribuye el espacio extra verticalmente
+        gbc.insets = new Insets(0, 0, 0, 0); // Elimina el espacio entre los botones
+        gbc.ipady = 0; // Elimina el 'padding' interno vertical
 
         JButton gestionDatosDinamicosButton = new JButton("Gestión de Datos Dinámicos \uD83D\uDCC8\u200B\uD83D\uDCC9\u200B");
         gestionDatosDinamicosButton.addActionListener(e -> new Main_A());
