@@ -35,9 +35,18 @@ public class Main_C extends JFrame {
         for (int i = 1; i <= 100; i++) {
             recuperadorEficiente.agregarDato(i, unidades[i - 1]);
         }
+
         setLayout(new FlowLayout());
+        getContentPane().setBackground(Color.LIGHT_GRAY);
+        Font buttonFont = new Font("Arial", Font.BOLD, 14);
+        Color buttonTextColor = Color.WHITE;
+        Color buttonBackgroundColor = Color.DARK_GRAY;
+
 
         JButton gestionarRelacionesButton = new JButton("Gestionar Relaciones");
+        gestionarRelacionesButton.setFont(buttonFont);
+        gestionarRelacionesButton.setForeground(buttonTextColor);
+        gestionarRelacionesButton.setBackground(buttonBackgroundColor);
         gestionarRelacionesButton.addActionListener(e -> {
             Integer clave = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número:"));
             String valorLetra = numerosYLetras.obtenerValor(clave);
@@ -46,6 +55,9 @@ public class Main_C extends JFrame {
         });
 
         JButton recuperarDatosEficientesButton = new JButton("Recuperar Datos Eficientes");
+        recuperarDatosEficientesButton.setFont(buttonFont);
+        recuperarDatosEficientesButton.setForeground(buttonTextColor);
+        recuperarDatosEficientesButton.setBackground(buttonBackgroundColor);
         recuperarDatosEficientesButton.addActionListener(e -> {
             new RecuperarDatosFrame(recuperadorEficiente);
         });

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] Rerefactor del main">
-      <change beforePath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" afterDir="false" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] deco recuperador datos frame pt4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/Main_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/Main_C.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,33 +35,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Aplicación.executor": "Run",
-    "Application.GUI_AnálisisOrganización.executor": "Run",
-    "Application.GUI_Archivos.executor": "Run",
-    "Application.GUI_GestiónDatosDinámicos.executor": "Run",
-    "Application.GUI_Relaciones.executor": "Run",
-    "Application.GUI_Selección.executor": "Run",
-    "Application.GUI_Ventas.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Main_A.executor": "Run",
-    "Application.Main_B.executor": "Run",
-    "Application.Main_C.executor": "Run",
-    "Application.comparación.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Aplicación.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_AnálisisOrganización.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Archivos.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_GestiónDatosDinámicos.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Relaciones.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Selección.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUI_Ventas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main_A.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main_B.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main_C.executor&quot;: &quot;Run&quot;,
+    &quot;Application.comparación.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nerea\OneDrive\Documentos\GitHub\CasoFinalIntegrador_SGADM\src\main\resources" />
@@ -101,39 +102,9 @@
       <workItem from="1713780427883" duration="749000" />
       <workItem from="1713782619507" duration="764000" />
       <workItem from="1713787313344" duration="223000" />
-      <workItem from="1713854259546" duration="6686000" />
-    </task>
-    <task id="LOCAL-00067" summary="[Módulo 3] GUI relaciones código">
-      <option name="closed" value="true" />
-      <created>1713620074066</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1713620074066</updated>
-    </task>
-    <task id="LOCAL-00068" summary="[Módulo 3] GUI relaciones código">
-      <option name="closed" value="true" />
-      <created>1713620087046</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1713620087046</updated>
-    </task>
-    <task id="LOCAL-00069" summary="[Módulo 3] GUI relaciones código">
-      <option name="closed" value="true" />
-      <created>1713620096474</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1713620096474</updated>
-    </task>
-    <task id="LOCAL-00070" summary="[Módulo 3] GUI relaciones código">
-      <option name="closed" value="true" />
-      <created>1713636792523</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1713636792523</updated>
+      <workItem from="1713854259546" duration="8424000" />
+      <workItem from="1713864021047" duration="173000" />
+      <workItem from="1713872082045" duration="310000" />
     </task>
     <task id="LOCAL-00071" summary="[Módulo 3] GUI relaciones código (ajustes)">
       <option name="closed" value="true" />
@@ -495,17 +466,45 @@
       <option name="project" value="LOCAL" />
       <updated>1713860643006</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="[Módulo 3] deco recuperador datos frame">
+      <option name="closed" value="true" />
+      <created>1713861016835</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1713861016835</updated>
+    </task>
+    <task id="LOCAL-00117" summary="[Módulo 3] deco recuperador datos frame pt2">
+      <option name="closed" value="true" />
+      <created>1713861156329</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1713861156329</updated>
+    </task>
+    <task id="LOCAL-00118" summary="[Módulo 3] deco recuperador datos frame pt3">
+      <option name="closed" value="true" />
+      <created>1713861225985</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1713861225985</updated>
+    </task>
+    <task id="LOCAL-00119" summary="[Módulo 3] deco recuperador datos frame pt4">
+      <option name="closed" value="true" />
+      <created>1713861316382</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1713861316382</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Main código pt2" />
-    <MESSAGE value="[Módulo 5] Decoración del panel" />
-    <MESSAGE value="[Módulo 2] Ajuste tamaño ventana" />
-    <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto)" />
     <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt2" />
     <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt3" />
     <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt4" />
@@ -527,6 +526,10 @@
     <MESSAGE value="[Módulo 3] RecuperarDatosFrame código pt3" />
     <MESSAGE value="[Módulo 3] R refactor del main" />
     <MESSAGE value="[Módulo 3] Rerefactor del main" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] Rerefactor del main" />
+    <MESSAGE value="[Módulo 3] deco recuperador datos frame" />
+    <MESSAGE value="[Módulo 3] deco recuperador datos frame pt2" />
+    <MESSAGE value="[Módulo 3] deco recuperador datos frame pt3" />
+    <MESSAGE value="[Módulo 3] deco recuperador datos frame pt4" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] deco recuperador datos frame pt4" />
   </component>
 </project>
