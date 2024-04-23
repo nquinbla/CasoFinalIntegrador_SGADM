@@ -10,6 +10,7 @@ import java.awt.*;
 public class Main extends JFrame {
     public Main() {
         setLayout(new BorderLayout());
+        setTitle("Sistema de Gestión Y Análisis de Datos Multidimensionales");
 
         DecoPanel decoPanel = new DecoPanel();
         add(decoPanel, BorderLayout.CENTER);
@@ -36,8 +37,9 @@ public class Main extends JFrame {
 
         add(buttonPanel, BorderLayout.SOUTH);
 
-        setSize(1000, 600);
+        setSize(1200, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 
