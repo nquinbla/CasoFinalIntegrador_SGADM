@@ -29,6 +29,7 @@ public class Main_B extends JFrame {
 
         String[] opcionesOrdenacion = { "Por Fecha", "Por Cantidad", "Por Cliente" };
         JComboBox<String> comboBoxOrdenacion = new JComboBox<>(opcionesOrdenacion);
+        comboBoxOrdenacion.setBackground(Color.GRAY);
 
         comboBoxOrdenacion.addActionListener(e -> {
             String seleccion = (String) comboBoxOrdenacion.getSelectedItem();
