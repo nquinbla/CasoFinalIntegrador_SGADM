@@ -6,6 +6,7 @@ import java.util.List;
 public class GestiónDatosDinámicos {
     private List<Pareja> parejas;
     private List<Matriz> matrices;
+    private List<Cadenas> cadenas;
 
     public GestiónDatosDinámicos() {
         this.parejas = new ArrayList<>();
@@ -47,5 +48,20 @@ public class GestiónDatosDinámicos {
     }
     public List<Matriz> getMatrices() {
         return matrices;
+    }
+
+    // Métodos de gestión de cadenas
+    public void agregarCadena(Cadenas cadena) {
+        if (!cadenas.contains(cadena)) {
+            cadenas.add(cadena);
+        }
+    }
+    public void eliminarCadena(Cadenas cadena) {
+        cadenas.removeIf(c -> c.getPrimerElemento() == cadena.getPrimerElemento() && c.getSegundoElemento() == cadena.getSegundoElemento());
+    }
+    public void modificarCadena(int index, Cadenas nuevaCadena) {
+        if (index >= 0 && index < cadenas.size()) {
+            cadenas.set(index, nuevaCadena);
+        }
     }
 }
