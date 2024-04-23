@@ -5,7 +5,9 @@ LINK: https://github.com/nquinbla/CasoFinalIntegrador_SGADM.git
 ## DESCRIPCIÓN
  El proyecto consistirá en el desarrollo de una aplicación de software que integre varias estructuras de datos, algoritmos de ordenación y búsqueda, y métodos interactivos de entrada y salida de datos. Los estudiantes aplicarán conceptos avanzados de programación y estructuras de datos para   
  crear una herramienta versátil y eficiente.
- 
+
+ ______________________________________________________________________________________________
+
 ## MÓDULOS
 
  ### 1. Gestión de Datos Dinámicos [A_GestiónDatosDinámicos]
@@ -17,17 +19,22 @@ LINK: https://github.com/nquinbla/CasoFinalIntegrador_SGADM.git
 * GestiónDatosDinámicos.java -> Esta clase es responsable de gestionar las operaciones de datos dinámicos. Contiene una lista de objetos Matriz y proporciona métodos para agregar, eliminar y modificar matrices en la lista. Cada operación afecta a la lista de matrices y, por lo tanto, a los datos que se muestran en la GUI.
 * GUI_Selección -> Esta clase es otra GUI que permite al usuario elegir entre trabajar con parejas o matrices. Dependiendo de la elección del usuario, se abre la GUI correspondiente.
 
+______________________________________________________________________________________________
 
  ### 2. Análisis y Organización de Información [B_AnálisisYOrganizaciónInfo]
 Este módulo, B_AnálisisYOrganizaciónInfo, es parte de una aplicación de gestión de ventas. Aquí se manejan las ventas y los clientes, y se proporciona una interfaz gráfica de usuario (GUI) para interactuar con estos datos.
 * Venta.java: Esta clase representa una venta individual. Cada venta tiene una fecha, una cantidad y un cliente. Los métodos getFecha(), getCantidad() y getCliente() se utilizan para obtener estos valores, mientras que los métodos setFecha(), setCantidad() y setCliente() se utilizan para establecer estos valores.
 * RegistroVentas.java: Esta clase se utiliza para gestionar un conjunto de ventas. Las ventas se almacenan en tres TreeSet: ventasPorFecha, ventasPorCantidad y ventasPorCliente, que ordenan las ventas por fecha, cantidad y cliente, respectivamente. Los métodos agregarVenta(), eliminarVenta() y editarVenta() se utilizan para modificar estos conjuntos. Los métodos getVentasPorFecha(), getVentasPorCantidad() y getVentasPorCliente() se utilizan para obtener las ventas ordenadas.
 * Cliente.java: Esta clase representa a un cliente. Cada cliente tiene un nombre, que se puede obtener con getNombre() y establecer con setNombre().
-* GUI_Ventas.java: Esta clase es la interfaz gráfica de usuario (GUI) para gestionar las ventas. Permite al usuario agregar, eliminar y editar ventas, así como ordenar las ventas por fecha, cantidad o cliente. Los datos ingresados por el usuario se validan antes de ser utilizados para crear o editar una venta. La GUI también proporciona una opción de ayuda para el usuario. 
+* GUI_Ventas.java: Esta clase es la interfaz gráfica de usuario (GUI) para gestionar las ventas. Permite al usuario agregar, eliminar y editar ventas, así como ordenar las ventas por fecha, cantidad o cliente. Los datos ingresados por el usuario se validan antes de ser utilizados para crear o editar una venta. La GUI también proporciona una opción de ayuda para el usuario.
+
+______________________________________________________________________________________________
 
  ### 3. Mapas y Asociación de Datos [C_MapasYAsociaciónDatos]
    * Gestión de Relaciones: Crear mapas para asociar y gestionar relaciones entre diferentes conjuntos de datos, como números y letras o números y sus representaciones textuales.
    * Recuperación Eficiente: Desarrollar métodos para recuperar información asociada de manera eficiente, basándose en claves o criterios definidos por el usuario.
+
+______________________________________________________________________________________________
 
  ### 4. Indexación y Visualización de Archivos (Ejercicio 12):
 El proyecto proporciona una funcionalidad para indexar y listar archivos en un directorio dado. Los archivos se indexan de manera recursiva, lo que significa que si hay subdirectorios en el directorio dado, sus archivos también se indexarán. Los archivos indexados se pueden buscar por nombre y se pueden listar en orden alfabético.
@@ -36,39 +43,33 @@ El proyecto proporciona una funcionalidad para indexar y listar archivos en un d
 Esta clase se utiliza para indexar archivos de manera recursiva. Mantiene un mapa donde la clave es el nombre del archivo y el valor es la ruta absoluta del archivo.  
 
 ##### Métodos principales:  
-indexar(File directorio): Este método se utiliza para indexar todos los archivos en un directorio dado. Si encuentra un subdirectorio, lo indexa recursivamente.
-buscar(String nombreArchivo): Este método se utiliza para buscar la ruta de un archivo por su nombre.
-getIndex(): Este método se utiliza para obtener el mapa de indexación.
+    - indexar(File directorio): Este método toma un directorio como argumento y indexa todos los archivos en ese directorio y sus subdirectorios.
+    - buscar(String nombreArchivo): Este método se utiliza para buscar un archivo por su nombre en el índice.
+    - getIndex(): Este método devuelve el índice de archivos.
 
 ##### Ejemplo de uso:  
-IndexadorRecursivo indexador = new IndexadorRecursivo();
-indexador.indexar(new File("/path/to/directory"));
-String filePath = indexador.buscar("fileName");
-
-------------------------------------------------------
+    IndexadorRecursivo indexador = new IndexadorRecursivo();
+    indexador.indexar(new File("/path/to/directory"));
+    String filePath = indexador.buscar("fileName");
 
 #### OrdenadorYListador  
 Esta clase se utiliza para ordenar y listar archivos. Mantiene un mapa donde la clave es el nombre del archivo y el valor es la ruta absoluta del archivo. El mapa se implementa como un TreeMap para mantener las entradas ordenadas por el nombre del archivo.  
 
 ##### Métodos principales:  
-agregar(String nombreArchivo, String rutaArchivo): Este método se utiliza para agregar un archivo al mapa.
-listar(): Este método se utiliza para obtener una lista de archivos, donde cada entrada es una cadena que contiene el nombre del archivo y su ruta.
+    - agregar(String nombreArchivo, String rutaArchivo): Este método toma el nombre y la ruta del archivo como argumentos y los agrega a la lista.
+    - listar(): Este método devuelve una lista de strings, cada uno de los cuales representa un archivo y su ruta.
 
 ##### Ejemplo de uso:
-OrdenadorYListador ordenador = new OrdenadorYListador();
-ordenador.agregar("fileName", "/path/to/file");
-List<String> fileList = ordenador.listar();
+    OrdenadorYListador ordenador = new OrdenadorYListador();
+    ordenador.agregar("fileName", "/path/to/file");
+    List<String> fileList = ordenador.listar();
 
----------------------------------------------------------
-
-#### GUI_Archivos  
+#### Main_D
 Esta clase se utiliza para crear una interfaz de usuario que permite al usuario indexar y listar archivos. Utiliza las clases IndexadorRecursivo y OrdenadorYListador para realizar estas operaciones.  
 
 ##### Métodos principales:  
-GUI_Archivos(): Este es el constructor de la clase. Crea la interfaz de usuario y configura los manejadores de eventos para los botones.
-
-##### Ejemplo de uso:  
-GUI_Archivos gui = new GUI_Archivos();
+    Main_D(): Este es el constructor de la clase. Crea una interfaz gráfica de usuario (GUI) que permite al usuario seleccionar un directorio para indexar y luego listar los archivos indexados.
+    main(String[] args): Este es el método principal que se utiliza para iniciar la aplicación.
 
 ______________________________________________________________________________________________
 ### 5. Decoración
