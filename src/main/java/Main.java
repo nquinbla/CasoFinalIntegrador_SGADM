@@ -3,6 +3,7 @@ import B_AnálisisYOrganizaciónInfo.Main_B;
 import C_MapasYAsociaciónDatos.Main_C;
 import D_IndexYVisualArchivos.Main_D;
 import E_Decoración.DecoPanel;
+import E_Decoración.DescriptionWindow;
 
 import javax.swing.*;
 import java.awt.*;
@@ -79,7 +80,7 @@ public class Main extends JFrame {
         menuButton.setContentAreaFilled(false);
         menuButton.setFocusPainted(false);
         menuButton.setOpaque(false);
-        menuButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Aquí se describen las funciones de cada botón..."));
+        menuButton.addActionListener(e -> new DescriptionWindow());
         iconPanel.add(menuButton);
 
         JButton homeButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-home.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));

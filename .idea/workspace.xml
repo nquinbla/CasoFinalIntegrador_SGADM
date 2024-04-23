@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="main pt19" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="main pt20" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,15 +102,7 @@
       <workItem from="1713787313344" duration="223000" />
       <workItem from="1713854259546" duration="8424000" />
       <workItem from="1713864021047" duration="173000" />
-      <workItem from="1713872082045" duration="9566000" />
-    </task>
-    <task id="LOCAL-00101" summary="[Módulo 1] ajustes">
-      <option name="closed" value="true" />
-      <created>1713856261922</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1713856261922</updated>
+      <workItem from="1713872082045" duration="9919000" />
     </task>
     <task id="LOCAL-00102" summary="[Módulo 2] ajustes base">
       <option name="closed" value="true" />
@@ -496,14 +488,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713881473602</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="main pt20">
+      <option name="closed" value="true" />
+      <created>1713882075564</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1713882075564</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="revisión main A pt2" />
     <MESSAGE value="revisión main A pt3" />
     <MESSAGE value="ajustes mains A, B, C, D" />
     <MESSAGE value="ajustes main B" />
@@ -528,6 +527,7 @@
     <MESSAGE value="main pt17 (no se colocar botones)" />
     <MESSAGE value="main pt18" />
     <MESSAGE value="main pt19" />
-    <option name="LAST_COMMIT_MESSAGE" value="main pt19" />
+    <MESSAGE value="main pt20" />
+    <option name="LAST_COMMIT_MESSAGE" value="main pt20" />
   </component>
 </project>
