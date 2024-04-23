@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="revisión main A pt1" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="ajustes main B">
+      <change beforePath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,39 +103,7 @@
       <workItem from="1713787313344" duration="223000" />
       <workItem from="1713854259546" duration="8424000" />
       <workItem from="1713864021047" duration="173000" />
-      <workItem from="1713872082045" duration="699000" />
-    </task>
-    <task id="LOCAL-00074" summary="[Módulo 3] código GUI pt4">
-      <option name="closed" value="true" />
-      <created>1713682713994</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1713682713994</updated>
-    </task>
-    <task id="LOCAL-00075" summary="[Módulo 3] código GUI pt5">
-      <option name="closed" value="true" />
-      <created>1713682752899</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1713682752899</updated>
-    </task>
-    <task id="LOCAL-00076" summary="[Módulo 3] código GUI pt6">
-      <option name="closed" value="true" />
-      <created>1713683100858</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1713683100859</updated>
-    </task>
-    <task id="LOCAL-00077" summary="[Módulo 3] RecuperadorEficiente ajustes">
-      <option name="closed" value="true" />
-      <created>1713683172779</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1713683172779</updated>
+      <workItem from="1713872082045" duration="1036000" />
     </task>
     <task id="LOCAL-00078" summary="[Módulo 3] GUI código pt 7">
       <option name="closed" value="true" />
@@ -495,17 +465,45 @@
       <option name="project" value="LOCAL" />
       <updated>1713872783141</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="revisión main A pt2">
+      <option name="closed" value="true" />
+      <created>1713872835580</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1713872835580</updated>
+    </task>
+    <task id="LOCAL-00124" summary="revisión main A pt3">
+      <option name="closed" value="true" />
+      <created>1713872867315</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1713872867315</updated>
+    </task>
+    <task id="LOCAL-00125" summary="ajustes mains A, B, C, D">
+      <option name="closed" value="true" />
+      <created>1713872976173</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1713872976173</updated>
+    </task>
+    <task id="LOCAL-00126" summary="ajustes main B">
+      <option name="closed" value="true" />
+      <created>1713873081979</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1713873081979</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 1] ajustes main" />
-    <MESSAGE value="[Módulo 1] ajustes nombres de clases" />
-    <MESSAGE value="[Módulo 1] ajustes opcion cadenas eliminar pt1" />
-    <MESSAGE value="[Módulo 1] ajustes opcion cadenas eliminar pt2 (arreglado)" />
     <MESSAGE value="[Módulo 1] ajustes" />
     <MESSAGE value="[Módulo 2] ajustes base" />
     <MESSAGE value="[Módulo 4] ajustes main deco pt1" />
@@ -527,6 +525,10 @@
     <MESSAGE value="[Módulo 3] decoración main pt1" />
     <MESSAGE value="[Módulo 3] decoración main pt2" />
     <MESSAGE value="revisión main A pt1" />
-    <option name="LAST_COMMIT_MESSAGE" value="revisión main A pt1" />
+    <MESSAGE value="revisión main A pt2" />
+    <MESSAGE value="revisión main A pt3" />
+    <MESSAGE value="ajustes mains A, B, C, D" />
+    <MESSAGE value="ajustes main B" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes main B" />
   </component>
 </project>

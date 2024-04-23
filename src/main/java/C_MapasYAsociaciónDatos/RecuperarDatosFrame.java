@@ -78,6 +78,7 @@ public class RecuperarDatosFrame extends JFrame {
 
         setSize(300, 150);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 }
