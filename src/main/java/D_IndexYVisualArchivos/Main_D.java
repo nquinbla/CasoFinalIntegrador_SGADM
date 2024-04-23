@@ -23,7 +23,7 @@ public class Main_D extends JFrame {
         imageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         JPanel imagePanel = new JPanel();
-        imagePanel.setBackground(Color.LIGHT_GRAY); 
+        imagePanel.setBackground(Color.LIGHT_GRAY);
         imagePanel.add(imageLabel);
 
         add(imagePanel);
