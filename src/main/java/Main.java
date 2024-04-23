@@ -17,6 +17,7 @@ public class Main extends JFrame {
 
         JPanel buttonPanel = new JPanel(new GridBagLayout());
         buttonPanel.setOpaque(false);
+        buttonPanel.setAlignmentX(Component.CENTER_ALIGNMENT); // Centra el panel de botones
 
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridwidth = GridBagConstraints.REMAINDER;
@@ -41,7 +42,7 @@ public class Main extends JFrame {
         indexadorVisualizacionButton.addActionListener(e -> new Main_D());
         buttonPanel.add(indexadorVisualizacionButton, gbc);
 
-        decoPanel.add(buttonPanel, BorderLayout.EAST);
+        decoPanel.add(buttonPanel, BorderLayout.CENTER); // Cambia la posición del panel de botones al centro
 
         add(decoPanel, BorderLayout.CENTER);
 
