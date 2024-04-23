@@ -62,6 +62,7 @@ public class Main_A extends JFrame {
 
         setSize(370, 160);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 
