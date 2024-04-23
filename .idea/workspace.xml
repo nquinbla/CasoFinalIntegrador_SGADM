@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] R refactor del main" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] Rerefactor del main">
+      <change beforePath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,15 +101,7 @@
       <workItem from="1713780427883" duration="749000" />
       <workItem from="1713782619507" duration="764000" />
       <workItem from="1713787313344" duration="223000" />
-      <workItem from="1713854259546" duration="6281000" />
-    </task>
-    <task id="LOCAL-00066" summary="[Módulo 3] recuperador eficiente código">
-      <option name="closed" value="true" />
-      <created>1713620028654</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1713620028654</updated>
+      <workItem from="1713854259546" duration="6686000" />
     </task>
     <task id="LOCAL-00067" summary="[Módulo 3] GUI relaciones código">
       <option name="closed" value="true" />
@@ -493,14 +487,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713860520613</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="[Módulo 3] Rerefactor del main">
+      <option name="closed" value="true" />
+      <created>1713860643006</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1713860643006</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Main código pt1" />
     <MESSAGE value="Main código pt2" />
     <MESSAGE value="[Módulo 5] Decoración del panel" />
     <MESSAGE value="[Módulo 2] Ajuste tamaño ventana" />
@@ -525,6 +526,7 @@
     <MESSAGE value="[Módulo 3] RecuperarDatosFrame código pt2" />
     <MESSAGE value="[Módulo 3] RecuperarDatosFrame código pt3" />
     <MESSAGE value="[Módulo 3] R refactor del main" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] R refactor del main" />
+    <MESSAGE value="[Módulo 3] Rerefactor del main" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] Rerefactor del main" />
   </component>
 </project>

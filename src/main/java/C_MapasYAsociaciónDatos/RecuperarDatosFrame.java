@@ -15,7 +15,14 @@ public class RecuperarDatosFrame extends JFrame {
 
         tipoDatosComboBox = new JComboBox<>(new String[] {"Texto", "Número", "Letras", "Palabras"});
         inputField = new JTextField(20);
+
         JButton recuperarButton = new JButton("Recuperar Datos");
+
+        getContentPane().setBackground(Color.LIGHT_GRAY);
+        recuperarButton.setForeground(Color.WHITE);
+        recuperarButton.setBackground(Color.BLUE);
+        recuperarButton.setFont(new Font("Arial", Font.BOLD, 14));
+
         recuperarButton.addActionListener(e -> {
             String tipoDatos = (String) tipoDatosComboBox.getSelectedItem();
             String input = inputField.getText();
