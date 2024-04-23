@@ -60,7 +60,7 @@ public class Main_A extends JFrame {
         add(matricesButton);
         add(cadenasButton);
 
-        setSize(370, 140);
+        setSize(370, 160);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }

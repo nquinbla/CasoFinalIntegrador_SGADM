@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] deco recuperador datos frame pt4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/Main_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/Main_C.java" afterDir="false" />
-    </list>
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="revisión main A pt1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,31 +101,7 @@
       <workItem from="1713787313344" duration="223000" />
       <workItem from="1713854259546" duration="8424000" />
       <workItem from="1713864021047" duration="173000" />
-      <workItem from="1713872082045" duration="310000" />
-    </task>
-    <task id="LOCAL-00071" summary="[Módulo 3] GUI relaciones código (ajustes)">
-      <option name="closed" value="true" />
-      <created>1713682441026</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1713682441027</updated>
-    </task>
-    <task id="LOCAL-00072" summary="[Módulo 3] ajustes GUI pt2">
-      <option name="closed" value="true" />
-      <created>1713682478870</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1713682478870</updated>
-    </task>
-    <task id="LOCAL-00073" summary="[Módulo 3] código GUI pt3">
-      <option name="closed" value="true" />
-      <created>1713682620476</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1713682620476</updated>
+      <workItem from="1713872082045" duration="699000" />
     </task>
     <task id="LOCAL-00074" summary="[Módulo 3] código GUI pt4">
       <option name="closed" value="true" />
@@ -498,16 +471,37 @@
       <option name="project" value="LOCAL" />
       <updated>1713861316382</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="[Módulo 3] decoración main pt1">
+      <option name="closed" value="true" />
+      <created>1713872509060</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1713872509061</updated>
+    </task>
+    <task id="LOCAL-00121" summary="[Módulo 3] decoración main pt2">
+      <option name="closed" value="true" />
+      <created>1713872602519</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1713872602519</updated>
+    </task>
+    <task id="LOCAL-00122" summary="revisión main A pt1">
+      <option name="closed" value="true" />
+      <created>1713872783141</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1713872783141</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt2" />
-    <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt3" />
-    <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt4" />
     <MESSAGE value="[Módulo 1] ajustes main" />
     <MESSAGE value="[Módulo 1] ajustes nombres de clases" />
     <MESSAGE value="[Módulo 1] ajustes opcion cadenas eliminar pt1" />
@@ -530,6 +524,9 @@
     <MESSAGE value="[Módulo 3] deco recuperador datos frame pt2" />
     <MESSAGE value="[Módulo 3] deco recuperador datos frame pt3" />
     <MESSAGE value="[Módulo 3] deco recuperador datos frame pt4" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] deco recuperador datos frame pt4" />
+    <MESSAGE value="[Módulo 3] decoración main pt1" />
+    <MESSAGE value="[Módulo 3] decoración main pt2" />
+    <MESSAGE value="revisión main A pt1" />
+    <option name="LAST_COMMIT_MESSAGE" value="revisión main A pt1" />
   </component>
 </project>
