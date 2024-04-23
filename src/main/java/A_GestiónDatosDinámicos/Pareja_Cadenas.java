@@ -1,11 +1,11 @@
 package A_GestiónDatosDinámicos;
 
-public class Cadenas {
+public class Pareja_Cadenas {
     // Aquí irían los atributos y métodos de la clase ParejaCadenas
     private String primerElemento;
     private String segundoElemento;
 
-    public Cadenas(String primerElemento, String segundoElemento) {
+    public Pareja_Cadenas(String primerElemento, String segundoElemento) {
         this.primerElemento = primerElemento;
         this.segundoElemento = segundoElemento;
     }
@@ -30,7 +30,7 @@ public class Cadenas {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Cadenas pareja = (Cadenas) o;
+        Pareja_Cadenas pareja = (Pareja_Cadenas) o;
         return primerElemento.equals(pareja.primerElemento) && segundoElemento.equals(pareja.segundoElemento);
     }
 

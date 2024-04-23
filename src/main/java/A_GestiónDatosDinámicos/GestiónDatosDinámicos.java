@@ -4,37 +4,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestiónDatosDinámicos {
-    private List<Pareja> parejas;
-    private List<Matriz> matrices;
-    private List<Cadenas> cadenas;
+    private List<Pareja_Enteros> parejaEnteros;
+    private List<Pareja_Matriz> matrices;
+    private List<Pareja_Cadenas> cadenas;
 
     public GestiónDatosDinámicos() {
-        this.parejas = new ArrayList<>();
+        this.parejaEnteros = new ArrayList<>();
         this.matrices = new ArrayList<>();
         this.cadenas = new ArrayList<>();
     }
 
-    // Métodos de gestión de parejas
-    public void agregarPareja(Pareja pareja) {
-        if (!parejas.contains(pareja)) {
-            parejas.add(pareja);
+    // Métodos de gestión de parejaEnteros
+    public void agregarPareja(Pareja_Enteros parejaEnteros) {
+        if (!this.parejaEnteros.contains(parejaEnteros)) {
+            this.parejaEnteros.add(parejaEnteros);
         }
     }
-    public void eliminarPareja(Pareja pareja) {
-        parejas.removeIf(p -> p.getPrimerElemento() == pareja.getPrimerElemento() && p.getSegundoElemento() == pareja.getSegundoElemento());
+    public void eliminarPareja(Pareja_Enteros parejaEnteros) {
+        this.parejaEnteros.removeIf(p -> p.getPrimerElemento() == parejaEnteros.getPrimerElemento() && p.getSegundoElemento() == parejaEnteros.getSegundoElemento());
     }
-    public void modificarPareja(int index, Pareja nuevaPareja) {
-        if (index >= 0 && index < parejas.size()) {
-            parejas.set(index, nuevaPareja);
+    public void modificarPareja(int index, Pareja_Enteros nuevaParejaEnteros) {
+        if (index >= 0 && index < parejaEnteros.size()) {
+            parejaEnteros.set(index, nuevaParejaEnteros);
         }
     }
-    public List<Pareja> getParejas() {
-        return parejas;
+    public List<Pareja_Enteros> getParejas() {
+        return parejaEnteros;
     }
 
     // Métodos de gestión de matrices
-    public void agregarMatriz(Matriz matriz) {
-        matrices.add(matriz);
+    public void agregarMatriz(Pareja_Matriz parejaMatriz) {
+        matrices.add(parejaMatriz);
     }
     // En la clase GestiónDatosDinámicos
     public void eliminarMatriz(int index) {
@@ -42,29 +42,29 @@ public class GestiónDatosDinámicos {
             matrices.remove(index);
         }
     }
-    public void modificarMatriz(int index, Matriz nuevaMatriz) {
+    public void modificarMatriz(int index, Pareja_Matriz nuevaParejaMatriz) {
         if (index >= 0 && index < matrices.size()) {
-            matrices.set(index, nuevaMatriz);
+            matrices.set(index, nuevaParejaMatriz);
         }
     }
-    public List<Matriz> getMatrices() {
+    public List<Pareja_Matriz> getMatrices() {
         return matrices;
     }
 
     // Métodos de gestión de cadenas
-    public void agregarCadena(Cadenas cadena) {
+    public void agregarCadena(Pareja_Cadenas cadena) {
         if (!cadenas.contains(cadena)) {
             cadenas.add(cadena);
         }
     }
-    public void eliminarCadena(Cadenas cadena) {
+    public void eliminarCadena(Pareja_Cadenas cadena) {
         cadenas.removeIf(c -> c.getPrimerElemento() == cadena.getPrimerElemento() && c.getSegundoElemento() == cadena.getSegundoElemento());
     }
-    public void modificarCadena(int index, Cadenas nuevaCadena) {
+    public void modificarCadena(int index, Pareja_Cadenas nuevaCadena) {
         if (index >= 0 && index < cadenas.size()) {
             cadenas.set(index, nuevaCadena);
         }
     }
-    public List<Cadenas> getCadenas() {return cadenas;}
+    public List<Pareja_Cadenas> getCadenas() {return cadenas;}
 
 }

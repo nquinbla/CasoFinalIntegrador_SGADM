@@ -36,8 +36,8 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                     try {
                         int primerElemento = Integer.parseInt(primerElementoField.getText());
                         int segundoElemento = Integer.parseInt(segundoElementoField.getText());
-                        Pareja pareja = new Pareja(primerElemento, segundoElemento);
-                        gestionDatosDinamicos.agregarPareja(pareja);
+                        Pareja_Enteros parejaEnteros = new Pareja_Enteros(primerElemento, segundoElemento);
+                        gestionDatosDinamicos.agregarPareja(parejaEnteros);
                         actualizarParejasArea();
                     } catch (NumberFormatException ex) {
                         JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
@@ -51,8 +51,8 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                     try {
                         int primerElemento = Integer.parseInt(primerElementoField.getText());
                         int segundoElemento = Integer.parseInt(segundoElementoField.getText());
-                        Pareja pareja = new Pareja(primerElemento, segundoElemento);
-                        gestionDatosDinamicos.eliminarPareja(pareja);
+                        Pareja_Enteros parejaEnteros = new Pareja_Enteros(primerElemento, segundoElemento);
+                        gestionDatosDinamicos.eliminarPareja(parejaEnteros);
                         actualizarParejasArea();
                     } catch (NumberFormatException ex) {
                         JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
@@ -66,16 +66,16 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                     try {
                         int primerElemento = Integer.parseInt(primerElementoField.getText());
                         int segundoElemento = Integer.parseInt(segundoElementoField.getText());
-                        Pareja pareja = new Pareja(primerElemento, segundoElemento);
-                        int index = gestionDatosDinamicos.getParejas().indexOf(pareja);
+                        Pareja_Enteros parejaEnteros = new Pareja_Enteros(primerElemento, segundoElemento);
+                        int index = gestionDatosDinamicos.getParejas().indexOf(parejaEnteros);
                         if (index != -1) {
-                            int nuevoPrimerElemento = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el nuevo primer elemento de la pareja"));
-                            int nuevoSegundoElemento = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el nuevo segundo elemento de la pareja"));
-                            Pareja nuevaPareja = new Pareja(nuevoPrimerElemento, nuevoSegundoElemento);
-                            gestionDatosDinamicos.modificarPareja(index, nuevaPareja);
+                            int nuevoPrimerElemento = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el nuevo primer elemento de la parejaEnteros"));
+                            int nuevoSegundoElemento = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el nuevo segundo elemento de la parejaEnteros"));
+                            Pareja_Enteros nuevaParejaEnteros = new Pareja_Enteros(nuevoPrimerElemento, nuevoSegundoElemento);
+                            gestionDatosDinamicos.modificarPareja(index, nuevaParejaEnteros);
                             actualizarParejasArea();
                         } else {
-                            JOptionPane.showMessageDialog(null, "La pareja no se encuentra en la lista.");
+                            JOptionPane.showMessageDialog(null, "La parejaEnteros no se encuentra en la lista.");
                         }
                     } catch (NumberFormatException ex) {
                         JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
@@ -96,8 +96,8 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                                 elementos[i][j] = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor del elemento en la fila " + (i+1) + " y la columna " + (j+1)));
                             }
                         }
-                        Matriz matriz = new Matriz(elementos);
-                        gestionDatosDinamicos.agregarMatriz(matriz);
+                        Pareja_Matriz parejaMatriz = new Pareja_Matriz(elementos);
+                        gestionDatosDinamicos.agregarMatriz(parejaMatriz);
                         matrizSeleccionada = gestionDatosDinamicos.getMatrices().size() - 1;
                         actualizarMatricesArea();
                     } catch (NumberFormatException ex) {
@@ -124,8 +124,8 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                         try {
                             int nuevasFilas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese las nuevas filas de la matriz"));
                             int nuevasColumnas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese las nuevas columnas de la matriz"));
-                            Matriz nuevaMatriz = new Matriz(nuevasFilas, nuevasColumnas);
-                            gestionDatosDinamicos.modificarMatriz(matrizSeleccionada, nuevaMatriz);
+                            Pareja_Matriz nuevaParejaMatriz = new Pareja_Matriz(nuevasFilas, nuevasColumnas);
+                            gestionDatosDinamicos.modificarMatriz(matrizSeleccionada, nuevaParejaMatriz);
                             actualizarMatricesArea();
                         } catch (NumberFormatException ex) {
                             JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");}
@@ -141,7 +141,7 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                 public void actionPerformed(ActionEvent e) {
                     String primerElemento = primerElementoField.getText();
                     String segundoElemento = segundoElementoField.getText();
-                    Cadenas cadena = new Cadenas(primerElemento, segundoElemento);
+                    Pareja_Cadenas cadena = new Pareja_Cadenas(primerElemento, segundoElemento);
                     gestionDatosDinamicos.agregarCadena(cadena);
                     actualizarCadenasArea();
                 }
@@ -151,7 +151,7 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                 public void actionPerformed(ActionEvent e) {
                     String primerElemento = primerElementoField.getText();
                     String segundoElemento = segundoElementoField.getText();
-                    Cadenas cadena = new Cadenas(primerElemento, segundoElemento);
+                    Pareja_Cadenas cadena = new Pareja_Cadenas(primerElemento, segundoElemento);
                     gestionDatosDinamicos.eliminarCadena(cadena);
                     actualizarCadenasArea();
                 }
@@ -161,12 +161,12 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                 public void actionPerformed(ActionEvent e) {
                     String primerElemento = primerElementoField.getText();
                     String segundoElemento = segundoElementoField.getText();
-                    Cadenas cadena = new Cadenas(primerElemento, segundoElemento);
+                    Pareja_Cadenas cadena = new Pareja_Cadenas(primerElemento, segundoElemento);
                     int index = gestionDatosDinamicos.getCadenas().indexOf(cadena);
                     if (index != -1) {
                         String nuevoPrimerElemento = JOptionPane.showInputDialog("Ingrese el nuevo primer elemento de la cadena");
                         String nuevoSegundoElemento = JOptionPane.showInputDialog("Ingrese el nuevo segundo elemento de la cadena");
-                        Cadenas nuevaCadena = new Cadenas(nuevoPrimerElemento, nuevoSegundoElemento);
+                        Pareja_Cadenas nuevaCadena = new Pareja_Cadenas(nuevoPrimerElemento, nuevoSegundoElemento);
                         gestionDatosDinamicos.modificarCadena(index, nuevaCadena);
                         actualizarCadenasArea();
                     } else {
@@ -196,22 +196,22 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
 
     private void actualizarParejasArea() {
         StringBuilder sb = new StringBuilder();
-        for (Pareja pareja : gestionDatosDinamicos.getParejas()) {
-            sb.append(pareja.toString()).append("\n");
+        for (Pareja_Enteros parejaEnteros : gestionDatosDinamicos.getParejas()) {
+            sb.append(parejaEnteros.toString()).append("\n");
         }
         datosArea.setText(sb.toString());
     }
 
     private void actualizarMatricesArea() {
         StringBuilder sb = new StringBuilder();
-        for (Matriz matriz : gestionDatosDinamicos.getMatrices()) {
-            sb.append(matriz.toString()).append("\n");
+        for (Pareja_Matriz parejaMatriz : gestionDatosDinamicos.getMatrices()) {
+            sb.append(parejaMatriz.toString()).append("\n");
         }
         datosArea.setText(sb.toString());
     }
     private void actualizarCadenasArea() {
         StringBuilder sb = new StringBuilder();
-        for (Cadenas cadena : gestionDatosDinamicos.getCadenas()) {
+        for (Pareja_Cadenas cadena : gestionDatosDinamicos.getCadenas()) {
             sb.append(cadena.toString()).append("\n");
         }
         datosArea.setText(sb.toString());

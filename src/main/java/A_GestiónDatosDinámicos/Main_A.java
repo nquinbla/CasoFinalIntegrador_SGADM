@@ -5,13 +5,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main_B extends JFrame {
-    public Main_B() {
+public class Main_A extends JFrame {
+    public Main_A() {
         setLayout(new FlowLayout());
 
         JButton parejasButton = new JButton("Trabajar con Parejas");
         JButton matricesButton = new JButton("Trabajar con Matrices");
-        JButton cadenasButton = new JButton("Trabajar con Cadenas");
+        JButton cadenasButton = new JButton("Trabajar con Pareja_Cadenas");
 
         parejasButton.addActionListener(new ActionListener() {
             @Override
@@ -47,6 +47,6 @@ public class Main_B extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new Main_B());
+        SwingUtilities.invokeLater(() -> new Main_A());
     }
 }
