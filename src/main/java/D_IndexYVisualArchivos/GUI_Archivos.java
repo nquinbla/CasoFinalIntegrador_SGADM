@@ -54,7 +54,7 @@ public class GUI_Archivos extends JFrame {
 
         add(buttonPanel);
 
-        setSize(500, 230);
+        setSize(500, 240);
         setTitle("Listado de Archivos");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
