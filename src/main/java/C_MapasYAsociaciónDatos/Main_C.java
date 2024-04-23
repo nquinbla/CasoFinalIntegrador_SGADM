@@ -35,10 +35,7 @@ public class Main_C extends JFrame {
         for (int i = 1; i <= 100; i++) {
             recuperadorEficiente.agregarDato(i, unidades[i - 1]);
         }
-
         setLayout(new FlowLayout());
-
-
 
         JButton gestionarRelacionesButton = new JButton("Gestionar Relaciones");
         gestionarRelacionesButton.addActionListener(e -> {
