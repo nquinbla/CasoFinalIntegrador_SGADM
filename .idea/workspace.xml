@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] ajustes base">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-icono-subida-archivos.png" afterDir="false" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 4] ajustes main deco pt3">
       <change beforePath="$PROJECT_DIR$/src/main/java/D_IndexYVisualArchivos/GUI_Archivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D_IndexYVisualArchivos/GUI_Archivos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,31 +100,7 @@
       <workItem from="1713780427883" duration="749000" />
       <workItem from="1713782619507" duration="764000" />
       <workItem from="1713787313344" duration="223000" />
-      <workItem from="1713854259546" duration="2443000" />
-    </task>
-    <task id="LOCAL-00054" summary="[Módulo 2] ajustes pt12 (arreglo editar venta)">
-      <option name="closed" value="true" />
-      <created>1713610576513</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1713610576513</updated>
-    </task>
-    <task id="LOCAL-00055" summary="[Módulo 2] ajustes pt13 (arreglo editar venta)">
-      <option name="closed" value="true" />
-      <created>1713612787267</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1713612787267</updated>
-    </task>
-    <task id="LOCAL-00056" summary="[Módulo 2] ajustes pt14 (botón información)">
-      <option name="closed" value="true" />
-      <created>1713613742373</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1713613742373</updated>
+      <workItem from="1713854259546" duration="2815000" />
     </task>
     <task id="LOCAL-00057" summary="[Módulo 2] ajustes pt15 (botón información)">
       <option name="closed" value="true" />
@@ -495,16 +470,37 @@
       <option name="project" value="LOCAL" />
       <updated>1713856417673</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="[Módulo 4] ajustes main deco pt1">
+      <option name="closed" value="true" />
+      <created>1713856912790</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1713856912790</updated>
+    </task>
+    <task id="LOCAL-00104" summary="[Módulo 4] ajustes main deco pt2">
+      <option name="closed" value="true" />
+      <created>1713857020184</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1713857020184</updated>
+    </task>
+    <task id="LOCAL-00105" summary="[Módulo 4] ajustes main deco pt3">
+      <option name="closed" value="true" />
+      <created>1713857048098</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1713857048098</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 3] código GUI pt6" />
-    <MESSAGE value="[Módulo 3] RecuperadorEficiente ajustes" />
-    <MESSAGE value="[Módulo 3] GUI código pt 7" />
     <MESSAGE value="[Módulo 3] GUI código pt 8" />
     <MESSAGE value="[Módulo 3] GUI código pt 9" />
     <MESSAGE value="[Módulo 3] GUI código pt10" />
@@ -527,6 +523,9 @@
     <MESSAGE value="[Módulo 1] ajustes opcion cadenas eliminar pt2 (arreglado)" />
     <MESSAGE value="[Módulo 1] ajustes" />
     <MESSAGE value="[Módulo 2] ajustes base" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] ajustes base" />
+    <MESSAGE value="[Módulo 4] ajustes main deco pt1" />
+    <MESSAGE value="[Módulo 4] ajustes main deco pt2" />
+    <MESSAGE value="[Módulo 4] ajustes main deco pt3" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 4] ajustes main deco pt3" />
   </component>
 </project>

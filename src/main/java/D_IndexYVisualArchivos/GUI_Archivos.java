@@ -23,6 +23,8 @@ public class GUI_Archivos extends JFrame {
         add(imageLabel);
 
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
+        buttonPanel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0)); // agrega un margen alrededor del panel
 
         JButton indexarButton = new JButton("Indexar Archivos");
         indexarButton.addActionListener(e -> {
