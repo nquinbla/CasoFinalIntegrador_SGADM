@@ -11,6 +11,7 @@ public class GestiónDatosDinámicos {
     public GestiónDatosDinámicos() {
         this.parejas = new ArrayList<>();
         this.matrices = new ArrayList<>();
+        this.cadenas = new ArrayList<>();
     }
 
     // Métodos de gestión de parejas
@@ -64,4 +65,6 @@ public class GestiónDatosDinámicos {
             cadenas.set(index, nuevaCadena);
         }
     }
+    public List<Cadenas> getCadenas() {return cadenas;}
+
 }

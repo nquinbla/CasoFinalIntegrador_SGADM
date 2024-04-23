@@ -9,7 +9,7 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
     private GestiónDatosDinámicos gestionDatosDinamicos;
     private JTextField primerElementoField;
     private JTextField segundoElementoField;
-    private JTextField tercerElementoField; // Nuevo campo para la matriz
+    private JTextField tercerElementoField;
     private JTextArea datosArea;
     private int matrizSeleccionada = -1;
 
@@ -128,10 +128,49 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
                             gestionDatosDinamicos.modificarMatriz(matrizSeleccionada, nuevaMatriz);
                             actualizarMatricesArea();
                         } catch (NumberFormatException ex) {
-                            JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");
-                        }
+                            JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros.");}
                     } else {
                         JOptionPane.showMessageDialog(null, "Por favor, seleccione una matriz.");
+                    }
+                }
+            });
+        } else if (tipo.equals("cadenas")) {
+            // En el ActionListener del botón de agregar
+            agregarButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    String primerElemento = primerElementoField.getText();
+                    String segundoElemento = segundoElementoField.getText();
+                    Cadenas cadena = new Cadenas(primerElemento, segundoElemento);
+                    gestionDatosDinamicos.agregarCadena(cadena);
+                    actualizarCadenasArea();
+                }
+            });
+            eliminarButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    String primerElemento = primerElementoField.getText();
+                    String segundoElemento = segundoElementoField.getText();
+                    Cadenas cadena = new Cadenas(primerElemento, segundoElemento);
+                    gestionDatosDinamicos.eliminarCadena(cadena);
+                    actualizarCadenasArea();
+                }
+            });
+            modificarButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    String primerElemento = primerElementoField.getText();
+                    String segundoElemento = segundoElementoField.getText();
+                    Cadenas cadena = new Cadenas(primerElemento, segundoElemento);
+                    int index = gestionDatosDinamicos.getCadenas().indexOf(cadena);
+                    if (index != -1) {
+                        String nuevoPrimerElemento = JOptionPane.showInputDialog("Ingrese el nuevo primer elemento de la cadena");
+                        String nuevoSegundoElemento = JOptionPane.showInputDialog("Ingrese el nuevo segundo elemento de la cadena");
+                        Cadenas nuevaCadena = new Cadenas(nuevoPrimerElemento, nuevoSegundoElemento);
+                        gestionDatosDinamicos.modificarCadena(index, nuevaCadena);
+                        actualizarCadenasArea();
+                    } else {
+                        JOptionPane.showMessageDialog(null, "La cadena no se encuentra en la lista.");
                     }
                 }
             });
@@ -167,6 +206,13 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
         StringBuilder sb = new StringBuilder();
         for (Matriz matriz : gestionDatosDinamicos.getMatrices()) {
             sb.append(matriz.toString()).append("\n");
+        }
+        datosArea.setText(sb.toString());
+    }
+    private void actualizarCadenasArea() {
+        StringBuilder sb = new StringBuilder();
+        for (Cadenas cadena : gestionDatosDinamicos.getCadenas()) {
+            sb.append(cadena.toString()).append("\n");
         }
         datosArea.setText(sb.toString());
     }
