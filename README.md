@@ -6,6 +6,7 @@ LINK: https://github.com/nquinbla/CasoFinalIntegrador_SGADM.git
  El proyecto consistirá en el desarrollo de una aplicación de software que integre varias estructuras de datos, algoritmos de ordenación y búsqueda, y métodos interactivos de entrada y salida de datos. Los estudiantes aplicarán conceptos avanzados de programación y estructuras de datos para   
  crear una herramienta versátil y eficiente.
 
+
  ______________________________________________________________________________________________
 
 ## MÓDULOS
@@ -14,7 +15,7 @@ LINK: https://github.com/nquinbla/CasoFinalIntegrador_SGADM.git
   Consiste en una interfaz gráfica donde el usuario puede escoger con lo que desea trabajar, matrices, cadenas de texto o parejas de números enteros. En las dos opciones podrán agregar, eliminar y modificar los elementos de estos que deseé, manejando así datos multidimensionales.
 
 
-#### Pareja_Enteros
+#### `Pareja_Enteros`
 Esta clase representa una pareja de enteros. 
 
 ##### Métodos principales:  
@@ -22,7 +23,7 @@ Esta clase representa una pareja de enteros.
     - getPrimerElemento(), getSegundoElemento(): Estos métodos devuelven el primer y segundo elemento de la pareja, respectivamente.
     - setPrimerElemento(int primerElemento), setSegundoElemento(int segundoElemento): Estos métodos establecen el primer y segundo elemento de la pareja, respectivamente.
 
-#### Pareja_Matriz
+#### `Pareja_Matriz`
 Esta clase representa una matriz de enteros.  Métodos principales:
 
 ##### Métodos principales:  
@@ -31,7 +32,7 @@ Esta clase representa una matriz de enteros.  Métodos principales:
     - setElemento(int fila, int columna, int valor): Este método establece el valor de un elemento en la matriz.
     - getElemento(int fila, int columna): Este método devuelve el valor de un elemento en la matriz.
 
-#### Pareja_Cadenas
+#### `Pareja_Cadenas`
 Esta clase representa una pareja de cadenas.  Métodos principales:  
 
 ##### Métodos principales:  
@@ -39,7 +40,7 @@ Esta clase representa una pareja de cadenas.  Métodos principales:
     - getPrimerElemento(), getSegundoElemento(): Estos métodos devuelven el primer y segundo elemento de la pareja, respectivamente.
     - setPrimerElemento(String primerElemento), setSegundoElemento(String segundoElemento): Estos métodos establecen el primer y segundo elemento de la pareja, respectivamente.
     
-#### GestiónDatosDinámicos
+#### `GestiónDatosDinámicos`
 Esta clase se utiliza para gestionar listas de parejas de enteros, matrices y cadenas. Cada tipo de dato se gestiona con una lista separada y la clase proporciona métodos para agregar, eliminar y modificar los datos en cada lista.
 
 ##### Métodos principales:  
@@ -53,13 +54,13 @@ Esta clase se utiliza para gestionar listas de parejas de enteros, matrices y ca
     - eliminarCadena(Pareja_Cadenas cadena): Elimina una cadena de la lista correspondiente.
     - modificarCadena(int index, Pareja_Cadenas nuevaCadena): Modifica una cadena en la lista correspondiente.
 
-##### GUI_GestiónDatosDinámicos
+##### `GUI_GestiónDatosDinámicos`
 Esta clase se utiliza para proporcionar una interfaz gráfica de usuario (GUI) para interactuar con la clase GestiónDatosDinámicos. Permite al usuario seleccionar el tipo de datos con el que quiere trabajar (parejas de enteros, matrices o cadenas) y proporciona una interfaz para agregar, eliminar y modificar los datos seleccionados.
 
 ##### Métodos principales:  
     - GUI_GestiónDatosDinámicos(String tipo): Este es el constructor de la clase. Crea la GUI y configura los listeners para los botones de agregar, eliminar y modificar.
 
-#### Main_A
+#### `Main_A`
 Esta es la clase principal que utiliza las clases GestiónDatosDinámicos y GUI_GestiónDatosDinámicos para iniciar la aplicación.  
 
 ##### Métodos principales:  
@@ -71,17 +72,15 @@ ________________________________________________________________________________
  ### 2. Análisis y Organización de Información [B_AnálisisYOrganizaciónInfo]
 Este módulo, B_AnálisisYOrganizaciónInfo, es parte de una aplicación de gestión de ventas. Aquí se manejan las ventas y los clientes, y se proporciona una interfaz gráfica de usuario (GUI) para interactuar con estos datos.
 
-#### Venta
+#### `Venta`
 Esta clase representa una venta, que tiene una fecha, una cantidad y un cliente.  
 
 ##### Métodos principales
     - Venta(Date fecha, int cantidad, String cliente): Este es el constructor de la clase. Crea una venta con la fecha, cantidad y cliente proporcionados.
-
-##### Métodos principales
     - getFecha(), getCantidad(), getCliente(): Estos métodos devuelven la fecha, cantidad y cliente de la venta, respectivamente.
     - setFecha(Date fecha), setCantidad(int cantidad), setCliente(String cliente): Estos métodos establecen la fecha, cantidad y cliente de la venta, respectivamente.
 
-#### RegistroVentas
+#### `RegistroVentas`
 Esta clase se utiliza para gestionar un registro de ventas. Las ventas se pueden agregar, eliminar y obtener por fecha, cantidad o cliente. 
 
 ##### Métodos principales
@@ -90,14 +89,14 @@ Esta clase se utiliza para gestionar un registro de ventas. Las ventas se pueden
     - getVentasPorFecha(), getVentasPorCantidad(), getVentasPorCliente(): Estos métodos devuelven un conjunto ordenado de ventas por fecha, cantidad o cliente, respectivamente.
     - editarVenta(Venta ventaAntigua, Venta ventaNueva): Este método reemplaza una venta antigua en el registro con una nueva venta.
 
-#### Main_B
+#### `Main_B`
 Esta es la clase principal que utiliza las clases Venta y RegistroVentas para gestionar y analizar las ventas. También proporciona una interfaz gráfica de usuario (GUI) para interactuar con el registro de ventas. 
 
 ##### Métodos principales
     - Main_B(): Este es el constructor de la clase. Crea la GUI y configura los listeners para los botones de agregar, eliminar y editar ventas.
     - main(String[] args): Este es el método principal que se utiliza para iniciar la aplicación.
 
-#### Cliente
+#### `Cliente`
 Esta clase representa un cliente, que tiene un nombre. 
 
 ##### Métodos principales
@@ -109,7 +108,7 @@ ________________________________________________________________________________
  ### 3. Mapas y Asociación de Datos [C_MapasYAsociaciónDatos]
 Se compone de varias clases que trabajan juntas para gestionar y recuperar datos de manera eficiente.
 
-#### GestorRelaciones
+#### `GestorRelaciones`
 Esta clase se encarga de gestionar las relaciones entre dos tipos de datos, K y V. Utiliza un HashMap para almacenar estas relaciones, donde K es la clave y V es el valor.
 
 ##### Métodos principales:  
@@ -119,7 +118,7 @@ Esta clase se encarga de gestionar las relaciones entre dos tipos de datos, K y 
     - obtenerClave(V valor): Obtiene la clave asociada a un valor.
     - existeRelacionConValor(V valor): Verifica si existe una relación con un valor dado.
 
-#### RecuperadorEficiente
+#### `RecuperadorEficiente`
 Esta clase se encarga de almacenar y recuperar datos de manera eficiente. Al igual que GestorRelaciones, utiliza un HashMap para almacenar los datos.
 
 ##### Métodos principales:  
@@ -128,13 +127,13 @@ Esta clase se encarga de almacenar y recuperar datos de manera eficiente. Al igu
     - existeDato(K clave): Verifica si existe un dato con una clave dada.
     - recuperarDatoPorCriterio(Predicate<V> criterio): Recupera un dato basado en un criterio dado.
 
-#### RecuperarDatosFrame
+#### `RecuperarDatosFrame`
 Esta es una interfaz gráfica de usuario (GUI) que permite al usuario seleccionar el tipo de dato que desea recuperar y proporcionar el valor de entrada correspondiente.
 
 ##### Métodos principales:  
     - RecuperarDatosFrame(RecuperadorEficiente<Integer, String> recuperadorEficiente): Constructor de la clase, inicializa la interfaz gráfica.
 
-#### Main_C
+#### `Main_C`
 Esta es la clase principal del módulo. Crea instancias de GestorRelaciones y RecuperadorEficiente, y llena estos objetos con datos de prueba. Luego, crea una GUI que permite al usuario gestionar las relaciones y recuperar datos de manera eficiente.
 
 ##### Métodos principales:  
@@ -149,20 +148,15 @@ ________________________________________________________________________________
  ### 4. Indexación y Visualización de Archivos (Ejercicio 12):
 El proyecto proporciona una funcionalidad para indexar y listar archivos en un directorio dado. Los archivos se indexan de manera recursiva, lo que significa que si hay subdirectorios en el directorio dado, sus archivos también se indexarán. Los archivos indexados se pueden buscar por nombre y se pueden listar en orden alfabético.
 
-#### 'IndexadorRecursivo'
+#### `IndexadorRecursivo`
 Esta clase se utiliza para indexar archivos de manera recursiva. Mantiene un mapa donde la clave es el nombre del archivo y el valor es la ruta absoluta del archivo.  
 
-##### Métodos principales:  
+##### `Métodos principales`
     - indexar(File directorio): Este método toma un directorio como argumento y indexa todos los archivos en ese directorio y sus subdirectorios.
     - buscar(String nombreArchivo): Este método se utiliza para buscar un archivo por su nombre en el índice.
     - getIndex(): Este método devuelve el índice de archivos.
 
-##### Ejemplo de uso:  
-    IndexadorRecursivo indexador = new IndexadorRecursivo();
-    indexador.indexar(new File("/path/to/directory"));
-    String filePath = indexador.buscar("fileName");
-
-#### OrdenadorYListador  
+#### `OrdenadorYListador`
 Esta clase se utiliza para ordenar y listar archivos. Mantiene un mapa donde la clave es el nombre del archivo y el valor es la ruta absoluta del archivo. El mapa se implementa como un TreeMap para mantener las entradas ordenadas por el nombre del archivo.  
 
 ##### Métodos principales:  
@@ -174,7 +168,7 @@ Esta clase se utiliza para ordenar y listar archivos. Mantiene un mapa donde la 
     ordenador.agregar("fileName", "/path/to/file");
     List<String> fileList = ordenador.listar();
 
-#### Main_D
+#### `Main_D`
 Esta clase se utiliza para crear una interfaz de usuario que permite al usuario indexar y listar archivos. Utiliza las clases IndexadorRecursivo y OrdenadorYListador para realizar estas operaciones.  
 
 ##### Métodos principales:  
