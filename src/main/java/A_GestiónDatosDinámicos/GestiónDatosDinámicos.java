@@ -58,8 +58,9 @@ public class GestiónDatosDinámicos {
         }
     }
     public void eliminarCadena(Pareja_Cadenas cadena) {
-        cadenas.removeIf(c -> c.getPrimerElemento() == cadena.getPrimerElemento() && c.getSegundoElemento() == cadena.getSegundoElemento());
+        cadenas.removeIf(c -> c.getPrimerElemento().equals(cadena.getPrimerElemento()) && c.getSegundoElemento().equals(cadena.getSegundoElemento()));
     }
+
     public void modificarCadena(int index, Pareja_Cadenas nuevaCadena) {
         if (index >= 0 && index < cadenas.size()) {
             cadenas.set(index, nuevaCadena);
