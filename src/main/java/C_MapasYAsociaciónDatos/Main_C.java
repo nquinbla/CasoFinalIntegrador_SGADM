@@ -2,14 +2,13 @@ package C_MapasYAsociaciónDatos;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Optional;
 
-public class GUI_Relaciones extends JFrame {
+public class Main_C extends JFrame {
     private GestorRelaciones<Integer, String> numerosYLetras;
     private GestorRelaciones<Integer, String> numerosYTextos;
     private RecuperadorEficiente<Integer, String> recuperadorEficiente;
 
-    public GUI_Relaciones() {
+    public Main_C() {
         numerosYLetras = new GestorRelaciones<>();
         for (int i = 1; i <= 28; i++) {
             char letra = (char) ('A' + i - 1); // Convertir el número a una letra del abecedario
@@ -63,6 +62,6 @@ public class GUI_Relaciones extends JFrame {
     }
 
     public static void main(String[] args) {
-        new GUI_Relaciones();
+        new Main_C();
     }
 }

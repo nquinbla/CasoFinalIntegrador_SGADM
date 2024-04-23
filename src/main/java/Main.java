@@ -1,6 +1,6 @@
 import A_GestiónDatosDinámicos.Main_A;
 import B_AnálisisYOrganizaciónInfo.Main_B;
-import C_MapasYAsociaciónDatos.GUI_Relaciones;
+import C_MapasYAsociaciónDatos.Main_C;
 import D_IndexYVisualArchivos.Main_D;
 
 import javax.swing.*;
@@ -17,7 +17,7 @@ public class Main extends JFrame {
         analisisOrganizacionButton.addActionListener(e -> new Main_B());
 
         JButton mapasAsociacionButton = new JButton("Mapas y Asociación de Datos \uD83D\uDDFA\uFE0F\u200B\uD83D\uDCCA\u200B");
-        mapasAsociacionButton.addActionListener(e -> new GUI_Relaciones());
+        mapasAsociacionButton.addActionListener(e -> new Main_C());
 
         JButton indexadorVisualizacionButton = new JButton("Indexador y Visualización de Archivos \uD83D\uDC41\uFE0F\u200B\uD83D\uDDC3\uFE0F\u200B");
         indexadorVisualizacionButton.addActionListener(e -> new Main_D());
