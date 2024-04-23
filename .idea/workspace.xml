@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 4] ajustes main deco pt6" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="main general ajustes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,15 +98,7 @@
       <workItem from="1713780427883" duration="749000" />
       <workItem from="1713782619507" duration="764000" />
       <workItem from="1713787313344" duration="223000" />
-      <workItem from="1713854259546" duration="4921000" />
-    </task>
-    <task id="LOCAL-00060" summary="[Módulo 2] ajustes pt18 (ordenación)">
-      <option name="closed" value="true" />
-      <created>1713616488617</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1713616488617</updated>
+      <workItem from="1713854259546" duration="5383000" />
     </task>
     <task id="LOCAL-00061" summary="[Módulo 2] ajustes pt19 (ayuda)">
       <option name="closed" value="true" />
@@ -492,14 +484,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713858911807</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="main general ajustes">
+      <option name="closed" value="true" />
+      <created>1713859454391</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1713859454392</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 4] Indexador recursivo código" />
     <MESSAGE value="[Módulo 4] ordenador y listador código" />
     <MESSAGE value="[Módulo 4] Gui archivos código" />
     <MESSAGE value="[Módulo 4] ajustes código" />
@@ -524,6 +523,7 @@
     <MESSAGE value="[Módulo 4] ajustes main deco pt4" />
     <MESSAGE value="[Módulo 4] ajustes main deco pt5" />
     <MESSAGE value="[Módulo 4] ajustes main deco pt6" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 4] ajustes main deco pt6" />
+    <MESSAGE value="main general ajustes" />
+    <option name="LAST_COMMIT_MESSAGE" value="main general ajustes" />
   </component>
 </project>
