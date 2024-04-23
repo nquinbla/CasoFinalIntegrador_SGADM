@@ -4,7 +4,7 @@ Caso Final Integrador de la Unidad 6, sobre sistemas de gestión y análisis de 
 LINK: https://github.com/nquinbla/CasoFinalIntegrador_SGADM.git 
  ______________________________________________________________________________________________
  
-## Índice
+## ÍNDICE
 
 - [DESCRIPCIÓN](#descripción)
 - [MÓDULOS](#módulos)
