@@ -15,6 +15,13 @@ public class Main extends JFrame {
         DecoPanel decoPanel = new DecoPanel();
         decoPanel.setLayout(new BoxLayout(decoPanel, BoxLayout.X_AXIS));
 
+        JPanel titlePanel = new JPanel();
+        titlePanel.setLayout(new BoxLayout(titlePanel, BoxLayout.Y_AXIS));
+        JLabel titleLabel = new JLabel("<html><h1>UAX</h1></html>", SwingConstants.LEFT);
+        JLabel subtitleLabel = new JLabel("<html><h2>Sistema de Gestión y Análisis de Datos</h2></html>", SwingConstants.LEFT);
+        titlePanel.add(titleLabel);
+        titlePanel.add(subtitleLabel);
+
         JPanel buttonPanel = new JPanel(new GridBagLayout());
         buttonPanel.setOpaque(false);
 
@@ -41,6 +48,7 @@ public class Main extends JFrame {
         indexadorVisualizacionButton.addActionListener(e -> new Main_D());
         buttonPanel.add(indexadorVisualizacionButton, gbc);
 
+        decoPanel.add(titlePanel);
         decoPanel.add(Box.createHorizontalStrut(400)); // Añade un componente de relleno invisible con un tamaño específico
         decoPanel.add(buttonPanel);
 
