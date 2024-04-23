@@ -8,6 +8,9 @@ public class DecoPanel extends JPanel {
 
 
     public DecoPanel() {
+        setBackground(new Color(220, 232, 255)); // Este es un azul personalizado, puedes ajustar los valores RGB a tu gusto
+
+
         // Cargar la imagen
         ImageIcon icono1 = new ImageIcon("src/main/resources/image-removebg-preview (3).png");
         imagen1 = icono1.getImage();
