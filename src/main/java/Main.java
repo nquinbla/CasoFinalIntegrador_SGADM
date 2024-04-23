@@ -13,7 +13,7 @@ public class Main extends JFrame {
         setTitle("Sistema de Gestión Y Análisis de Datos Multidimensionales");
 
         DecoPanel decoPanel = new DecoPanel();
-        decoPanel.setLayout(new BoxLayout(decoPanel, BoxLayout.Y_AXIS));
+        decoPanel.setLayout(new BorderLayout());
 
         JPanel titlePanel = new JPanel(new GridBagLayout());
         titlePanel.setOpaque(false); // Hacer que titlePanel sea transparente
@@ -30,7 +30,7 @@ public class Main extends JFrame {
         JLabel subtitleLabel = new JLabel("<html><h2 style='font-size: 20px;'>Sistema de Gestión y Análisis de Datos</h2></html>");
         titlePanel.add(subtitleLabel, gbc);
 
-        decoPanel.add(titlePanel);
+        decoPanel.add(titlePanel, BorderLayout.CENTER);
 
         JPanel buttonPanel = new JPanel(new GridBagLayout());
         buttonPanel.setOpaque(false);
@@ -58,7 +58,7 @@ public class Main extends JFrame {
         indexadorVisualizacionButton.addActionListener(e -> new Main_D());
         buttonPanel.add(indexadorVisualizacionButton, gbc);
 
-        decoPanel.add(buttonPanel);
+        decoPanel.add(buttonPanel, BorderLayout.WEST);
 
         JPanel iconPanel = new JPanel();
         iconPanel.setLayout(new BoxLayout(iconPanel, BoxLayout.Y_AXIS));
