@@ -30,8 +30,6 @@ public class Main extends JFrame {
         JLabel subtitleLabel = new JLabel("<html><h2 style='font-size: 20px;'>Sistema de Gestión y Análisis de Datos</h2></html>");
         titlePanel.add(subtitleLabel, gbc);
 
-        decoPanel.add(titlePanel, BorderLayout.CENTER);
-
         JPanel buttonPanel = new JPanel(new GridBagLayout());
         buttonPanel.setOpaque(false);
 
@@ -58,25 +56,45 @@ public class Main extends JFrame {
         indexadorVisualizacionButton.addActionListener(e -> new Main_D());
         buttonPanel.add(indexadorVisualizacionButton, gbc);
 
-        decoPanel.add(buttonPanel, BorderLayout.WEST);
+        JPanel centerPanel = new JPanel();
+        centerPanel.setLayout(new BoxLayout(centerPanel, BoxLayout.Y_AXIS));
+        centerPanel.add(titlePanel);
+        centerPanel.add(buttonPanel);
+        decoPanel.add(centerPanel, BorderLayout.CENTER);
 
         JPanel iconPanel = new JPanel();
         iconPanel.setLayout(new BoxLayout(iconPanel, BoxLayout.Y_AXIS));
         iconPanel.setOpaque(false);
 
         JButton correoButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-correo.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        correoButton.setBorderPainted(false);
+        correoButton.setContentAreaFilled(false);
+        correoButton.setFocusPainted(false);
+        correoButton.setOpaque(false);
         correoButton.addActionListener(e -> new JFrame().setVisible(true));
         iconPanel.add(correoButton);
 
         JButton homeButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-home.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        homeButton.setBorderPainted(false);
+        homeButton.setContentAreaFilled(false);
+        homeButton.setFocusPainted(false);
+        homeButton.setOpaque(false);
         homeButton.addActionListener(e -> new JFrame().setVisible(true));
         iconPanel.add(homeButton);
 
         JButton menuButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-menu.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        menuButton.setBorderPainted(false);
+        menuButton.setContentAreaFilled(false);
+        menuButton.setFocusPainted(false);
+        menuButton.setOpaque(false);
         menuButton.addActionListener(e -> new JFrame().setVisible(true));
         iconPanel.add(menuButton);
 
         JButton usuarioButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-usuario.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        usuarioButton.setBorderPainted(false);
+        usuarioButton.setContentAreaFilled(false);
+        usuarioButton.setFocusPainted(false);
+        usuarioButton.setOpaque(false);
         usuarioButton.addActionListener(e -> new JFrame().setVisible(true));
         iconPanel.add(usuarioButton);
 
