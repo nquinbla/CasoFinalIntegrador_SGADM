@@ -26,6 +26,10 @@ public class RecuperarDatosFrame extends JFrame {
         recuperarButton.addActionListener(e -> {
             String tipoDatos = (String) tipoDatosComboBox.getSelectedItem();
             String input = inputField.getText();
+            if (input.equalsIgnoreCase(tipoDatos)) {
+                JOptionPane.showMessageDialog(null, "El tipo de dato y el input no pueden ser iguales.");
+                return;
+            }
             switch (tipoDatos) {
                 case "Texto":
                     try {
