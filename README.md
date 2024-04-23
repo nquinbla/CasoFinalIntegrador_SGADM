@@ -70,10 +70,39 @@ ________________________________________________________________________________
 
  ### 2. Análisis y Organización de Información [B_AnálisisYOrganizaciónInfo]
 Este módulo, B_AnálisisYOrganizaciónInfo, es parte de una aplicación de gestión de ventas. Aquí se manejan las ventas y los clientes, y se proporciona una interfaz gráfica de usuario (GUI) para interactuar con estos datos.
-* Venta.java: Esta clase representa una venta individual. Cada venta tiene una fecha, una cantidad y un cliente. Los métodos getFecha(), getCantidad() y getCliente() se utilizan para obtener estos valores, mientras que los métodos setFecha(), setCantidad() y setCliente() se utilizan para establecer estos valores.
-* RegistroVentas.java: Esta clase se utiliza para gestionar un conjunto de ventas. Las ventas se almacenan en tres TreeSet: ventasPorFecha, ventasPorCantidad y ventasPorCliente, que ordenan las ventas por fecha, cantidad y cliente, respectivamente. Los métodos agregarVenta(), eliminarVenta() y editarVenta() se utilizan para modificar estos conjuntos. Los métodos getVentasPorFecha(), getVentasPorCantidad() y getVentasPorCliente() se utilizan para obtener las ventas ordenadas.
-* Cliente.java: Esta clase representa a un cliente. Cada cliente tiene un nombre, que se puede obtener con getNombre() y establecer con setNombre().
-* GUI_Ventas.java: Esta clase es la interfaz gráfica de usuario (GUI) para gestionar las ventas. Permite al usuario agregar, eliminar y editar ventas, así como ordenar las ventas por fecha, cantidad o cliente. Los datos ingresados por el usuario se validan antes de ser utilizados para crear o editar una venta. La GUI también proporciona una opción de ayuda para el usuario.
+
+#### Venta
+Esta clase representa una venta, que tiene una fecha, una cantidad y un cliente.  
+
+##### Métodos principales
+    - Venta(Date fecha, int cantidad, String cliente): Este es el constructor de la clase. Crea una venta con la fecha, cantidad y cliente proporcionados.
+
+##### Métodos principales
+    - getFecha(), getCantidad(), getCliente(): Estos métodos devuelven la fecha, cantidad y cliente de la venta, respectivamente.
+    - setFecha(Date fecha), setCantidad(int cantidad), setCliente(String cliente): Estos métodos establecen la fecha, cantidad y cliente de la venta, respectivamente.
+
+#### RegistroVentas
+Esta clase se utiliza para gestionar un registro de ventas. Las ventas se pueden agregar, eliminar y obtener por fecha, cantidad o cliente. 
+
+##### Métodos principales
+    - agregarVenta(Venta venta): Este método agrega una venta al registro.
+    - eliminarVenta(Venta venta): Este método elimina una venta del registro.
+    - getVentasPorFecha(), getVentasPorCantidad(), getVentasPorCliente(): Estos métodos devuelven un conjunto ordenado de ventas por fecha, cantidad o cliente, respectivamente.
+    - editarVenta(Venta ventaAntigua, Venta ventaNueva): Este método reemplaza una venta antigua en el registro con una nueva venta.
+
+#### Main_B
+Esta es la clase principal que utiliza las clases Venta y RegistroVentas para gestionar y analizar las ventas. También proporciona una interfaz gráfica de usuario (GUI) para interactuar con el registro de ventas. 
+
+##### Métodos principales
+    - Main_B(): Este es el constructor de la clase. Crea la GUI y configura los listeners para los botones de agregar, eliminar y editar ventas.
+    - main(String[] args): Este es el método principal que se utiliza para iniciar la aplicación.
+
+#### Cliente
+Esta clase representa un cliente, que tiene un nombre. 
+
+##### Métodos principales
+    - Cliente(String nombre): Este es el constructor de la clase. Crea un cliente con el nombre proporcionado.
+    - getNombre(), setNombre(String nombre): Estos métodos obtienen y establecen el nombre del cliente, respectivamente.
 
 ______________________________________________________________________________________________
 
