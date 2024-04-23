@@ -21,20 +21,44 @@ public class RecuperarDatosFrame extends JFrame {
             String input = inputField.getText();
             switch (tipoDatos) {
                 case "Texto":
-                    // Aquí puedes usar el valor de input para recuperar los datos correspondientes
-                    // usando el objeto recuperadorEficiente
+                    // Si el usuario selecciona "Texto", asumimos que el input es un número y lo convertimos a texto
+                    try {
+                        int numero = Integer.parseInt(input);
+                        String texto = recuperadorEficiente.recuperarDato(numero);
+                        JOptionPane.showMessageDialog(null, "El texto para " + numero + " es: " + texto);
+                    } catch (NumberFormatException ex) {
+                        JOptionPane.showMessageDialog(null, "Por favor, ingrese un número válido.");
+                    }
                     break;
                 case "Número":
-                    // Aquí puedes usar el valor de input para recuperar los datos correspondientes
-                    // usando el objeto recuperadorEficiente
+                    // Si el usuario selecciona "Número", asumimos que el input es un texto y lo convertimos a número
+                    Integer numero = Integer.valueOf(recuperadorEficiente.recuperarDatoPorCriterio(s -> s.equals(input)).orElse(null));
+                    if (numero != null) {
+                        JOptionPane.showMessageDialog(null, "El número para " + input + " es: " + numero);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "No se encontró un número para: " + input);
+                    }
                     break;
                 case "Letras":
-                    // Aquí puedes usar el valor de input para recuperar los datos correspondientes
-                    // usando el objeto recuperadorEficiente
+                    // Si el usuario selecciona "Letras", asumimos que el input es un número y devolvemos la cantidad de letras en su representación textual
+                    try {
+                        int numeroLetras = Integer.parseInt(input);
+                        String texto = recuperadorEficiente.recuperarDato(numeroLetras);
+                        JOptionPane.showMessageDialog(null, "La cantidad de letras para " + numeroLetras + " es: " + (texto != null ? texto.length() : "N/A"));
+                    } catch (NumberFormatException ex) {
+                        JOptionPane.showMessageDialog(null, "Por favor, ingrese un número válido.");
+                    }
                     break;
                 case "Palabras":
-                    // Aquí puedes usar el valor de input para recuperar los datos correspondientes
-                    // usando el objeto recuperadorEficiente
+                    // Si el usuario selecciona "Palabras", asumimos que el input es un número y devolvemos la cantidad de palabras en su representación textual
+                    try {
+                        int numeroPalabras = Integer.parseInt(input);
+                        String texto = recuperadorEficiente.recuperarDato(numeroPalabras);
+                        long cantidadPalabras = texto != null ? texto.split("\\s+").length : 0;
+                        JOptionPane.showMessageDialog(null, "La cantidad de palabras para " + numeroPalabras + " es: " + cantidadPalabras);
+                    } catch (NumberFormatException ex) {
+                        JOptionPane.showMessageDialog(null, "Por favor, ingrese un número válido.");
+                    }
                     break;
             }
         });

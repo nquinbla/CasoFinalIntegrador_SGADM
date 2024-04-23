@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="main general ajustes" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] RecuperarDatosFrame código pt2">
+      <change beforePath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,23 +100,7 @@
       <workItem from="1713780427883" duration="749000" />
       <workItem from="1713782619507" duration="764000" />
       <workItem from="1713787313344" duration="223000" />
-      <workItem from="1713854259546" duration="5383000" />
-    </task>
-    <task id="LOCAL-00061" summary="[Módulo 2] ajustes pt19 (ayuda)">
-      <option name="closed" value="true" />
-      <created>1713616612001</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1713616612001</updated>
-    </task>
-    <task id="LOCAL-00062" summary="[Módulo 2] ajustes pt19 (size de ayuda)">
-      <option name="closed" value="true" />
-      <created>1713616800861</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1713616800861</updated>
+      <workItem from="1713854259546" duration="5897000" />
     </task>
     <task id="LOCAL-00063" summary="[Módulo 2] ajustes pt21 FIN MODULO 2">
       <option name="closed" value="true" />
@@ -492,15 +478,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713859454392</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="[Módulo 3] RecuperarDatosFrame código">
+      <option name="closed" value="true" />
+      <created>1713859850300</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1713859850300</updated>
+    </task>
+    <task id="LOCAL-00111" summary="[Módulo 3] RecuperarDatosFrame código pt2">
+      <option name="closed" value="true" />
+      <created>1713860066767</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1713860066767</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 4] ordenador y listador código" />
-    <MESSAGE value="[Módulo 4] Gui archivos código" />
     <MESSAGE value="[Módulo 4] ajustes código" />
     <MESSAGE value="[Módulo 4] ajustes código pt2" />
     <MESSAGE value="Main código pt1" />
@@ -524,6 +524,8 @@
     <MESSAGE value="[Módulo 4] ajustes main deco pt5" />
     <MESSAGE value="[Módulo 4] ajustes main deco pt6" />
     <MESSAGE value="main general ajustes" />
-    <option name="LAST_COMMIT_MESSAGE" value="main general ajustes" />
+    <MESSAGE value="[Módulo 3] RecuperarDatosFrame código" />
+    <MESSAGE value="[Módulo 3] RecuperarDatosFrame código pt2" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] RecuperarDatosFrame código pt2" />
   </component>
 </project>
