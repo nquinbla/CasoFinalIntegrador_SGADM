@@ -11,7 +11,7 @@ public class Main_A extends JFrame {
 
         JButton parejasButton = new JButton("Trabajar con Parejas");
         JButton matricesButton = new JButton("Trabajar con Matrices");
-        JButton cadenasButton = new JButton("Trabajar con Pareja_Cadenas");
+        JButton cadenasButton = new JButton("Trabajar con Cadenas");
 
         parejasButton.addActionListener(new ActionListener() {
             @Override

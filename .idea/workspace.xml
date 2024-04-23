@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 1] nueva opción (cadenas de texto) pt4" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 1] ajustes nombres de clases">
+      <change beforePath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Main_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Main_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Pareja_Cadenas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Pareja_Cadenas.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +45,7 @@
     "Application.GUI_Selección.executor": "Run",
     "Application.GUI_Ventas.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.Main_A.executor": "Run",
     "Application.Main_B.executor": "Run",
     "Application.comparación.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -97,23 +101,7 @@
       <workItem from="1713780427883" duration="749000" />
       <workItem from="1713782619507" duration="764000" />
       <workItem from="1713787313344" duration="223000" />
-      <workItem from="1713854259546" duration="1257000" />
-    </task>
-    <task id="LOCAL-00048" summary="[Módulo 2] ajustes pt9 (no se que hago)">
-      <option name="closed" value="true" />
-      <created>1713606014743</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1713606014743</updated>
-    </task>
-    <task id="LOCAL-00049" summary="[Módulo 2] ajustes pt9 (arreglos de editar ventas)">
-      <option name="closed" value="true" />
-      <created>1713606420334</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1713606420334</updated>
+      <workItem from="1713854259546" duration="1598000" />
     </task>
     <task id="LOCAL-00050" summary="[Módulo 2] ajustes pt9 (arreglos de editar ventas)">
       <option name="closed" value="true" />
@@ -491,15 +479,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713855520614</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="[Módulo 1] ajustes main">
+      <option name="closed" value="true" />
+      <created>1713855552850</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1713855552850</updated>
+    </task>
+    <task id="LOCAL-00098" summary="[Módulo 1] ajustes nombres de clases">
+      <option name="closed" value="true" />
+      <created>1713855648463</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1713855648463</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 3] GUI relaciones código" />
-    <MESSAGE value="[Módulo 3] GUI relaciones código (ajustes)" />
     <MESSAGE value="[Módulo 3] ajustes GUI pt2" />
     <MESSAGE value="[Módulo 3] código GUI pt3" />
     <MESSAGE value="[Módulo 3] código GUI pt4" />
@@ -523,6 +525,8 @@
     <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt2" />
     <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt3" />
     <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt4" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 1] nueva opción (cadenas de texto) pt4" />
+    <MESSAGE value="[Módulo 1] ajustes main" />
+    <MESSAGE value="[Módulo 1] ajustes nombres de clases" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 1] ajustes nombres de clases" />
   </component>
 </project>
