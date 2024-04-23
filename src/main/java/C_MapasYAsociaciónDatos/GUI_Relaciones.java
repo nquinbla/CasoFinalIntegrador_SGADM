@@ -51,24 +51,7 @@ public class GUI_Relaciones extends JFrame {
 
         JButton recuperarDatosEficientesButton = new JButton("Recuperar Datos Eficientes");
         recuperarDatosEficientesButton.addActionListener(e -> {
-            Integer clave = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número:"));
-            String valor = recuperadorEficiente.recuperarDato(clave);
-            if (valor != null) {
-                JOptionPane.showMessageDialog(null, "El valor para " + clave + " es: " + valor);
-            } else {
-                JOptionPane.showMessageDialog(null, "No se encontró un valor para: " + clave);
-            }
-
-            boolean existeDato = recuperadorEficiente.existeDato(clave);
-            JOptionPane.showMessageDialog(null, "¿Existe dato para " + clave + "? " + (existeDato ? "Sí" : "No"));
-
-            int longitud = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la longitud deseada:"));
-            Optional<String> datoPorCriterio = recuperadorEficiente.recuperarDatoPorCriterio(s -> s.length() == longitud);
-            if (datoPorCriterio.isPresent()) {
-                JOptionPane.showMessageDialog(null, "El primer valor con longitud " + longitud + " es: " + datoPorCriterio.get());
-            } else {
-                JOptionPane.showMessageDialog(null, "No se encontró un valor con longitud " + longitud);
-            }
+            new RecuperarDatosFrame(recuperadorEficiente);
         });
 
         add(gestionarRelacionesButton);
