@@ -74,36 +74,36 @@ public class Main extends JFrame {
         iconPanel.setLayout(new BoxLayout(iconPanel, BoxLayout.Y_AXIS));
         iconPanel.setOpaque(false);
 
-        JButton correoButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-correo.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        correoButton.setBorderPainted(false);
-        correoButton.setContentAreaFilled(false);
-        correoButton.setFocusPainted(false);
-        correoButton.setOpaque(false);
-        correoButton.addActionListener(e -> new JFrame().setVisible(true));
-        iconPanel.add(correoButton);
+        JButton menuButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-menu.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        menuButton.setBorderPainted(false);
+        menuButton.setContentAreaFilled(false);
+        menuButton.setFocusPainted(false);
+        menuButton.setOpaque(false);
+        menuButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Aquí se describen las funciones de cada botón..."));
+        iconPanel.add(menuButton);
 
         JButton homeButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-home.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
         homeButton.setBorderPainted(false);
         homeButton.setContentAreaFilled(false);
         homeButton.setFocusPainted(false);
         homeButton.setOpaque(false);
-        homeButton.addActionListener(e -> new JFrame().setVisible(true));
+        homeButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Ya estás en casa"));
         iconPanel.add(homeButton);
 
-        JButton menuButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-menu.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        menuButton.setBorderPainted(false);
-        menuButton.setContentAreaFilled(false);
-        menuButton.setFocusPainted(false);
-        menuButton.setOpaque(false);
-        menuButton.addActionListener(e -> new JFrame().setVisible(true));
-        iconPanel.add(menuButton);
+        JButton correoButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-correo.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        correoButton.setBorderPainted(false);
+        correoButton.setContentAreaFilled(false);
+        correoButton.setFocusPainted(false);
+        correoButton.setOpaque(false);
+        correoButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "nquinbla@myuax.com"));
+        iconPanel.add(correoButton);
 
         JButton usuarioButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-usuario.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
         usuarioButton.setBorderPainted(false);
         usuarioButton.setContentAreaFilled(false);
         usuarioButton.setFocusPainted(false);
         usuarioButton.setOpaque(false);
-        usuarioButton.addActionListener(e -> new JFrame().setVisible(true));
+        usuarioButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Creado por Nerea Quintanilla Blanco"));
         iconPanel.add(usuarioButton);
 
         decoPanel.add(iconPanel, BorderLayout.EAST);
