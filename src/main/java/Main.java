@@ -13,24 +13,33 @@ public class Main extends JFrame {
         setTitle("Sistema de Gestión Y Análisis de Datos Multidimensionales");
 
         DecoPanel decoPanel = new DecoPanel();
-        decoPanel.setLayout(new BoxLayout(decoPanel, BoxLayout.X_AXIS));
+        decoPanel.setLayout(new BoxLayout(decoPanel, BoxLayout.Y_AXIS));
 
-        JPanel titlePanel = new JPanel();
-        titlePanel.setLayout(new BoxLayout(titlePanel, BoxLayout.Y_AXIS));
+        JPanel titlePanel = new JPanel(new GridBagLayout());
         titlePanel.setOpaque(false); // Hacer que titlePanel sea transparente
-        JLabel titleLabel = new JLabel("<html><h1>UAX</h1></html>", SwingConstants.LEFT);
-        JLabel subtitleLabel = new JLabel("<html><h2>Sistema de Gestión y Análisis de Datos</h2></html>", SwingConstants.LEFT);
-        titlePanel.add(titleLabel);
-        titlePanel.add(subtitleLabel);
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.gridwidth = GridBagConstraints.REMAINDER;
+        gbc.anchor = GridBagConstraints.CENTER;
+        JLabel titleLabel = new JLabel("<html><h1 style='font-size: 60px;'><font color='black'>U</font><font color='black'>A</font><font color='#3679FA'>X</font></h1></html>");
+        titlePanel.add(titleLabel, gbc);
+
+        gbc.insets = new Insets(0, 0, 0, 0); // Reducir el espacio vertical
+        JLabel universityLabel = new JLabel("<html><h2 style='font-size: 16px;'>Universidad Alfonso <font color='#3679FA'>X</font> el Sabio</h2></html>");
+        titlePanel.add(universityLabel, gbc);
+
+        JLabel subtitleLabel = new JLabel("<html><h2 style='font-size: 20px;'>Sistema de Gestión y Análisis de Datos</h2></html>");
+        titlePanel.add(subtitleLabel, gbc);
+
+        decoPanel.add(titlePanel);
 
         JPanel buttonPanel = new JPanel(new GridBagLayout());
         buttonPanel.setOpaque(false);
 
-        GridBagConstraints gbc = new GridBagConstraints();
+        gbc = new GridBagConstraints();
         gbc.gridwidth = GridBagConstraints.REMAINDER;
         gbc.anchor = GridBagConstraints.NORTH;
         gbc.weighty = 0;
-        gbc.insets = new Insets(0, 0, 0, 0);
+        gbc.insets = new Insets(10, 0, 10, 0); // Agregar espacio vertical entre los botones
         gbc.ipady = 0;
 
         JButton gestionDatosDinamicosButton = new JButton("Gestión de Datos Dinámicos \uD83D\uDCC8\u200B\uD83D\uDCC9\u200B");
@@ -49,12 +58,11 @@ public class Main extends JFrame {
         indexadorVisualizacionButton.addActionListener(e -> new Main_D());
         buttonPanel.add(indexadorVisualizacionButton, gbc);
 
-        decoPanel.add(titlePanel); // Añade titlePanel a decoPanel
-        decoPanel.add(buttonPanel); // Añade buttonPanel a decoPanel
+        decoPanel.add(buttonPanel);
 
         add(decoPanel, BorderLayout.CENTER);
 
-        setSize(1200, 600);
+        setSize(1000, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);
