@@ -12,6 +12,7 @@ public class Main_D extends JFrame {
 
     public Main_D() {
         setLayout(new FlowLayout());
+        getContentPane().setBackground(Color.LIGHT_GRAY);
 
         ImageIcon imageIcon = new ImageIcon("src/main/resources/image-icono-subida-archivos.png");
         Image image = imageIcon.getImage();
@@ -20,14 +21,19 @@ public class Main_D extends JFrame {
 
         JLabel imageLabel = new JLabel(imageIcon);
         imageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-        add(imageLabel);
+
+        JPanel imagePanel = new JPanel();
+        imagePanel.setBackground(Color.LIGHT_GRAY); 
+        imagePanel.add(imageLabel);
+
+        add(imagePanel);
 
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        getContentPane().setBackground(Color.LIGHT_GRAY);
         buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
         buttonPanel.setBorder(BorderFactory.createEmptyBorder(30, 20, 10, 0));
+        buttonPanel.setBackground(Color.LIGHT_GRAY);
 
-        JButton indexarButton = new JButton("Indexar Archivos");
+        CustomButton indexarButton = new CustomButton("Indexar Archivos");
         indexarButton.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
             fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
@@ -42,7 +48,7 @@ public class Main_D extends JFrame {
             }
         });
 
-        JButton listarButton = new JButton("Listar Archivos");
+        CustomButton listarButton = new CustomButton("Listar Archivos");
         listarButton.addActionListener(e -> {
             List<String> lista = ordenadorYListador.listar();
             JTextArea textArea = new JTextArea(20, 50);
@@ -56,7 +62,6 @@ public class Main_D extends JFrame {
         buttonPanel.add(Box.createVerticalStrut(10));
         buttonPanel.add(listarButton);
 
-
         add(buttonPanel);
 
         setSize(500, 240);
@@ -68,5 +73,14 @@ public class Main_D extends JFrame {
 
     public static void main(String[] args) {
         new Main_D();
+    }
+
+    class CustomButton extends JButton {
+        public CustomButton(String text) {
+            super(text);
+            setFont(new Font("Arial", Font.BOLD, 14));
+            setForeground(Color.WHITE);
+            setBackground(Color.DARK_GRAY);
+        }
     }
 }
