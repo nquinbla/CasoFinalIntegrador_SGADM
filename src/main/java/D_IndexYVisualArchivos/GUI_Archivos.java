@@ -19,7 +19,10 @@ public class GUI_Archivos extends JFrame {
         imageIcon = new ImageIcon(scaledImage);
 
         JLabel imageLabel = new JLabel(imageIcon);
+        imageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         add(imageLabel);
+
+        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
 
         JButton indexarButton = new JButton("Indexar Archivos");
         indexarButton.addActionListener(e -> {
@@ -46,10 +49,12 @@ public class GUI_Archivos extends JFrame {
             JOptionPane.showMessageDialog(this, new JScrollPane(textArea));
         });
 
-        add(indexarButton);
-        add(listarButton);
+        buttonPanel.add(indexarButton);
+        buttonPanel.add(listarButton);
 
-        setSize(500, 500);
+        add(buttonPanel);
+
+        setSize(500, 230);
         setTitle("Listado de Archivos");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
