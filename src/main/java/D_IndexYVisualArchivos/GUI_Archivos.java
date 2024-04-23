@@ -52,6 +52,7 @@ public class GUI_Archivos extends JFrame {
         });
 
         buttonPanel.add(indexarButton);
+        buttonPanel.add(Box.createVerticalStrut(10));
         buttonPanel.add(listarButton);
 
         add(buttonPanel);
