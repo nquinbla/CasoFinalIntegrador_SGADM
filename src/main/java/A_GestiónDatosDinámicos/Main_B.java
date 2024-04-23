@@ -5,8 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GUI_Selección extends JFrame {
-    public GUI_Selección() {
+public class Main_B extends JFrame {
+    public Main_B() {
         setLayout(new FlowLayout());
 
         JButton parejasButton = new JButton("Trabajar con Parejas");
@@ -37,6 +37,6 @@ public class GUI_Selección extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new GUI_Selección());
+        SwingUtilities.invokeLater(() -> new Main_B());
     }
 }

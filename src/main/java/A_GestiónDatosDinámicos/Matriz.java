@@ -5,7 +5,7 @@ import java.util.Random;
 
 // Clase Matriz
 public class Matriz {
-    private int[][] elementos; // atributo de la clase Matriz
+    private int[][] elementos;
 
     public Matriz(int[][] elementos) {
         this.elementos = elementos;
