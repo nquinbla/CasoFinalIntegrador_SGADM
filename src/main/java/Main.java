@@ -13,18 +13,17 @@ public class Main extends JFrame {
         setTitle("Sistema de Gestión Y Análisis de Datos Multidimensionales");
 
         DecoPanel decoPanel = new DecoPanel();
-        decoPanel.setLayout(new BorderLayout());
+        decoPanel.setLayout(new BoxLayout(decoPanel, BoxLayout.X_AXIS));
 
         JPanel buttonPanel = new JPanel(new GridBagLayout());
         buttonPanel.setOpaque(false);
-        buttonPanel.setAlignmentX(Component.CENTER_ALIGNMENT); // Centra el panel de botones
 
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridwidth = GridBagConstraints.REMAINDER;
         gbc.anchor = GridBagConstraints.NORTH;
-        gbc.weighty = 0; // Cambia cómo se distribuye el espacio extra verticalmente
-        gbc.insets = new Insets(0, 0, 0, 0); // Elimina el espacio entre los botones
-        gbc.ipady = 0; // Elimina el 'padding' interno vertical
+        gbc.weighty = 0;
+        gbc.insets = new Insets(0, 0, 0, 0);
+        gbc.ipady = 0;
 
         JButton gestionDatosDinamicosButton = new JButton("Gestión de Datos Dinámicos \uD83D\uDCC8\u200B\uD83D\uDCC9\u200B");
         gestionDatosDinamicosButton.addActionListener(e -> new Main_A());
@@ -42,7 +41,8 @@ public class Main extends JFrame {
         indexadorVisualizacionButton.addActionListener(e -> new Main_D());
         buttonPanel.add(indexadorVisualizacionButton, gbc);
 
-        decoPanel.add(buttonPanel, BorderLayout.CENTER); // Cambia la posición del panel de botones al centro
+        decoPanel.add(Box.createHorizontalStrut(100)); // Añade un componente de relleno invisible con un tamaño específico
+        decoPanel.add(buttonPanel); // Añade el panel de botones después del relleno
 
         add(decoPanel, BorderLayout.CENTER);
 
