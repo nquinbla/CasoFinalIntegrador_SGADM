@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="main pt14">
-      <change beforePath="$PROJECT_DIR$/src/main/java/E_Decoración/DecoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E_Decoración/DecoPanel.java" afterDir="false" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="main pt15">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,15 +104,7 @@
       <workItem from="1713787313344" duration="223000" />
       <workItem from="1713854259546" duration="8424000" />
       <workItem from="1713864021047" duration="173000" />
-      <workItem from="1713872082045" duration="8121000" />
-    </task>
-    <task id="LOCAL-00096" summary="[Módulo 1] nueva opción (cadenas de texto) pt4">
-      <option name="closed" value="true" />
-      <created>1713855520614</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1713855520614</updated>
+      <workItem from="1713872082045" duration="8453000" />
     </task>
     <task id="LOCAL-00097" summary="[Módulo 1] ajustes main">
       <option name="closed" value="true" />
@@ -498,14 +490,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713880034518</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="main pt15">
+      <option name="closed" value="true" />
+      <created>1713880297128</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1713880297128</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 3] deco recuperador datos frame pt3" />
     <MESSAGE value="[Módulo 3] deco recuperador datos frame pt4" />
     <MESSAGE value="[Módulo 3] decoración main pt1" />
     <MESSAGE value="[Módulo 3] decoración main pt2" />
@@ -530,6 +529,7 @@
     <MESSAGE value="main pt12" />
     <MESSAGE value="main pt13" />
     <MESSAGE value="main pt14" />
-    <option name="LAST_COMMIT_MESSAGE" value="main pt14" />
+    <MESSAGE value="main pt15" />
+    <option name="LAST_COMMIT_MESSAGE" value="main pt15" />
   </component>
 </project>

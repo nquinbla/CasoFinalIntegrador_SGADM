@@ -60,6 +60,28 @@ public class Main extends JFrame {
 
         decoPanel.add(buttonPanel);
 
+        JPanel iconPanel = new JPanel();
+        iconPanel.setLayout(new BoxLayout(iconPanel, BoxLayout.Y_AXIS));
+        iconPanel.setOpaque(false);
+
+        JButton correoButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-correo.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        correoButton.addActionListener(e -> new JFrame().setVisible(true));
+        iconPanel.add(correoButton);
+
+        JButton homeButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-home.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        homeButton.addActionListener(e -> new JFrame().setVisible(true));
+        iconPanel.add(homeButton);
+
+        JButton menuButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-menu.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        menuButton.addActionListener(e -> new JFrame().setVisible(true));
+        iconPanel.add(menuButton);
+
+        JButton usuarioButton = new JButton(new ImageIcon(new ImageIcon("src/main/resources/image-icono-usuario.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        usuarioButton.addActionListener(e -> new JFrame().setVisible(true));
+        iconPanel.add(usuarioButton);
+
+        decoPanel.add(iconPanel, BorderLayout.EAST);
+
         add(decoPanel, BorderLayout.CENTER);
 
         setSize(1000, 600);
