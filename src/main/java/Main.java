@@ -41,8 +41,8 @@ public class Main extends JFrame {
         indexadorVisualizacionButton.addActionListener(e -> new Main_D());
         buttonPanel.add(indexadorVisualizacionButton, gbc);
 
-        decoPanel.add(Box.createHorizontalStrut(100)); // Añade un componente de relleno invisible con un tamaño específico
-        decoPanel.add(buttonPanel); // Añade el panel de botones después del relleno
+        decoPanel.add(Box.createHorizontalStrut(400)); // Añade un componente de relleno invisible con un tamaño específico
+        decoPanel.add(buttonPanel);
 
         add(decoPanel, BorderLayout.CENTER);
 
