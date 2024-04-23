@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] RecuperarDatosFrame código pt2">
-      <change beforePath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/C_MapasYAsociaciónDatos/RecuperarDatosFrame.java" afterDir="false" />
-    </list>
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 3] R refactor del main" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +44,7 @@
     "Application.Main.executor": "Run",
     "Application.Main_A.executor": "Run",
     "Application.Main_B.executor": "Run",
+    "Application.Main_C.executor": "Run",
     "Application.comparación.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -100,31 +99,7 @@
       <workItem from="1713780427883" duration="749000" />
       <workItem from="1713782619507" duration="764000" />
       <workItem from="1713787313344" duration="223000" />
-      <workItem from="1713854259546" duration="5897000" />
-    </task>
-    <task id="LOCAL-00063" summary="[Módulo 2] ajustes pt21 FIN MODULO 2">
-      <option name="closed" value="true" />
-      <created>1713618341342</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1713618341342</updated>
-    </task>
-    <task id="LOCAL-00064" summary="[Módulo 2] ajustes pt21 FIN MODULO 2">
-      <option name="closed" value="true" />
-      <created>1713618444194</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1713618444194</updated>
-    </task>
-    <task id="LOCAL-00065" summary="[Módulo 3] gestor de relaciones código">
-      <option name="closed" value="true" />
-      <created>1713619985335</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1713619985335</updated>
+      <workItem from="1713854259546" duration="6281000" />
     </task>
     <task id="LOCAL-00066" summary="[Módulo 3] recuperador eficiente código">
       <option name="closed" value="true" />
@@ -494,15 +469,37 @@
       <option name="project" value="LOCAL" />
       <updated>1713860066767</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="[Módulo 3] RecuperarDatosFrame código pt3">
+      <option name="closed" value="true" />
+      <created>1713860194167</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1713860194167</updated>
+    </task>
+    <task id="LOCAL-00113" summary="[Módulo 3] RecuperarDatosFrame código pt3">
+      <option name="closed" value="true" />
+      <created>1713860287133</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1713860287133</updated>
+    </task>
+    <task id="LOCAL-00114" summary="[Módulo 3] R refactor del main">
+      <option name="closed" value="true" />
+      <created>1713860520613</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1713860520613</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 4] ajustes código" />
-    <MESSAGE value="[Módulo 4] ajustes código pt2" />
     <MESSAGE value="Main código pt1" />
     <MESSAGE value="Main código pt2" />
     <MESSAGE value="[Módulo 5] Decoración del panel" />
@@ -526,6 +523,8 @@
     <MESSAGE value="main general ajustes" />
     <MESSAGE value="[Módulo 3] RecuperarDatosFrame código" />
     <MESSAGE value="[Módulo 3] RecuperarDatosFrame código pt2" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] RecuperarDatosFrame código pt2" />
+    <MESSAGE value="[Módulo 3] RecuperarDatosFrame código pt3" />
+    <MESSAGE value="[Módulo 3] R refactor del main" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 3] R refactor del main" />
   </component>
 </project>
