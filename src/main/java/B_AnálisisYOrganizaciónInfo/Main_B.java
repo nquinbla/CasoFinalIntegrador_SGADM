@@ -2,22 +2,21 @@ package B_AnálisisYOrganizaciónInfo;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.List;
 
-public class GUI_Ventas extends JFrame {
+public class Main_B extends JFrame {
     private RegistroVentas registroVentas;
     private JTextField diaField, mesField, añoField, cantidadField, clienteField;
     private JTextArea resultadoArea;
     private JComboBox<String> ventaComboBox;
 
-    public GUI_Ventas() {
+    public Main_B() {
         registroVentas = new RegistroVentas();
 
         setLayout(new FlowLayout());
+        Color lightBlueGray = Color.decode("#B0C4DE");
+        getContentPane().setBackground(lightBlueGray); // color personalizado
+
 
         diaField = new JTextField(2);
         mesField = new JTextField(2);
@@ -54,10 +53,8 @@ public class GUI_Ventas extends JFrame {
             }
         });
 
-// Agregar el JComboBox a tu GUI
         add(new JLabel("Ordenar:"));
         add(comboBoxOrdenacion);
-
 
         JButton agregarButton = new JButton("Agregar Venta");
         agregarButton.addActionListener(e -> {
@@ -231,6 +228,6 @@ public class GUI_Ventas extends JFrame {
     }
 
     public static void main(String[] args) {
-        new GUI_Ventas();
+        new Main_B();
     }
 }

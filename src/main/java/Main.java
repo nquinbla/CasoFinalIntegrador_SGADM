@@ -1,5 +1,5 @@
 import A_GestiónDatosDinámicos.Main_A;
-import B_AnálisisYOrganizaciónInfo.GUI_Ventas;
+import B_AnálisisYOrganizaciónInfo.Main_B;
 import C_MapasYAsociaciónDatos.GUI_Relaciones;
 import D_IndexYVisualArchivos.GUI_Archivos;
 
@@ -14,7 +14,7 @@ public class Main extends JFrame {
         gestionDatosDinamicosButton.addActionListener(e -> new Main_A());
 
         JButton analisisOrganizacionButton = new JButton("Análisis y Organización de Información");
-        analisisOrganizacionButton.addActionListener(e -> new GUI_Ventas());
+        analisisOrganizacionButton.addActionListener(e -> new Main_B());
 
         JButton mapasAsociacionButton = new JButton("Mapas y Asociación de Datos");
         mapasAsociacionButton.addActionListener(e -> new GUI_Relaciones());
