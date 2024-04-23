@@ -12,10 +12,10 @@ public class DescriptionWindow extends JFrame {
 
         JTextArea textArea = new JTextArea();
         textArea.setEditable(false);
-        textArea.setText("Gestión de Datos Dinámicos: Esta función permite...\n" +
-                "Análisis y Organización de Información: Esta función permite...\n" +
-                "Mapas y Asociación de Datos: Esta función permite...\n" +
-                "Indexador y Visualización de Archivos: Esta función permite...");
+        textArea.setText("Gestión de Datos Dinámicos: permite trabajar con diferentes opciones de datos, como la creación de tablas, gráficos y la importación y exportación de datos.\n" +
+                "Análisis y Organización de Información: permite analizar y organizar la información de diferentes maneras, como la creación de informes y la clasificación de datos.\n" +
+                "Mapas y Asociación de Datos: permite trabajar con mapas y asociar datos a diferentes elementos, como la creación de mapas y la asociación de datos a elementos de un mapa.\n" +
+                "Decoración: permite personalizar la interfaz de usuario con diferentes elementos decorativos, como imágenes y colores personalizados.");
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
 
