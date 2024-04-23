@@ -191,6 +191,7 @@ public class GUI_GestiónDatosDinámicos extends JFrame {
 
         setSize(550, 300);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 

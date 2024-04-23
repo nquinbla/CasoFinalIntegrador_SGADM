@@ -68,6 +68,7 @@ public class Main_C extends JFrame {
 
         setSize(300, 110);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 

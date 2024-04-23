@@ -60,6 +60,7 @@ public class Main_D extends JFrame {
         setSize(500, 240);
         setTitle("Listado de Archivos");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 
