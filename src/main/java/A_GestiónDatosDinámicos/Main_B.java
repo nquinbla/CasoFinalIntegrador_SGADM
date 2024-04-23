@@ -11,6 +11,7 @@ public class Main_B extends JFrame {
 
         JButton parejasButton = new JButton("Trabajar con Parejas");
         JButton matricesButton = new JButton("Trabajar con Matrices");
+        JButton cadenasButton = new JButton("Trabajar con Cadenas");
 
         parejasButton.addActionListener(new ActionListener() {
             @Override
@@ -28,8 +29,17 @@ public class Main_B extends JFrame {
             }
         });
 
+        cadenasButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new GUI_GestiónDatosDinámicos("cadenas");
+                dispose();
+            }
+        });
+
         add(parejasButton);
         add(matricesButton);
+        add(cadenasButton);
 
         setSize(300, 120);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
