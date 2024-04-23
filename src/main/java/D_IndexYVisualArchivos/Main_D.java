@@ -6,11 +6,11 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 
-public class GUI_Archivos extends JFrame {
+public class Main_D extends JFrame {
     private final IndexadorRecursivo indexadorRecursivo = new IndexadorRecursivo();
     private final OrdenadorYListador ordenadorYListador = new OrdenadorYListador();
 
-    public GUI_Archivos() {
+    public Main_D() {
         setLayout(new FlowLayout());
 
         ImageIcon imageIcon = new ImageIcon("src/main/resources/image-icono-subida-archivos.png");
@@ -64,6 +64,6 @@ public class GUI_Archivos extends JFrame {
     }
 
     public static void main(String[] args) {
-        new GUI_Archivos();
+        new Main_D();
     }
 }

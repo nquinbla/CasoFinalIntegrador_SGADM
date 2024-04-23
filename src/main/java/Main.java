@@ -1,7 +1,7 @@
 import A_GestiónDatosDinámicos.Main_A;
 import B_AnálisisYOrganizaciónInfo.Main_B;
 import C_MapasYAsociaciónDatos.GUI_Relaciones;
-import D_IndexYVisualArchivos.GUI_Archivos;
+import D_IndexYVisualArchivos.Main_D;
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,7 +20,7 @@ public class Main extends JFrame {
         mapasAsociacionButton.addActionListener(e -> new GUI_Relaciones());
 
         JButton indexadorVisualizacionButton = new JButton("Indexador y Visualización de Archivos");
-        indexadorVisualizacionButton.addActionListener(e -> new GUI_Archivos());
+        indexadorVisualizacionButton.addActionListener(e -> new Main_D());
 
         add(gestionDatosDinamicosButton);
         add(analisisOrganizacionButton);
