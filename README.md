@@ -1,13 +1,24 @@
 # Caso Final Integrador Tema 6: Sistema de Gestión y Análisis de Datos Multidimensionales
 Caso Final Integrador de la Unidad 6, sobre sistemas de gestión y análisis de datos multidimensionales de Nerea Quintanilla Blanco.
-LINK: https://github.com/nquinbla/CasoFinalIntegrador_SGADM.git
+LINK: https://github.com/nquinbla/CasoFinalIntegrador_SGADM.git 
+ ______________________________________________________________________________________________
+ 
+## Índice
+
+- [DESCRIPCIÓN](#descripción)
+- [MÓDULOS](#módulos)
+  - [1. Gestión de Datos Dinámicos](#1-gestión-de-datos-dinámicos-a_gestióndatosdinámicos)
+  - [2. Análisis y Organización de Información](#2-análisis-y-organización-de-información-b_análisisyorganizacióninfo)
+  - [3. Mapas y Asociación de Datos](#3-mapas-y-asociación-de-datos-c_mapasyasociacióndatos)
+  - [4. Indexación y Visualización de Archivos](#4-indexación-y-visualización-de-archivos-d_indexyvisualarchivos)
+  - [5. Decoración](#5-decoración)
+- [CRITERIOS DE EVALUACIÓN + RÚBRICA](#criterios-de-evaluación--rúbrica)
+
+______________________________________________________________________________________________
 
 ## DESCRIPCIÓN
  El proyecto consistirá en el desarrollo de una aplicación de software que integre varias estructuras de datos, algoritmos de ordenación y búsqueda, y métodos interactivos de entrada y salida de datos. Los estudiantes aplicarán conceptos avanzados de programación y estructuras de datos para   
  crear una herramienta versátil y eficiente.
-
-
- ______________________________________________________________________________________________
 
 ## MÓDULOS
 
@@ -145,7 +156,7 @@ En cuanto a la gestión de datos y estructuras, este módulo utiliza principalme
 
 ______________________________________________________________________________________________
 
- ### 4. Indexación y Visualización de Archivos (Ejercicio 12):
+ ### 4. Indexación y Visualización de Archivos [D_IndexYVisualArchivos]
 El proyecto proporciona una funcionalidad para indexar y listar archivos en un directorio dado. Los archivos se indexan de manera recursiva, lo que significa que si hay subdirectorios en el directorio dado, sus archivos también se indexarán. Los archivos indexados se pueden buscar por nombre y se pueden listar en orden alfabético.
 
 #### `IndexadorRecursivo`
