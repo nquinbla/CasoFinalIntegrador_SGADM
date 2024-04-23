@@ -13,6 +13,14 @@ public class GUI_Archivos extends JFrame {
     public GUI_Archivos() {
         setLayout(new FlowLayout());
 
+        ImageIcon imageIcon = new ImageIcon("src/main/resources/image-icono-subida-archivos.png");
+        Image image = imageIcon.getImage();
+        Image scaledImage = image.getScaledInstance(200, 200, Image.SCALE_SMOOTH); // redimensiona la imagen
+        imageIcon = new ImageIcon(scaledImage);
+
+        JLabel imageLabel = new JLabel(imageIcon);
+        add(imageLabel);
+
         JButton indexarButton = new JButton("Indexar Archivos");
         indexarButton.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
@@ -41,7 +49,7 @@ public class GUI_Archivos extends JFrame {
         add(indexarButton);
         add(listarButton);
 
-        setSize(300, 110);
+        setSize(500, 500);
         setTitle("Listado de Archivos");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);

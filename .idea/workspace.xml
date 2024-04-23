@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 1] ajustes opcion cadenas eliminar pt2 (arreglado)">
-      <change beforePath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Main_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Main_A.java" afterDir="false" />
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] ajustes base">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image-icono-subida-archivos.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/D_IndexYVisualArchivos/GUI_Archivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D_IndexYVisualArchivos/GUI_Archivos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,23 +101,7 @@
       <workItem from="1713780427883" duration="749000" />
       <workItem from="1713782619507" duration="764000" />
       <workItem from="1713787313344" duration="223000" />
-      <workItem from="1713854259546" duration="1952000" />
-    </task>
-    <task id="LOCAL-00052" summary="[Módulo 2] ajustes pt11 (arreglos de editar ventas)">
-      <option name="closed" value="true" />
-      <created>1713606457049</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1713606457049</updated>
-    </task>
-    <task id="LOCAL-00053" summary="[Módulo 2] ajustes pt12 (comparando para cambiar cosas en GUI_Ventas)">
-      <option name="closed" value="true" />
-      <created>1713610385350</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1713610385350</updated>
+      <workItem from="1713854259546" duration="2443000" />
     </task>
     <task id="LOCAL-00054" summary="[Módulo 2] ajustes pt12 (arreglo editar venta)">
       <option name="closed" value="true" />
@@ -494,15 +479,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713856118106</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="[Módulo 1] ajustes">
+      <option name="closed" value="true" />
+      <created>1713856261922</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1713856261922</updated>
+    </task>
+    <task id="LOCAL-00102" summary="[Módulo 2] ajustes base">
+      <option name="closed" value="true" />
+      <created>1713856417673</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1713856417673</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 3] código GUI pt4" />
-    <MESSAGE value="[Módulo 3] código GUI pt5" />
     <MESSAGE value="[Módulo 3] código GUI pt6" />
     <MESSAGE value="[Módulo 3] RecuperadorEficiente ajustes" />
     <MESSAGE value="[Módulo 3] GUI código pt 7" />
@@ -526,6 +525,8 @@
     <MESSAGE value="[Módulo 1] ajustes nombres de clases" />
     <MESSAGE value="[Módulo 1] ajustes opcion cadenas eliminar pt1" />
     <MESSAGE value="[Módulo 1] ajustes opcion cadenas eliminar pt2 (arreglado)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 1] ajustes opcion cadenas eliminar pt2 (arreglado)" />
+    <MESSAGE value="[Módulo 1] ajustes" />
+    <MESSAGE value="[Módulo 2] ajustes base" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] ajustes base" />
   </component>
 </project>
