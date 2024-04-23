@@ -107,8 +107,42 @@ Esta clase representa un cliente, que tiene un nombre.
 ______________________________________________________________________________________________
 
  ### 3. Mapas y Asociación de Datos [C_MapasYAsociaciónDatos]
-   * Gestión de Relaciones: Crear mapas para asociar y gestionar relaciones entre diferentes conjuntos de datos, como números y letras o números y sus representaciones textuales.
-   * Recuperación Eficiente: Desarrollar métodos para recuperar información asociada de manera eficiente, basándose en claves o criterios definidos por el usuario.
+Se compone de varias clases que trabajan juntas para gestionar y recuperar datos de manera eficiente.
+
+#### GestorRelaciones
+Esta clase se encarga de gestionar las relaciones entre dos tipos de datos, K y V. Utiliza un HashMap para almacenar estas relaciones, donde K es la clave y V es el valor.
+
+##### Métodos principales:  
+    - agregarRelacion(K clave, V valor): Agrega una relación al mapa.
+    - obtenerValor(K clave): Obtiene el valor asociado a una clave.
+    - existeRelacion(K clave): Verifica si existe una relación con una clave dada.
+    - obtenerClave(V valor): Obtiene la clave asociada a un valor.
+    - existeRelacionConValor(V valor): Verifica si existe una relación con un valor dado.
+
+#### RecuperadorEficiente
+Esta clase se encarga de almacenar y recuperar datos de manera eficiente. Al igual que GestorRelaciones, utiliza un HashMap para almacenar los datos.
+
+##### Métodos principales:  
+    - agregarDato(K clave, V valor): Agrega un dato al mapa.
+    - recuperarDato(K clave): Recupera un dato a partir de una clave.
+    - existeDato(K clave): Verifica si existe un dato con una clave dada.
+    - recuperarDatoPorCriterio(Predicate<V> criterio): Recupera un dato basado en un criterio dado.
+
+#### RecuperarDatosFrame
+Esta es una interfaz gráfica de usuario (GUI) que permite al usuario seleccionar el tipo de dato que desea recuperar y proporcionar el valor de entrada correspondiente.
+
+##### Métodos principales:  
+    - RecuperarDatosFrame(RecuperadorEficiente<Integer, String> recuperadorEficiente): Constructor de la clase, inicializa la interfaz gráfica.
+
+#### Main_C
+Esta es la clase principal del módulo. Crea instancias de GestorRelaciones y RecuperadorEficiente, y llena estos objetos con datos de prueba. Luego, crea una GUI que permite al usuario gestionar las relaciones y recuperar datos de manera eficiente.
+
+##### Métodos principales:  
+    - Main_C(): Constructor de la clase, inicializa las relaciones y la interfaz gráfica.
+    - main(String[] args): Método principal, crea una instancia de Main_C.
+
+#### EXTRA
+En cuanto a la gestión de datos y estructuras, este módulo utiliza principalmente HashMaps para almacenar y recuperar datos de manera eficiente. Los HashMaps permiten la recuperación de datos en tiempo constante, lo que hace que esta estructura de datos sea ideal para este propósito. Además, la clase RecuperadorEficiente proporciona un método para recuperar datos basados en un criterio dado, lo que permite una mayor flexibilidad en la recuperación de datos.
 
 ______________________________________________________________________________________________
 
