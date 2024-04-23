@@ -10,16 +10,16 @@ public class Main extends JFrame {
     public Main() {
         setLayout(new FlowLayout());
 
-        JButton gestionDatosDinamicosButton = new JButton("Gestión de Datos Dinámicos");
+        JButton gestionDatosDinamicosButton = new JButton("Gestión de Datos Dinámicos \uD83D\uDCC8\u200B\uD83D\uDCC9\u200B");
         gestionDatosDinamicosButton.addActionListener(e -> new Main_A());
 
-        JButton analisisOrganizacionButton = new JButton("Análisis y Organización de Información");
+        JButton analisisOrganizacionButton = new JButton("Análisis y Organización de Información \uD83D\uDDC4\uFE0F\u200Bℹ\uFE0F\u200B");
         analisisOrganizacionButton.addActionListener(e -> new Main_B());
 
-        JButton mapasAsociacionButton = new JButton("Mapas y Asociación de Datos");
+        JButton mapasAsociacionButton = new JButton("Mapas y Asociación de Datos \uD83D\uDDFA\uFE0F\u200B\uD83D\uDCCA\u200B");
         mapasAsociacionButton.addActionListener(e -> new GUI_Relaciones());
 
-        JButton indexadorVisualizacionButton = new JButton("Indexador y Visualización de Archivos");
+        JButton indexadorVisualizacionButton = new JButton("Indexador y Visualización de Archivos \uD83D\uDC41\uFE0F\u200B\uD83D\uDDC3\uFE0F\u200B");
         indexadorVisualizacionButton.addActionListener(e -> new Main_D());
 
         add(gestionDatosDinamicosButton);
