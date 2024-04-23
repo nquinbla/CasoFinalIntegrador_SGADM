@@ -11,15 +11,62 @@ LINK: https://github.com/nquinbla/CasoFinalIntegrador_SGADM.git
 ## MÓDULOS
 
  ### 1. Gestión de Datos Dinámicos [A_GestiónDatosDinámicos]
-  Consiste en una interfaz gráfica donde el usuario puede escoger con lo que desea trabajar, matrices o parejas de números enteros. En las dos opciones podrán agregar, eliminar y modificar los elementos de estos que deseé, manejando así datos multidimensionales.
-  
-* Pareja.java -> Esta clase representa una parejaEnteros de enteros. Cada objeto Pareja tiene dos atributos, primerElemento y segundoElemento, que representan los dos enteros de la parejaEnteros. La clase Pareja tiene métodos para establecer y obtener estos elementos, así como un método toString() que devuelve una representación de cadena de la parejaEnteros.
-* Matriz.java -> Esta clase representa una parejaMatriz de enteros. Cada objeto Matriz tiene un atributo elementos, que es un array bidimensional de enteros. La clase Matriz tiene métodos para establecer y obtener elementos individuales de la parejaMatriz, así como un método toString() que devuelve una representación de cadena de la parejaMatriz. Los elementos de la parejaMatriz se pueden inicializar a través del constructor o mediante el método setElemento(). Los elementos se pueden recuperar utilizando el método getElemento().
-* GestiónDatosDinámicos -> Esta clase es una interfaz gráfica de usuario (GUI) que permite al usuario interactuar con objetos Matriz. La GUI tiene campos de texto para que el usuario pueda ingresar los valores de los elementos de la parejaMatriz, así como botones para agregar, eliminar y modificar matrices. Los datos ingresados por el usuario se utilizan para crear nuevos objetos Matriz, que luego se agregan a una lista de matrices. La GUI también tiene un área de texto donde se muestran todas las matrices en la lista.
-* GestiónDatosDinámicos.java -> Esta clase es responsable de gestionar las operaciones de datos dinámicos. Contiene una lista de objetos Matriz y proporciona métodos para agregar, eliminar y modificar matrices en la lista. Cada operación afecta a la lista de matrices y, por lo tanto, a los datos que se muestran en la GUI.
-* GUI_Selección -> Esta clase es otra GUI que permite al usuario elegir entre trabajar con parejas o matrices. Dependiendo de la elección del usuario, se abre la GUI correspondiente.
+  Consiste en una interfaz gráfica donde el usuario puede escoger con lo que desea trabajar, matrices, cadenas de texto o parejas de números enteros. En las dos opciones podrán agregar, eliminar y modificar los elementos de estos que deseé, manejando así datos multidimensionales.
 
-______________________________________________________________________________________________
+
+#### Pareja_Enteros
+Esta clase representa una pareja de enteros. 
+
+##### Métodos principales:  
+    - Pareja_Enteros(int primerElemento, int segundoElemento): Este es el constructor de la clase. Crea una pareja de enteros con los elementos proporcionados.
+    - getPrimerElemento(), getSegundoElemento(): Estos métodos devuelven el primer y segundo elemento de la pareja, respectivamente.
+    - setPrimerElemento(int primerElemento), setSegundoElemento(int segundoElemento): Estos métodos establecen el primer y segundo elemento de la pareja, respectivamente.
+
+#### Pareja_Matriz
+Esta clase representa una matriz de enteros.  Métodos principales:
+
+##### Métodos principales:  
+    - Pareja_Matriz(int[][] elementos): Este es el constructor de la clase. Crea una matriz con los elementos proporcionados.
+    - Pareja_Matriz(int filas, int columnas): Este es otro constructor de la clase. Crea una matriz vacía con el número de filas y columnas proporcionado.
+    - setElemento(int fila, int columna, int valor): Este método establece el valor de un elemento en la matriz.
+    - getElemento(int fila, int columna): Este método devuelve el valor de un elemento en la matriz.
+
+#### Pareja_Cadenas
+Esta clase representa una pareja de cadenas.  Métodos principales:  
+
+##### Métodos principales:  
+    - Pareja_Cadenas(String primerElemento, String segundoElemento): Este es el constructor de la clase. Crea una pareja de cadenas con los elementos proporcionados.
+    - getPrimerElemento(), getSegundoElemento(): Estos métodos devuelven el primer y segundo elemento de la pareja, respectivamente.
+    - setPrimerElemento(String primerElemento), setSegundoElemento(String segundoElemento): Estos métodos establecen el primer y segundo elemento de la pareja, respectivamente.
+    
+#### GestiónDatosDinámicos
+Esta clase se utiliza para gestionar listas de parejas de enteros, matrices y cadenas. Cada tipo de dato se gestiona con una lista separada y la clase proporciona métodos para agregar, eliminar y modificar los datos en cada lista.
+
+##### Métodos principales:  
+    - agregarPareja(Pareja_Enteros parejaEnteros): Agrega una pareja de enteros a la lista correspondiente.
+    - eliminarPareja(Pareja_Enteros parejaEnteros): Elimina una pareja de enteros de la lista correspondiente.
+    - modificarPareja(int index, Pareja_Enteros nuevaParejaEnteros): Modifica una pareja de enteros en la lista correspondiente.
+    - agregarMatriz(Pareja_Matriz parejaMatriz): Agrega una matriz a la lista correspondiente.
+    - eliminarMatriz(int index): Elimina una matriz de la lista correspondiente.
+    - modificarMatriz(int index, Pareja_Matriz nuevaParejaMatriz): Modifica una matriz en la lista correspondiente.
+    - agregarCadena(Pareja_Cadenas cadena): Agrega una cadena a la lista correspondiente.
+    - eliminarCadena(Pareja_Cadenas cadena): Elimina una cadena de la lista correspondiente.
+    - modificarCadena(int index, Pareja_Cadenas nuevaCadena): Modifica una cadena en la lista correspondiente.
+
+##### GUI_GestiónDatosDinámicos
+Esta clase se utiliza para proporcionar una interfaz gráfica de usuario (GUI) para interactuar con la clase GestiónDatosDinámicos. Permite al usuario seleccionar el tipo de datos con el que quiere trabajar (parejas de enteros, matrices o cadenas) y proporciona una interfaz para agregar, eliminar y modificar los datos seleccionados.
+
+##### Métodos principales:  
+    - GUI_GestiónDatosDinámicos(String tipo): Este es el constructor de la clase. Crea la GUI y configura los listeners para los botones de agregar, eliminar y modificar.
+
+#### Main_A
+Esta es la clase principal que utiliza las clases GestiónDatosDinámicos y GUI_GestiónDatosDinámicos para iniciar la aplicación.  
+
+##### Métodos principales:  
+    - Main_A(): Este es el constructor de la clase. Crea la GUI que permite al usuario seleccionar el tipo de datos con el que quiere trabajar.
+    - main(String[] args): Este es el método principal que se utiliza para iniciar la aplicación.
+  
+____________________________________________________________________________________________________________________________________________________________________________________________
 
  ### 2. Análisis y Organización de Información [B_AnálisisYOrganizaciónInfo]
 Este módulo, B_AnálisisYOrganizaciónInfo, es parte de una aplicación de gestión de ventas. Aquí se manejan las ventas y los clientes, y se proporciona una interfaz gráfica de usuario (GUI) para interactuar con estos datos.
