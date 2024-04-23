@@ -28,7 +28,6 @@ public class RecuperarDatosFrame extends JFrame {
             String input = inputField.getText();
             switch (tipoDatos) {
                 case "Texto":
-                    // Si el usuario selecciona "Texto", asumimos que el input es un número y lo convertimos a texto
                     try {
                         int numero = Integer.parseInt(input);
                         String texto = recuperadorEficiente.recuperarDato(numero);
@@ -38,7 +37,6 @@ public class RecuperarDatosFrame extends JFrame {
                     }
                     break;
                 case "Número":
-                    // Si el usuario selecciona "Número", asumimos que el input es un texto y lo convertimos a número
                     Integer numero = Integer.valueOf(recuperadorEficiente.recuperarDatoPorCriterio(s -> s.equals(input)).orElse(null));
                     if (numero != null) {
                         JOptionPane.showMessageDialog(null, "El número para " + input + " es: " + numero);
@@ -47,7 +45,6 @@ public class RecuperarDatosFrame extends JFrame {
                     }
                     break;
                 case "Letras":
-                    // Si el usuario selecciona "Letras", asumimos que el input es un número y devolvemos la cantidad de letras en su representación textual
                     try {
                         int numeroLetras = Integer.parseInt(input);
                         String texto = recuperadorEficiente.recuperarDato(numeroLetras);
@@ -57,7 +54,6 @@ public class RecuperarDatosFrame extends JFrame {
                     }
                     break;
                 case "Palabras":
-                    // Si el usuario selecciona "Palabras", asumimos que el input es un número y devolvemos la cantidad de palabras en su representación textual
                     try {
                         int numeroPalabras = Integer.parseInt(input);
                         String texto = recuperadorEficiente.recuperarDato(numeroPalabras);
