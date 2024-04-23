@@ -9,6 +9,7 @@ public class Main_A extends JFrame {
     public Main_A() {
         setLayout(new FlowLayout());
 
+        JLabel instructionLabel = new JLabel("Por favor, seleccione el campo con el que quiere trabajar");
         JButton parejasButton = new JButton("Trabajar con Parejas");
         JButton matricesButton = new JButton("Trabajar con Matrices");
         JButton cadenasButton = new JButton("Trabajar con Cadenas");
@@ -37,11 +38,12 @@ public class Main_A extends JFrame {
             }
         });
 
+        add(instructionLabel);
         add(parejasButton);
         add(matricesButton);
         add(cadenasButton);
 
-        setSize(350, 120);
+        setSize(370, 140);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 1] ajustes nombres de clases">
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 1] ajustes opcion cadenas eliminar pt2 (arreglado)">
       <change beforePath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Main_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Main_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Pareja_Cadenas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/A_GestiónDatosDinámicos/Pareja_Cadenas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,23 +100,7 @@
       <workItem from="1713780427883" duration="749000" />
       <workItem from="1713782619507" duration="764000" />
       <workItem from="1713787313344" duration="223000" />
-      <workItem from="1713854259546" duration="1598000" />
-    </task>
-    <task id="LOCAL-00050" summary="[Módulo 2] ajustes pt9 (arreglos de editar ventas)">
-      <option name="closed" value="true" />
-      <created>1713606432889</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1713606432890</updated>
-    </task>
-    <task id="LOCAL-00051" summary="[Módulo 2] ajustes pt10 (arreglos de editar ventas)">
-      <option name="closed" value="true" />
-      <created>1713606442029</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1713606442029</updated>
+      <workItem from="1713854259546" duration="1952000" />
     </task>
     <task id="LOCAL-00052" summary="[Módulo 2] ajustes pt11 (arreglos de editar ventas)">
       <option name="closed" value="true" />
@@ -495,15 +478,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713855648463</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="[Módulo 1] ajustes opcion cadenas eliminar pt1">
+      <option name="closed" value="true" />
+      <created>1713855936227</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1713855936227</updated>
+    </task>
+    <task id="LOCAL-00100" summary="[Módulo 1] ajustes opcion cadenas eliminar pt2 (arreglado)">
+      <option name="closed" value="true" />
+      <created>1713856118106</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1713856118106</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 3] ajustes GUI pt2" />
-    <MESSAGE value="[Módulo 3] código GUI pt3" />
     <MESSAGE value="[Módulo 3] código GUI pt4" />
     <MESSAGE value="[Módulo 3] código GUI pt5" />
     <MESSAGE value="[Módulo 3] código GUI pt6" />
@@ -527,6 +524,8 @@
     <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt4" />
     <MESSAGE value="[Módulo 1] ajustes main" />
     <MESSAGE value="[Módulo 1] ajustes nombres de clases" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 1] ajustes nombres de clases" />
+    <MESSAGE value="[Módulo 1] ajustes opcion cadenas eliminar pt1" />
+    <MESSAGE value="[Módulo 1] ajustes opcion cadenas eliminar pt2 (arreglado)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 1] ajustes opcion cadenas eliminar pt2 (arreglado)" />
   </component>
 </project>
