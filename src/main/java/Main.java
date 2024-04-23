@@ -13,7 +13,7 @@ public class Main extends JFrame {
         setTitle("Sistema de Gestión Y Análisis de Datos Multidimensionales");
 
         DecoPanel decoPanel = new DecoPanel();
-        add(decoPanel, BorderLayout.CENTER);
+        decoPanel.setLayout(new BoxLayout(decoPanel, BoxLayout.Y_AXIS));
 
         JPanel buttonPanel = new JPanel(new FlowLayout());
         buttonPanel.setOpaque(false);
@@ -35,7 +35,10 @@ public class Main extends JFrame {
         buttonPanel.add(mapasAsociacionButton);
         buttonPanel.add(indexadorVisualizacionButton);
 
-        add(buttonPanel, BorderLayout.SOUTH);
+        decoPanel.add(Box.createVerticalGlue());
+        decoPanel.add(buttonPanel);
+
+        add(decoPanel, BorderLayout.CENTER);
 
         setSize(1200, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
