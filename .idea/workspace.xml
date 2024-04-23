@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 2] Ajuste tamaño ventana">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f6f6f804-3e66-4ad8-b88d-a0f2ce64cec4" name="Changes" comment="[Módulo 1] nueva opción (cadenas de texto) pt4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,30 +32,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Aplicación.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_AnálisisOrganización.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_Archivos.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_GestiónDatosDinámicos.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_Relaciones.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_Selección.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GUI_Ventas.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.comparación.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Aplicación.executor": "Run",
+    "Application.GUI_AnálisisOrganización.executor": "Run",
+    "Application.GUI_Archivos.executor": "Run",
+    "Application.GUI_GestiónDatosDinámicos.executor": "Run",
+    "Application.GUI_Relaciones.executor": "Run",
+    "Application.GUI_Selección.executor": "Run",
+    "Application.GUI_Ventas.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Main_B.executor": "Run",
+    "Application.comparación.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nerea\OneDrive\Documentos\GitHub\CasoFinalIntegrador_SGADM\src\main\resources" />
@@ -98,39 +97,7 @@
       <workItem from="1713780427883" duration="749000" />
       <workItem from="1713782619507" duration="764000" />
       <workItem from="1713787313344" duration="223000" />
-      <workItem from="1713854259546" duration="302000" />
-    </task>
-    <task id="LOCAL-00044" summary="[Módulo 2] ajustes pt5 (ordenación)">
-      <option name="closed" value="true" />
-      <created>1713528888890</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1713528888890</updated>
-    </task>
-    <task id="LOCAL-00045" summary="[Módulo 2] ajustes pt6 (recuadro)">
-      <option name="closed" value="true" />
-      <created>1713603891414</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1713603891414</updated>
-    </task>
-    <task id="LOCAL-00046" summary="[Módulo 2] ajustes pt7 (codigo)">
-      <option name="closed" value="true" />
-      <created>1713605348155</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1713605348155</updated>
-    </task>
-    <task id="LOCAL-00047" summary="[Módulo 2] ajustes pt8 (eliminar y editar ventas)">
-      <option name="closed" value="true" />
-      <created>1713605595149</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1713605595149</updated>
+      <workItem from="1713854259546" duration="1257000" />
     </task>
     <task id="LOCAL-00048" summary="[Módulo 2] ajustes pt9 (no se que hago)">
       <option name="closed" value="true" />
@@ -492,17 +459,45 @@
       <option name="project" value="LOCAL" />
       <updated>1713779928161</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="[Módulo 1] nueva opción (cadenas de texto)">
+      <option name="closed" value="true" />
+      <created>1713854963032</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1713854963033</updated>
+    </task>
+    <task id="LOCAL-00094" summary="[Módulo 1] nueva opción (cadenas de texto) pt2">
+      <option name="closed" value="true" />
+      <created>1713855044813</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1713855044813</updated>
+    </task>
+    <task id="LOCAL-00095" summary="[Módulo 1] nueva opción (cadenas de texto) pt3">
+      <option name="closed" value="true" />
+      <created>1713855486063</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1713855486063</updated>
+    </task>
+    <task id="LOCAL-00096" summary="[Módulo 1] nueva opción (cadenas de texto) pt4">
+      <option name="closed" value="true" />
+      <created>1713855520614</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1713855520614</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Módulo 2] ajustes pt19 (size de ayuda)" />
-    <MESSAGE value="[Módulo 2] ajustes pt21 FIN MODULO 2" />
-    <MESSAGE value="[Módulo 3] gestor de relaciones código" />
-    <MESSAGE value="[Módulo 3] recuperador eficiente código" />
     <MESSAGE value="[Módulo 3] GUI relaciones código" />
     <MESSAGE value="[Módulo 3] GUI relaciones código (ajustes)" />
     <MESSAGE value="[Módulo 3] ajustes GUI pt2" />
@@ -524,6 +519,10 @@
     <MESSAGE value="Main código pt2" />
     <MESSAGE value="[Módulo 5] Decoración del panel" />
     <MESSAGE value="[Módulo 2] Ajuste tamaño ventana" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 2] Ajuste tamaño ventana" />
+    <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto)" />
+    <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt2" />
+    <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt3" />
+    <MESSAGE value="[Módulo 1] nueva opción (cadenas de texto) pt4" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Módulo 1] nueva opción (cadenas de texto) pt4" />
   </component>
 </project>
